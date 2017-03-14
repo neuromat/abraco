@@ -1,0 +1,103 @@
+/*Definicoes gerais*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+h1, h2, h3, h4, p{
+  font-family: 'Open Sans', sans-serif;
+  color: #525758;
+}
+h1{
+  font-size: 30px;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 19px;
+  text-transform: uppercase;
+}
+h3{
+  font-size: 15px;
+  text-transform: uppercase;
+}
+p{
+  font-size: 15px;
+}
+a:link{
+  text-decoration: none;  
+}
+a:hover h2, a:hover h3{
+  font-weight: 600;
+}
+
+/*Texto de introducao*/
+.aIntroduction{
+  background-color: #125F65;
+  padding: 40px 15px;
+  margin-bottom: 20px;
+}
+.aIntroduction p{
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/*Links Secoes*/
+#aBotaoLesao{
+  background-color: #F8F8F8;
+  border-bottom: 10px solid #137B7B;
+  border-radius: 2px;
+  box-shadow: 1px -1px 2px #979a97;
+  -webkit-box-shadow: 1px -1px 2px #979a97;
+  -moz-box-shadow: 1px -1px 2px #979a97;
+  padding: 10px;
+}
+#aBotaoPesquisa{
+  background-color: #F8F8F8;
+  border-bottom: 10px solid #3758C1;
+  border-radius: 2px;
+  box-shadow: 1px -1px 2px #979a97;
+  -webkit-box-shadow: 1px -1px 2px #979a97;
+  -moz-box-shadow: 1px -1px 2px #979a97;
+  padding: 10px;
+}
+#aBotaoRecEduc{
+  background-color: #F8F8F8;
+  border-bottom: 10px solid #BE6837;
+  border-radius: 2px;
+  box-shadow: 1px -1px 2px #979a97;
+  -webkit-box-shadow: 1px -1px 2px #979a97;
+  -moz-box-shadow: 1px -1px 2px #979a97;
+  padding: 10px;
+}
+
+/*Ilustracao do braco*/
+.aIlustracao img{
+  width: 100%;
+  margin-top: 20px;
+}
+
+/*Area de novidades*/
+.aNovidades{
+  background-color: #ECECEC;
+}
+.aNovidades h2{
+    padding: 10px;
+}
+.aNovidade{
+  background-color: #FFFFFF;
+  border-bottom: 10px solid #125F65;
+  border-radius: 2px;
+  box-shadow: 1px -1px 2px #979a97;
+  -webkit-box-shadow: 1px -1px 2px #979a97;
+  -moz-box-shadow: 1px -1px 2px #979a97;
+  padding: 10px;
+  margin-top: 5px;
+}
+.aNovidadeTexto {
+   margin-top: 10px;
+}
+.aNovidadeTexto p{
+  text-align: left;
+  padding: 7px;
+  font-weight: 300;
+}

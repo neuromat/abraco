@@ -22,11 +22,18 @@ h3{
 p{
   font-size: 15px;
 }
+a{
+  color: #137B7B; 
+}
 a:link{
-  text-decoration: none;  
+  text-decoration: none;
 }
 a:hover h2, a:hover h3{
   font-weight: 600;
+}
+hr {
+    margin-top: 0;
+    margin-bottom:0;
 }
 
 /*Texto de introducao*/
@@ -100,4 +107,29 @@ a:hover h2, a:hover h3{
   text-align: left;
   padding: 7px;
   font-weight: 300;
+}
+
+/*Footer*/
+.aRodape{
+  background-color: #115960;
+  padding-top: 10px;
+}
+.aRodape h3, .aRodape ul, .aRodape a{
+  color: #FFFFFF;
+}
+.aRodape p{
+  color: #FFFFFF;
+  font-weight: 300;
+}
+.aRodape img{
+  vertical-align: bottom;
+  padding-top: 10px;
+}
+.aRodape li{
+  list-style-type:none;
+  font-weight: 300;
+}
+.aLicensa p{
+  font-size: 12px;
+  text-align: right;
 }

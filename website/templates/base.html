@@ -26,7 +26,17 @@
                 width: 20%;
             }
         </style>
+
+        <!-- Bootstrap -->
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <!--MEU CSS-->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!--FONTES-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+
+
         {% render_block "css" %}
+
     </head>
     <body>
         {% cms_toolbar %}
@@ -36,6 +46,9 @@
             </ul>
             {% block content %}{% endblock content %}
         </div>
+
+         {% include "footer.html" %}
+
         {% render_block "js" %}
     </body>
 </html>

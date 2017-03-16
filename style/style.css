@@ -109,6 +109,43 @@ hr {
   font-weight: 300;
 }
 
+/*Header e Nav*/
+
+.navbar-default .navbar-nav>li>a {
+    color: #525758;
+}
+.navbar {
+  min-height: 100px;
+}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    margin-top: 31px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #115C61;
+    border-radius: 2px;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #115c61;
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border-color: #FFFFFF;
+}
+.aLogo{
+  width: 75%;
+}
+@media (min-width: 768px)
+bootstrap.css:4221
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-top: 10px;
+}
+
 /*Footer*/
 .aRodape{
   background-color: #115960;

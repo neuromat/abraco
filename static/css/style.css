@@ -37,18 +37,20 @@ hr {
 }
 
 /*Texto de introducao*/
-.aIntroduction{
-  background-color: #125F65;
-  padding: 40px 15px;
-  margin-bottom: 20px;
+.aIntroduction {
+    background-image: url(../img/bg_verde.png);
+    background-repeat: repeat-x;
+    background-size: 228px;
+    padding: 40px 40px 10px 40px;
+    margin-bottom: 10px;
 }
 .aIntroduction p{
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 300;
+  margin-bottom: 20px;
 }
-
-/*Links Secoes*/
+/*Links Acoes*/
 #aBotaoLesao{
   background-color: #F8F8F8;
   border-bottom: 10px solid #137B7B;
@@ -80,15 +82,19 @@ hr {
 /*Ilustracao do braco*/
 .aIlustracao img{
   width: 100%;
-  margin-top: 20px;
+  padding: 0 10px;
 }
 
 /*Area de novidades*/
 .aNovidades{
-  background-color: #ECECEC;
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .aNovidades h2{
-    padding: 10px;
+  padding: 0;
 }
 .aNovidade{
   background-color: #FFFFFF;
@@ -110,7 +116,6 @@ hr {
 }
 
 /*Header e Nav*/
-
 .navbar-default .navbar-nav>li>a {
     color: #525758;
 }
@@ -169,4 +174,52 @@ bootstrap.css:4221
 .aLicensa p{
   font-size: 12px;
   text-align: right;
+}
+
+/*Ajustes dispositivos*/
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+.container {
+    width: 1200px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .aIntroduction {
+    background-image: url(../img/bg_verde.png);
+    background-repeat: repeat-x;
+    background-size: 317px;
+    padding: 40px 40px 10px 40px;
+    margin-bottom: 0px;
+    }
+/*Links Acoes*/
+#aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+.aIntroduction {
+    background-image: url(../img/bg_verde.png);
+    background-repeat: repeat-x;
+    background-size: 423px;
+    padding: 40px 40px 10px 40px;
+    margin-bottom: 0px;
+    }
+.aIlustracao img {
+    width: 100%;
+    padding: 0 0px;
+    } 
+.aIlustracaoMob {
+    padding-right: 0px;
+    padding-left: 0px;
+    }  
+.aIlustracao img {
+    width: 100%;
+    padding: 0 0px;
+    }
 }

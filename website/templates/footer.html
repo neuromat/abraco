@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -18,15 +20,15 @@
         <div class="row">
             <div class="container aRodape text-center">
                 <div class="col-md-4">
-                   <a href="#"><img src="../static/img/Neuromat.png" alt=""></a>
+                   <a href="#"><img src="{% static 'img/Neuromat.png' %}" alt=""></a>
                     <p>Iniciativa</p>
                 </div>
                 <div class="col-md-4">
-                   <a href="#"><img src="../static/img/Fapesp.png" alt=""></a>
+                   <a href="#"><img src="{% static 'img/Fapesp.png' %}" alt=""></a>
                     <p>Apoio</p>
                 </div>
                 <div class="col-md-4">
-                    <a href="#"><img src="../static/img/InstiDeolCouto.png" alt=""> </a>
+                    <a href="#"><img src="{% static 'img/InstiDeolCouto.png' %}" alt=""> </a>
                     <p>Parceiro</p>
                 </div>
             </div>

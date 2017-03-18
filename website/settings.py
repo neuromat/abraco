@@ -172,6 +172,8 @@ CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
     ('index.html', 'Home abraco'),
+    ('cabecalho.html', 'Header abraco'),
+    ('test.html', 'Home CMS'),
 )
 
 CMS_PERMISSION = True

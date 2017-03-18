@@ -1,3 +1,5 @@
+{% load  staticfiles %}
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -19,7 +21,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">
-                    <img class="aLogo" alt="Brand" src="../static/img/logo.png">
+                    <img class="aLogo" alt="Brand" src="{% static 'img/logo.png' %}">
                 </a>
                 <button class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#itensmenu"></button>
                 <ul id="itensmenu" class="nav navbar-nav collapse navbar-collapse">

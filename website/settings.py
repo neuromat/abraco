@@ -1,4 +1,5 @@
 import os
+
 gettext = lambda s: s
 DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 """
@@ -18,7 +19,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -30,13 +30,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 ROOT_URLCONF = 'website.urls'
 
 WSGI_APPLICATION = 'website.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
@@ -55,7 +53,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
@@ -71,11 +68,10 @@ STATICFILES_DIRS = (
 
 SITE_ID = 1
 
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'website', 'templates'),],
+        'DIRS': [os.path.join(BASE_DIR, 'website', 'templates'), ],
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -98,7 +94,6 @@ TEMPLATES = [
         },
     },
 ]
-
 
 MIDDLEWARE_CLASSES = (
     'cms.middleware.utils.ApphookReloadMiddleware',
@@ -142,7 +137,22 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'website'
+    'website',
+
+    # you will probably need to add these
+    'aldryn_apphooks_config',
+    'aldryn_categories',
+    'aldryn_common',
+    'aldryn_newsblog',
+    'aldryn_people',
+    'aldryn_reversion',
+    'aldryn_translation_tools',
+    'parler',
+    'sortedm2m',
+    'taggit',
+
+    # you'll almost certainly have these installed already
+    'reversion',
 )
 
 LANGUAGES = (
@@ -174,6 +184,7 @@ CMS_TEMPLATES = (
     ('index.html', 'Home abraco'),
     ('cabecalho.html', 'Header abraco'),
     ('test.html', 'Home CMS'),
+    ('test_blog.html', 'Blog CMS')
 )
 
 CMS_PERMISSION = True
@@ -193,7 +204,7 @@ DATABASES = {
 }
 
 MIGRATION_MODULES = {
-    
+
 }
 
 THUMBNAIL_PROCESSORS = (

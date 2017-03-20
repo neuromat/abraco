@@ -1,0 +1,19 @@
+{% extends "test.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles i18n %}
+
+{% block content %}
+
+    <!--Blog-->
+    {% block newsblog_content %}
+        <div class="container">
+            {% for article in article_list %}
+                {% include "aldryn_newsblog/includes/article.html" %}
+            {% empty %}
+                It's empty...
+            {% endfor %}
+
+            {% include "aldryn_newsblog/includes/pagination.html" %}
+        </div>
+    {% endblock %}
+
+{% endblock %}

@@ -1,6 +1,6 @@
 {% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail %}
 
-<article class="aldryn-newsblog-article{% if article.is_featured %} aldryn-newsblog-featured{% endif %}{% if not article.published %} unpublished{% endif %}{% if article.future %} future{% endif %}">
+<article class="container aldryn-newsblog-article{% if article.is_featured %} aldryn-newsblog-featured{% endif %}{% if not article.published %} unpublished{% endif %}{% if article.future %} future{% endif %}">
     {% if article.featured_image_id %}
         <p class="visual">
             {% if not detail_view %}
@@ -56,6 +56,9 @@
             {% render_placeholder article.content language placeholder_language %}
         </div>
     {% endif %}
+
+    <p>Vai corinthians!</p>
+
 </article>
 
 {% addtoblock "css" %}<link rel="stylesheet" href="{% static 'css/aldryn-newsblog/article.css' %}">{% endaddtoblock %}

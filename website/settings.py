@@ -139,7 +139,7 @@ INSTALLED_APPS = (
     'djangocms_video',
     'website',
 
-    # you will probably need to add these
+    # you will probably need to add these, for aldryn-newsblog
     'aldryn_apphooks_config',
     'aldryn_categories',
     'aldryn_common',
@@ -151,8 +151,11 @@ INSTALLED_APPS = (
     'sortedm2m',
     'taggit',
 
-    # you'll almost certainly have these installed already
+    # you'll almost certainly have these installed already, for aldryn-newsblog
     'reversion',
+
+    # bootstrap3
+    'aldryn_bootstrap3',
 )
 
 LANGUAGES = (
@@ -179,11 +182,10 @@ CMS_LANGUAGES = {
 }
 
 CMS_TEMPLATES = (
-    ## Customize this
     ('fullwidth.html', 'Fullwidth'),
     ('index.html', 'Home abraco'),
-    ('cabecalho.html', 'Header abraco'),
-    ('test.html', 'Home CMS'),
+    ('test_base.html', 'Base CMS'),
+    ('test_index.html', 'Index CMS'),
     ('test_blog.html', 'Blog CMS')
 )
 
@@ -213,3 +215,18 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+
+# Aldryn Bootstrap
+
+ALDRYN_BOOTSTRAP3_CAROUSEL_STYLES = [
+    ('feature', 'Featured Version'),
+]
+
+ALDRYN_BOOTSTRAP3_ICONSETS = [
+    ('glyphicons', 'glyphicons', 'Glyphicons'),
+    ('fontawesome', 'fa', 'Font Awesome'),
+    ('icons', 'icon', 'Custom Icons'),
+]
+
+ALDRYN_BOOTSTRAP3_GRID_SIZE = 12

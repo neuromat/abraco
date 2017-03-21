@@ -1,19 +1,12 @@
-{% extends "test.html" %}
-{% load cms_tags menu_tags sekizai_tags staticfiles i18n %}
+{% extends "test_base.html" %}
+{% load i18n %}
 
-{% block content %}
+{% block newsblog_content %}
+    {% for article in article_list %}
+        {% include "test_article.html" %}
+    {% empty %}
+        <p>{% trans "No items available" %}</p>
+    {% endfor %}
 
-    <!--Blog-->
-    {% block newsblog_content %}
-        <div class="container">
-            {% for article in article_list %}
-                {% include "aldryn_newsblog/includes/article.html" %}
-            {% empty %}
-                It's empty...
-            {% endfor %}
-
-            {% include "aldryn_newsblog/includes/pagination.html" %}
-        </div>
-    {% endblock %}
-
+    {% include "aldryn_newsblog/includes/pagination.html" %}
 {% endblock %}

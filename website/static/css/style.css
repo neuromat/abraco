@@ -14,6 +14,7 @@ h1{
 h2{
   font-size: 19px;
   text-transform: uppercase;
+  text-align: center;
 }
 h3{
   font-size: 15px;
@@ -35,6 +36,9 @@ hr {
     margin-top: 0;
     margin-bottom:0;
 }
+.glyphicon {
+    color: #125F65;
+}
 
 /*Texto de introducao*/
 .aIntroduction {
@@ -50,6 +54,7 @@ hr {
   font-weight: 300;
   margin-bottom: 20px;
 }
+
 /*Links Acoes*/
 #aBotaoLesao{
   background-color: #F8F8F8;
@@ -86,6 +91,53 @@ hr {
 }
 
 /*Area de novidades*/
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+.carousel-control {
+  opacity: 0.2;
+}
+.carousel-control:focus, .carousel-control:hover {
+  opacity: 0.5;
+}
+.carousel-control.right {
+    background-image: linear-gradient(to right,rgba(18,95,101,.0001) 0,rgba(18,95,101,.1) 100%);
+}
+.carousel-control.left {
+    background-image: linear-gradient(to right,rgba(18,95,101,.1) 0,rgba(18,95,101,.0001) 100%);
+}
 .aNovidades{
   background-color: #ececec;
   padding-top: 10px;
@@ -95,14 +147,13 @@ hr {
 }
 .aNovidades h2{
   padding: 0;
+  text-align: center;
 }
 .aNovidade{
   background-color: #FFFFFF;
+  border-top: 1px solid #75b2b7;
   border-bottom: 10px solid #125F65;
   border-radius: 2px;
-  box-shadow: 1px -1px 2px #979a97;
-  -webkit-box-shadow: 1px -1px 2px #979a97;
-  -moz-box-shadow: 1px -1px 2px #979a97;
   padding: 10px;
   margin-top: 5px;
 }

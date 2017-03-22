@@ -11,8 +11,6 @@
     <!--MEU CSS-->
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
     <!--FONTES-->
-    <link href="vendor/font-aw1esome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
@@ -64,49 +62,92 @@
         </div>
     </div>
     <!--Novidades-->
-    <div class="row">
-        <div class="container aNovidades text-center">
-            <h2>Novidades</h2>
-            <div class="col-md-4">
-                <a href="#">
-                    <div class="aNovidade aNovidadeTexto">
-                        <h3>Título da novidade</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus, a voluptatem
-                            voluptates dolorem aspernatur facilis dolorum optio architecto enim, doloremque. Voluptates ea,
-                            tempora recusandae ipsa voluptas aspernatur nam.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="#">
-                    <div class="aNovidade aNovidadeTexto">
-                        <h3>Título da novidade</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus, a voluptatem
-                            voluptates dolorem aspernatur facilis dolorum optio architecto enim, doloremque. Voluptates ea,
-                            tempora recusandae ipsa voluptas aspernatur nam.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="#">
-                    <div class="aNovidade aNovidadeTexto">
-                        <div>
-                            <h3>Título da novidade</h3>
+          <div class="row aSection">
+            <div class="container">
+                <h2>Novidades</h2>
+                    <div class="carousel slide multi-item-carousel" id="theCarousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="col-md-4">
+                                    <a href="#">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            <h3>Título da novidade 1</h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                nam.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="#">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            <h3>Título da novidade 2</h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                nam.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="#">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            <h3>Título da novidade 3</h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                nam.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="#">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            <h3>Título da novidade 4</h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                nam.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="#">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            <h3>Título da novidade 5</h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                nam.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--  Botoes de direcao -->
                         </div>
-                        <div>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus, a voluptatem
-                                voluptates dolorem aspernatur facilis dolorum optio architecto enim, doloremque. Voluptates
-                                ea, tempora recusandae ipsa voluptas aspernatur nam.</p>
-                        </div>
+                        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
                     </div>
-                </a>
             </div>
-        </div>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
-</body>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+            <script src="{% static 'js/slider.js'%}"></script>
+    </body>
 
 </html>

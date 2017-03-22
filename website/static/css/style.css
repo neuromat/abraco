@@ -39,6 +39,10 @@ hr {
 .glyphicon {
     color: #125F65;
 }
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 
 /*Texto de introducao*/
 .aIntroduction {
@@ -60,27 +64,27 @@ hr {
   background-color: #F8F8F8;
   border-bottom: 10px solid #137B7B;
   border-radius: 2px;
-  box-shadow: 1px -1px 2px #979a97;
-  -webkit-box-shadow: 1px -1px 2px #979a97;
-  -moz-box-shadow: 1px -1px 2px #979a97;
+  box-shadow: 1px -1px 2px #4c4e4c;
+  -webkit-box-shadow: 1px -1px 2px 4c4e4c;
+  -moz-box-shadow: 1px -1px 2px 4c4e4c;
   padding: 10px;
 }
 #aBotaoPesquisa{
   background-color: #F8F8F8;
   border-bottom: 10px solid #3758C1;
   border-radius: 2px;
-  box-shadow: 1px -1px 2px #979a97;
-  -webkit-box-shadow: 1px -1px 2px #979a97;
-  -moz-box-shadow: 1px -1px 2px #979a97;
+  box-shadow: 1px -1px 2px #4c4e4c;
+  -webkit-box-shadow: 1px -1px 2px #4c4e4c;
+  -moz-box-shadow: 1px -1px 2px #4c4e4c;
   padding: 10px;
 }
 #aBotaoRecEduc{
   background-color: #F8F8F8;
   border-bottom: 10px solid #BE6837;
   border-radius: 2px;
-  box-shadow: 1px -1px 2px #979a97;
-  -webkit-box-shadow: 1px -1px 2px #979a97;
-  -moz-box-shadow: 1px -1px 2px #979a97;
+  box-shadow: 1px -1px 2px #4c4e4c;
+  -webkit-box-shadow: 1px -1px 2px #4c4e4c;
+  -moz-box-shadow: 1px -1px 2px #4c4e4c;
   padding: 10px;
 }
 
@@ -137,6 +141,9 @@ hr {
 }
 .carousel-control.left {
     background-image: linear-gradient(to right,rgba(18,95,101,.1) 0,rgba(18,95,101,.0001) 100%);
+}
+.aSecaoNovidades{
+margin-bottom: 30px;
 }
 .aNovidades{
   background-color: #ececec;

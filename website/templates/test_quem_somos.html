@@ -1,0 +1,11 @@
+{% extends "test_base.html" %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+
+{% block content %}
+    <div class="container">
+        {% placeholder "Texto superior" %}
+    </div>
+    <div class="container">
+        {% placeholder "Pessoas etc" %}
+    </div>
+{% endblock content %}

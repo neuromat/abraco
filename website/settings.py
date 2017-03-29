@@ -159,18 +159,26 @@ INSTALLED_APPS = (
 )
 
 LANGUAGES = (
-    ## Customize this
+    ('pt', gettext('pt')),
     ('en', gettext('en')),
 )
 
 CMS_LANGUAGES = {
-    ## Customize this
     'default': {
         'public': True,
         'hide_untranslated': False,
         'redirect_on_fallback': True,
     },
     1: [
+        {
+            'public': True,
+            'code': 'pt',
+            'hide_untranslated': False,
+            'name': gettext('pt'),
+            'redirect_on_fallback': True,
+        },
+    ],
+    2: [
         {
             'public': True,
             'code': 'en',
@@ -186,7 +194,8 @@ CMS_TEMPLATES = (
     ('index.html', 'Home abraco'),
     ('test_base.html', 'Base CMS'),
     ('test_index.html', 'Index CMS'),
-    ('test_blog.html', 'Blog CMS')
+    ('test_blog.html', 'Blog CMS'),
+    ('test_quem_somos.html', 'Quem Somos CMS')
 )
 
 CMS_PERMISSION = True

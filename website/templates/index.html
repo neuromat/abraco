@@ -1,154 +1,154 @@
-{% load staticfiles %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
 
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <title>ABRAÇO | NEUROMAT</title>
-    <!-- Bootstrap -->
-    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <!--MEU CSS-->
-    <link rel="stylesheet" href="{% static 'css/style.css'%}">
-    <!--FONTES-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>ABRAÇO | NEUROMAT</title>
+        <!-- Bootstrap -->
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <!--MEU CSS-->
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+        <!--FONTES-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    </head>
 
-<body>
-    <!--Introdução-->
-    <div class="container aIntroduction ">
-        <div class="row">
-            <div class="col-md-12">
-                <p>Dor ou dormência no braço após um acidente podem ser sinal de uma lesão nos nervos da região do ombro, chamada
-                    lesão traumática do plexo braquial.</p>
-                <p>Nossa missão na rede ABRAÇO é acolher e orientar pacientes e familiares, além de desenvolver pesquisa sobre
-                    essa lesão e oferecer treinamento e capacitação para profissionais interessados.</p>
-            </div>
-        </div>
-        <div class="row aSection text-center">
-            <div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div id="aBotaoLesao">
-                            <h2>Lesão do Plexo Braquial</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div id="aBotaoPesquisa">
-                            <h2>Pesquisa</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div id="aBotaoRecEduc">
-                            <h2>Recursos Educacionais</h2>
-                        </div>
-                    </a>
+    <body>
+        <!--Introdução-->
+        <div class="container aIntroduction ">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Dor ou dormência no braço após um acidente podem ser sinal de uma lesão nos nervos da região do ombro, chamada
+                        lesão traumática do plexo braquial.</p>
+                    <p>Nossa missão na rede ABRAÇO é acolher e orientar pacientes e familiares, além de desenvolver pesquisa sobre
+                        essa lesão e oferecer treinamento e capacitação para profissionais interessados.</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--Ilustração do braço-->
-    <div class="row">
-        <div class="container aIlustracaoMob">
-            <div class="col-md-12 aIlustracao">
-                <img src="{% static 'img/ilustraBraco.jpg'%}" alt="Ilustração de uma braço e terminações nervosas">
-            </div>
-        </div>
-    </div>
-    <!--Novidades-->
-          <div class="row aSection">
-            <div class="container">
-                <h2>Novidades</h2>
-                    <div class="carousel slide multi-item-carousel aSecaoNovidades" id="Carousel">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="col-md-4">
-                                    <a href="#">
-                                        <div class="aNovidade aNovidadeTexto">
-                                            <h3>Título da novidade 1</h3>
-                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
-                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
-                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
-                                                nam.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
+            <div class="row aSection text-center">
+                <div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <div id="aBotaoLesao">
+                                <h2>Lesão do Plexo Braquial</h2>
                             </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="#">
-                                        <div class="aNovidade aNovidadeTexto">
-                                            <h3>Título da novidade 2</h3>
-                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
-                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
-                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
-                                                nam.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="#">
-                                        <div class="aNovidade aNovidadeTexto">
-                                            <h3>Título da novidade 3</h3>
-                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
-                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
-                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
-                                                nam.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="#">
-                                        <div class="aNovidade aNovidadeTexto">
-                                            <h3>Título da novidade 4</h3>
-                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
-                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
-                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
-                                                nam.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a href="#">
-                                        <div class="aNovidade aNovidadeTexto">
-                                            <h3>Título da novidade 5</h3>
-                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
-                                                a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
-                                                enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
-                                                nam.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--  Botoes de direcao -->
-                        </div>
-                        <a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                        <a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                        </a>
                     </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <div id="aBotaoPesquisa">
+                                <h2>Pesquisa</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <div id="aBotaoRecEduc">
+                                <h2>Recursos Educacionais</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
-            <script src="{% static 'js/slider.js'%}"></script>
-    </body>
+        </div>
+        <!--Ilustração do braço-->
+        <div class="row">
+            <div class="container aIlustracaoMob">
+                <div class="col-md-12 aIlustracao">
+                    <img src="{% static 'img/ilustraBraco.jpg'%}" alt="Ilustração de uma braço e terminações nervosas">
+                </div>
+            </div>
+        </div>
+        <!--Novidades-->
+              <div class="row aSection">
+                <div class="container">
+                    <h2>Novidades</h2>
+                        <div class="carousel slide multi-item-carousel aSecaoNovidades" id="Carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <div class="aNovidade aNovidadeTexto">
+                                                <h3>Título da novidade 1</h3>
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                    a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                    enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                    nam.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <div class="aNovidade aNovidadeTexto">
+                                                <h3>Título da novidade 2</h3>
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                    a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                    enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                    nam.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <div class="aNovidade aNovidadeTexto">
+                                                <h3>Título da novidade 3</h3>
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                    a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                    enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                    nam.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <div class="aNovidade aNovidadeTexto">
+                                                <h3>Título da novidade 4</h3>
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                    a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                    enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                    nam.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <div class="aNovidade aNovidadeTexto">
+                                                <h3>Título da novidade 5</h3>
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                                    a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto
+                                                    enim, doloremque. Voluptates ea, tempora recusandae ipsa voluptas aspernatur
+                                                    nam.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--  Botoes de direcao -->
+                            </div>
+                            <a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                            <a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                        </div>
+                </div>
+              </div>
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+                <script src="{% static 'js/slider.js'%}"></script>
+        </body>
 
 </html>

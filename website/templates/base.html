@@ -2,41 +2,35 @@
 <!doctype html>
 <html>
     <head>
-        <title>{% block title %}This is my new project home page{% endblock title %}</title>
+        <meta charset="UTF-8">
+        <title>ABRAÇO | NEUROMAT</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <style type="text/css">
-            .nav {
-                padding-left: 0;
-            }
-            .nav li {
-                display: inline;
-                list-style-type: none;
-                padding-right: 20px;
-            }
-            .container {
-                width: 940px;
-                margin: 0 auto
-            }
-            .content {
-                float: left;
-                width: 80%;
-            }
-            .sidebar {
-                float: left;
-                width: 20%;
-            }
-        </style>
+
+        <!-- Bootstrap -->
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <!--MEU CSS-->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!--FONTES-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
 
         {% render_block "css" %}
     </head>
     <body>
         {% cms_toolbar %}
-        <div class="container">
-            <ul class="nav">
-                {% show_menu 0 100 100 100 %}
-            </ul>
-            {% block content %}{% endblock content %}
-        </div>
+
+        {% include "cabecalho.html" %}
+
+        {% block content %}{% endblock content %}
+
+        {% include "footer.html" %}
+
         {% render_block "js" %}
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+        <!--Slider com 3 colunas-->
+        <script src="{% static 'js/slider.js'%}"></script>
     </body>
 </html>

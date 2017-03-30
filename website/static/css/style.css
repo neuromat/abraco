@@ -1,4 +1,5 @@
 /*Definicoes gerais*/
+
 * {margin: 0px; padding: 0px;}
 
 .row {margin-right: 0; margin-left: 0;}
@@ -43,56 +44,32 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
 /*Texto de introducao*/
 
-.aIntroduction {
-    background-image: url(../img/bg_verde.png);
-    background-repeat: repeat-x;
-    background-size: 228px;
-    padding: 40px 40px 10px 40px;
-    margin-bottom: 10px;
-}
-.aIntroduction p{
-  color: #FFFFFF;
-  font-size: 19px;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
+.aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 228px; padding: 40px 40px 10px 40px; margin-bottom: 10px;}
+.aIntroduction p {color: #FFFFFF; font-size: 19px; font-weight: 300; margin-bottom: 20px;}
 
 /*Links Acoes*/
 
-#aBotaoLesao{
-  background-color: #F8F8F8;
-  border-bottom: 10px solid #137B7B;
-  border-radius: 2px;
-  box-shadow: 1px -1px 2px #4c4e4c;
-  -webkit-box-shadow: 1px -1px 2px 4c4e4c;
-  -moz-box-shadow: 1px -1px 2px 4c4e4c;
-  padding: 10px;
-}
-
-#aBotaoPesquisa{
-  background-color: #F8F8F8;
-  border-bottom: 10px solid #3758C1;
-  border-radius: 2px;
-  box-shadow: 1px -1px 2px #4c4e4c;
-  -webkit-box-shadow: 1px -1px 2px #4c4e4c;
-  -moz-box-shadow: 1px -1px 2px #4c4e4c;
-  padding: 10px;
-}
-#aBotaoRecEduc{
-  background-color: #F8F8F8;
-  border-bottom: 10px solid #BE6837;
-  border-radius: 2px;
-  box-shadow: 1px -1px 2px #4c4e4c;
-  -webkit-box-shadow: 1px -1px 2px #4c4e4c;
-  -moz-box-shadow: 1px -1px 2px #4c4e4c;
-  padding: 10px;
-}
+#aBotaoLesao {background-color: #F8F8F8; border-bottom: 10px solid #137B7B; border-radius: 2px; box-shadow: 1px -1px 2px #4c4e4c; -webkit-box-shadow: 1px -1px 2px 4c4e4c; -moz-box-shadow: 1px -1px 2px 4c4e4c; padding: 10px;}
+#aBotaoPesquisa {background-color: #F8F8F8; border-bottom: 10px solid #3758C1; border-radius: 2px; box-shadow: 1px -1px 2px #4c4e4c; -webkit-box-shadow: 1px -1px 2px #4c4e4c; -moz-box-shadow: 1px -1px 2px #4c4e4c; padding: 10px;}
+#aBotaoRecEduc {background-color: #F8F8F8; border-bottom: 10px solid #BE6837; border-radius: 2px; box-shadow: 1px -1px 2px #4c4e4c; -webkit-box-shadow: 1px -1px 2px #4c4e4c; -moz-box-shadow: 1px -1px 2px #4c4e4c; padding: 10px;}
 
 /*Ilustracao do braco*/
 
 .aIlustracao {padding: 0 40px;}
 .aIlustracao img {width: 100%;}
+
 /*Area de novidades*/
+.aNovidadesAbraco {background-image: url(../img/bg_cinza.png); padding: 15px 40px; margin-top: 20px;}
+
+.aSecaoNovidades {margin-bottom: 30px;}
+
+.aNovidades {background-color: #ececec; padding-top: 10px; padding-bottom: 20px; margin-top: 20px; margin-bottom: 20px;}
+.aNovidades h2 {padding: 0; text-align: center;}
+
+.aNovidade{ background-color: #FFFFFF; border-top: 1px solid #75b2b7; border-bottom: 10px solid #125F65; border-radius: 2px; padding: 10px; margin-top: 5px;}
+
+.aNovidadeTexto {margin-top: 10px;}
+.aNovidadeTexto p{text-align: left; padding: 7px; font-weight: 300;}
 
 .multi-item-carousel{
   .carousel-inner{
@@ -141,109 +118,43 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 .carousel-control.left {
     background-image: linear-gradient(to right,rgba(18,95,101,.1) 0,rgba(18,95,101,.0001) 100%);
 }
-.aSecaoNovidades{
-margin-bottom: 30px;
-}
-.aNovidades{
-  background-color: #ececec;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.aNovidades h2{
-  padding: 0;
-  text-align: center;
-}
-.aNovidade{
-  background-color: #FFFFFF;
-  border-top: 1px solid #75b2b7;
-  border-bottom: 10px solid #125F65;
-  border-radius: 2px;
-  padding: 10px;
-  margin-top: 5px;
-}
-.aNovidadeTexto {
-   margin-top: 10px;
-}
-.aNovidadeTexto p{
-  text-align: left;
-  padding: 7px;
-  font-weight: 300;
-}
+
 /*Footer*/
-.aRodape{
-  background-color: #115960;
-  padding-top: 10px;
-}
-.aRodape h3, .aRodape ul, .aRodape a{
-  color: #FFFFFF;
-}
-.aRodape p{
-  color: #FFFFFF;
-  font-weight: 300;
-}
-.aRodape img{
-  vertical-align: bottom;
-  padding-top: 10px;
-}
-.aRodape li{
-  list-style-type:none;
-  font-weight: 300;
-}
-.aLicensa p{
-  font-size: 12px;
-  text-align: right;
-}
+
+.aRodape { background-color: #115960; padding-top: 10px;}
+.aRodape h3, .aRodape ul, .aRodape a {color: #FFFFFF;}
+.aRodape p {color: #FFFFFF; font-weight: 300;}
+.aRodape img { vertical-align: bottom; padding-top: 10px;}
+.aRodape li { list-style-type:none; font-weight: 300;}
+
+.aLicensa p {font-size: 12px; text-align: right;}
 
 /*Ajustes dispositivos*/
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-.container {
-    width: 1300px;
-    }
+.container {width: 1300px;}
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-.aLogo {width: 75%; margin: 0.5em 0;}
+  .aLogo {width: 75%; margin: 0.5em 0;}
+  .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 317px; padding: 40px 20px 10px 20px; margin-bottom: 0px;}
 
-  .aIntroduction {
-    background-image: url(../img/bg_verde.png);
-    background-repeat: repeat-x;
-    background-size: 317px;
-    padding: 40px 20px 10px 20px;
-    margin-bottom: 0px;
-    }
-/*Links Acoes*/
-#aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc{
-  margin-top: 5px;
-  margin-bottom: 10px;
-  }
+  /*Links Acoes*/
+  #aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc {margin-top: 5px; margin-bottom: 10px;}
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-.aLogo {width: 75%; margin: 0.5em 0;}
-.aMenuAbraco {position: absolute;z-index: 999;display: none;margin-top: -2.5em;top:86px;}
-.aIntroduction {
-    background-image: url(../img/bg_verde.png);
-    background-repeat: repeat-x;
-    background-size: 423px;
-    padding: 40px 10px 10px 10px;
-    margin-bottom: 0px;
-    }
-.aIlustracao img {
-    width: 100%;
-    padding: 0 0px;
-    } 
-.aIlustracaoMob {
-    padding-right: 0px;
-    padding-left: 0px;
-    }  
-.aIlustracao img {
-    width: 100%;
-    padding: 0 0px;
-    }
+
+.aLogo {width: 80%; margin: 0.5em 0;}
+
+.aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}
+
+.aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 423px; padding: 40px 10px 10px 10px; margin-bottom: 0px;}
+
+.aIlustracao {padding: 0;}
+.aIlustracao img {width: 100%; padding: 0;} 
+.aIlustracaoMob {padding-right: 0px; padding-left: 0px;}  
 }

@@ -183,12 +183,10 @@ CMS_LANGUAGES = {
 }
 
 CMS_TEMPLATES = (
-    ('fullwidth.html', 'Fullwidth'),
-    ('index.html', 'Home abraco'),
-    ('test_base.html', 'Base CMS'),
-    ('test_index.html', 'Index CMS'),
-    ('test_blog.html', 'Blog CMS'),
-    ('test_quem_somos.html', 'Quem Somos CMS')
+    ('base.html', 'Base CMS'),
+    ('index.html', 'Index CMS'),
+    ('blog.html', 'Blog CMS'),
+    ('quem_somos.html', 'Quem Somos CMS')
 )
 
 CMS_PERMISSION = True

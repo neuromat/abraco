@@ -1,50 +1,47 @@
 /*Definicoes gerais*/
-*{
-  margin: 0px;
-  padding: 0px;
-}
-h1, h2, h3, h4, p{
-  font-family: 'Open Sans', sans-serif;
-  color: #525758;
-}
-h1{
-  font-size: 30px;
-  text-transform: uppercase;
-}
-h2{
-  font-size: 19px;
-  text-transform: uppercase;
-  text-align: center;
-}
-h3{
-  font-size: 15px;
-  text-transform: uppercase;
-}
-p{
-  font-size: 15px;
-}
-a{
-  color: #137B7B; 
-}
-a:link{
-  text-decoration: none;
-}
-a:hover h2, a:hover h3{
-  font-weight: 600;
-}
-hr {
-    margin-top: 0;
-    margin-bottom:0;
-}
-.glyphicon {
-    color: #125F65;
-}
-.row {
-    margin-right: 0;
-    margin-left: 0;
-}
+* {margin: 0px; padding: 0px;}
+
+.row {margin-right: 0; margin-left: 0;}
+
+h1, h2, h3, h4, p {font-family: 'Open Sans', sans-serif;color: #525758;}
+
+h1 {font-size: 30px; text-transform: uppercase;}
+h2 {font-size: 19px; text-transform: uppercase; text-align: center;}
+h3 {font-size: 15px;text-transform: uppercase;}
+p {font-size: 15px;}
+
+a {color: #137B7B;}
+a:link {text-decoration: none;}
+a:hover h2, a:hover h3 {font-weight: 600;}
+a:focus, a:hover {color: #000000; text-decoration: none;}
+
+hr {margin-top: 0; margin-bottom:0;}
+
+/*Cabeçalho*/
+
+.aLogo {width: 35%; margin: 0.5em 0;}
+
+.btn {background-color: #115960;}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0px auto -webkit-focus-ring-color;}
+
+header .aMenu {color: #fff;margin: 1em 0;}
+header .aMenu i{ color: #fff; font-size: 2em }
+header .aMenu span.has-tip { border-bottom: 0; cursor: pointer }
+header .aMenu button {float: right;}
+
+header .aMenuAbraco {position: absolute;z-index: 999;display: none;margin-top: -2.5em;top:86px;left: 80px;}
+header .aMenuAbraco li:first-child a span { width: 0; height: 0; border: inset 0.5rem; border-color: transparent transparent #ffffff; border-bottom-style: solid; border-top-width: 0; bottom: 100%; position: absolute; left: 4%; }
+header .aMenuAbraco ul { list-style: none; margin: 0; background-color: #ffffff; border-radius: 2px; }
+header .aMenuAbraco ul li { border-bottom: 1px solid #ccc; }
+header .aMenuAbraco ul li:last-child { border-bottom: none; }
+header .aMenuAbraco ul li a { display: block; padding: .4em 4em .4em 1em; }
+header .aMenuAbraco ul li a:hover { background-color: #ccc; }
+header .aMenuAbraco ul li:first-child a:hover span {border-color: transparent transparent #ccc;}
+header .aMenuAbraco ul li:first-child a:hover {border-radius: 2px 2px 0 0; }
+header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
 /*Texto de introducao*/
+
 .aIntroduction {
     background-image: url(../img/bg_verde.png);
     background-repeat: repeat-x;
@@ -60,6 +57,7 @@ hr {
 }
 
 /*Links Acoes*/
+
 #aBotaoLesao{
   background-color: #F8F8F8;
   border-bottom: 10px solid #137B7B;
@@ -69,6 +67,7 @@ hr {
   -moz-box-shadow: 1px -1px 2px 4c4e4c;
   padding: 10px;
 }
+
 #aBotaoPesquisa{
   background-color: #F8F8F8;
   border-bottom: 10px solid #3758C1;
@@ -89,12 +88,13 @@ hr {
 }
 
 /*Ilustracao do braco*/
+
 .aIlustracao img{
   width: 100%;
   padding: 0 10px;
 }
-
 /*Area de novidades*/
+
 .multi-item-carousel{
   .carousel-inner{
     > .item{
@@ -172,43 +172,6 @@ margin-bottom: 30px;
   padding: 7px;
   font-weight: 300;
 }
-
-/*Header e Nav*/
-.navbar-default .navbar-nav>li>a {
-    color: #525758;
-}
-.navbar {
-  min-height: 100px;
-}
-.navbar-default {
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #e7e7e7;
-    margin-top: 31px;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #115C61;
-    border-radius: 2px;
-}
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #115c61;
-    background-color: transparent;
-}
-.navbar-default .navbar-toggle {
-    border-color: #FFFFFF;
-}
-.aLogo{
-  width: 75%;
-}
-@media (min-width: 768px)
-bootstrap.css:4221
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    margin-top: 10px;
-}
-
 /*Footer*/
 .aRodape{
   background-color: #115960;
@@ -239,7 +202,7 @@ bootstrap.css:4221
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 .container {
-    width: 1200px;
+    width: 1300px;
     }
 }
 

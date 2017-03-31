@@ -1,5 +1,29 @@
-atlassian-ide-plugin.xml
-.idea/*
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
 *.pyc
-media
+
+# C extensions
+*.so
+
+# Translations
+*.pot
+
+# Django stuff:
+*.log
+
+# Project’s settings.py
+website/settings_local.py
+
+# Database
 project.db
+
+# Other folders
+.idea/*
+venv/
+media
+
+docs/build*
+docs/source/_static/
+docs/source/_templates/

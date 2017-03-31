@@ -24,11 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'yv+b-a0k*2zulxq5xb%p9z_x_kay%#n$u#!3_%xiguw-fqt*7s'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -195,13 +194,11 @@ CMS_PLACEHOLDER_CONF = {}
 
 DATABASES = {
     'default': {
-        'CONN_MAX_AGE': 0,
-        'ENGINE': 'django.db.backends.sqlite3',
-        'HOST': 'localhost',
-        'NAME': 'project.db',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': '',
+        'USER': '',
         'PASSWORD': '',
-        'PORT': '',
-        'USER': ''
+        'HOST': '',
     }
 }
 
@@ -230,3 +227,8 @@ ALDRYN_BOOTSTRAP3_ICONSETS = [
 ]
 
 ALDRYN_BOOTSTRAP3_GRID_SIZE = 12
+
+try:
+    from settings_local import *
+except ImportError:
+    pass

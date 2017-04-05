@@ -220,6 +220,8 @@ THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.filters'
 )
 
+# specify path for translation files
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 
 # Aldryn Bootstrap
 

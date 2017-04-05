@@ -16,6 +16,10 @@
         <link type="text/css" rel="stylesheet" href="{% static 'js/jquery/jquery-ui.css' %}">
         <script src="{% static 'js/jquery/external/jquery/jquery.js' %}"></script>
         <script src="{% static 'js/jquery/jquery-ui.js' %}"></script>
+        <!-- Simple javascript notifications -->
+        <link href="{% static 'toastr/toastr.css' %}" rel="stylesheet"/>
+        <script src="{% static 'toastr/toastr.js' %}"></script>
+        <script src="{% static 'toastr/toastr_messages.js' %}"></script>
 
         {% block extrahead %}{% endblock %}
         {% render_block "css" %}

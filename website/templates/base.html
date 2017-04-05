@@ -12,7 +12,12 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <!--FONTES-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+        <!-- Jquery -->
+        <link type="text/css" rel="stylesheet" href="{% static 'js/jquery/jquery-ui.css' %}">
+        <script src="{% static 'js/jquery/external/jquery/jquery.js' %}"></script>
+        <script src="{% static 'js/jquery/jquery-ui.js' %}"></script>
 
+        {% block extrahead %}{% endblock %}
         {% render_block "css" %}
     </head>
     <body>

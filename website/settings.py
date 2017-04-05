@@ -17,8 +17,6 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
@@ -139,6 +137,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'website',
+    'faca_parte',
 
     # for aldryn-newsblog
     'aldryn_apphooks_config',

@@ -1,48 +1,47 @@
-{% extends "base.html" %} {% load cms_tags menu_tags sekizai_tags staticfiles %} {% block content %}
-
-<!--Introdução-->
-<div class="container aIntroduction ">
+{% extends "base.html" %} {% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% block content %}
+    <!--Introdução-->
+    <div class="container aIntroduction ">
+        <div class="row">
+            <div class="col-md-12">
+                {% placeholder "introducao" %}
+            </div>
+        </div>
+        <!-- Acoes da iniciativa -->
+        <div class="row aSection text-center">
+            <div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <div id="aBotaoLesao">
+                            <h2>Lesão do Plexo Braquial</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <div id="aBotaoPesquisa">
+                            <h2>Pesquisa</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <div id="aBotaoRecEduc">
+                            <h2>Recursos Educacionais</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Ilustração do braço-->
     <div class="row">
-        <div class="col-md-12">
-            {% placeholder "introducao" %}
-        </div>
-    </div>
-    <!-- Acoes da iniciativa -->
-    <div class="row aSection text-center">
-        <div>
-            <div class="col-md-4">
-                <a href="#">
-                    <div id="aBotaoLesao">
-                        <h2>Lesão do Plexo Braquial</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="#">
-                    <div id="aBotaoPesquisa">
-                        <h2>Pesquisa</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="#">
-                    <div id="aBotaoRecEduc">
-                        <h2>Recursos Educacionais</h2>
-                    </div>
-                </a>
+        <div class="container aIlustracaoMob">
+            <div class="col-md-12 aIlustracao">
+                <img src="{% static 'img/ilustraBraco.jpg'%}" alt="Ilustração de uma braço e terminações nervosas">
             </div>
         </div>
     </div>
-</div>
-<!--Ilustração do braço-->
-<div class="row">
-    <div class="container aIlustracaoMob">
-        <div class="col-md-12 aIlustracao">
-            {% placeholder "imagem" %}
-        </div>
-    </div>
-</div>
-
-{% placeholder "teste_novidades" %}
-
+    <!--Novidades-->
+    {% placeholder "Novidades" %}
 {% endblock content %}

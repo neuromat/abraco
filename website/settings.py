@@ -42,7 +42,7 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Sao_Paulo'
 
@@ -159,25 +159,33 @@ INSTALLED_APPS = (
 )
 
 LANGUAGES = (
-    ('pt', gettext('pt')),
-    ('en', gettext('en')),
+    ('pt-br', gettext('Português')),
+    # ('en', gettext('English')),
 )
 
 CMS_LANGUAGES = {
-    1: [
-        {
-            'code': 'pt',
-            'public': True,
-            'hide_untranslated': False,
-            'name': gettext('Portuguese'),
-            'redirect_on_fallback': True,
-        },
-    ],
     'default': {
+        'fallbacks': ['pt-br'],
         'public': True,
         'hide_untranslated': False,
         'redirect_on_fallback': True,
     },
+    1: [
+        {
+            'code': 'pt-br',
+            'public': True,
+            'hide_untranslated': False,
+            'name': gettext('Português'),
+            'redirect_on_fallback': True,
+        },
+        # {
+        #     'code': 'en',
+        #     'public': True,
+        #     'hide_untranslated': False,
+        #     'name': gettext('English'),
+        #     'redirect_on_fallback': True,
+        # },
+    ],
 }
 
 CMS_TEMPLATES = (

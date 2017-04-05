@@ -13,15 +13,14 @@ class PersonForm(ModelForm):
                   'street_complement', 'number', 'district', 'city', 'state', 'country']
 
         widgets = {
-            'select_interest': Select(attrs={'class': 'form-control', 'data-error': _('Interest must be filled')}),
+            'select_interest': Select(attrs={'class': 'form-control'}),
             'schooling': Select(attrs={'class': 'form-control'}),
             'full_name': TextInput(attrs={'class': 'form-control', 'autofocus': "true", 'required': "",
                                           'data-error': _('Name must be included')}),
             'email': TextInput(attrs={
                 'class': 'form-control', 'type': 'email', 'data-error': _('Incorrect e-mail'), 'required': "",
                 'pattern': '^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$'}),
-            'birth': DateInput(attrs={'class': 'form-control datepicker',
-                                      'data-error': _('Date of birth must be completed')}),
+            'birth': DateInput(attrs={'class': 'form-control datepicker'}),
             'zipcode': TextInput(attrs={'class': 'form-control', 'onBlur': 'pesquisacep(this.value);',
                                         'pattern': '\d{5}-?\d{3}'}),
             'street': TextInput(attrs={'class': 'form-control'}),

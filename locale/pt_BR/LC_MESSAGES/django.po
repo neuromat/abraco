@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-05 16:44-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: faca_parte/forms.py:19
+msgid "Name must be included"
+msgstr "O campo nome deve ser preenchido"
+
+#: faca_parte/forms.py:21
+msgid "Incorrect e-mail"
+msgstr "Email incorreto"
+
+#: faca_parte/models.py:6 faca_parte/models.py:22
+msgid "Name"
+msgstr "Nome"
+
+#: faca_parte/models.py:20
+msgid "Interest"
+msgstr "Interesse"
+
+#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:35
+msgid "Schooling"
+msgstr "Escolaridade"
+
+#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:23
+msgid "Email"
+msgstr "Email"
+
+#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:29
+msgid "Date of birth"
+msgstr "Data de nascimento"
+
+#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:77
+msgid "How did you hear about the project?"
+msgstr "Como ficou sabendo do projeto?"
+
+#: faca_parte/models.py:26
+msgid "Zip Code"
+msgstr "CEP"
+
+#: faca_parte/models.py:27
+msgid "Address"
+msgstr "Endereço"
+
+#: faca_parte/models.py:28
+msgid "Complement"
+msgstr "Complemento"
+
+#: faca_parte/models.py:29
+msgid "Number"
+msgstr "Número"
+
+#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:53
+msgid "District"
+msgstr "Bairro"
+
+#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:59
+msgid "City"
+msgstr "Cidade"
+
+#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:65
+msgid "State"
+msgstr "Estado"
+
+#: faca_parte/models.py:33
+msgid "Country"
+msgstr "País"
+
+#: faca_parte/templates/faca_parte/faca_parte.html:12
+msgid "Full name"
+msgstr "Nome completo"
+
+#: faca_parte/templates/faca_parte/faca_parte.html:41
+msgid "Zipcode"
+msgstr "CEP"
+
+#: faca_parte/templates/faca_parte/faca_parte.html:47
+msgid "Street"
+msgstr "Rua"
+
+#: faca_parte/templates/faca_parte/faca_parte.html:71
+msgid "What is your interest?"
+msgstr "Qual seu interesse?"
+
+#: faca_parte/templates/faca_parte/faca_parte.html:84
+msgid "Send"
+msgstr "Enviar"
+
+#: faca_parte/views.py:21
+msgid "Registration created successfully!"
+msgstr "Cadastro criado com sucesso!"
+
+#: faca_parte/views.py:26
+msgid "Information not saved."
+msgstr "O cadastro não foi criado"
+
+#: faca_parte/views.py:29
+msgid "Action not available."
+msgstr "Ação não disponível"
+
+#: website/settings.py:162 website/settings.py:178
+msgid "Português"
+msgstr ""
+
+#: website/settings.py:163 website/settings.py:185
+msgid "English"
+msgstr ""
+
+#: website/templates/aldryn_newsblog/articles_list.html:8
+msgid "No items available"
+msgstr ""
+
+#: website/templates/aldryn_newsblog/includes/pagination.html:8
+msgid "Previous"
+msgstr ""
+
+#: website/templates/aldryn_newsblog/includes/pagination.html:42
+msgid "Next"
+msgstr ""
+
+#: website/templates/aldryn_people/group_list.html:13
+#: website/templates/aldryn_people/plugins/standard/people_list.html:26
+msgid "Ungrouped"
+msgstr ""
+
+#: website/templates/aldryn_people/includes/group.html:13
+#: website/templates/aldryn_people/includes/person.html:27
+msgid "Phone:"
+msgstr ""
+
+#: website/templates/aldryn_people/includes/group.html:17
+#: website/templates/aldryn_people/includes/person.html:35
+msgid "Fax:"
+msgstr ""
+
+#: website/templates/aldryn_people/includes/group.html:21
+#: website/templates/aldryn_people/includes/person.html:39
+msgid "Email:"
+msgstr ""
+
+#: website/templates/aldryn_people/includes/group.html:26
+#: website/templates/aldryn_people/includes/person.html:44
+msgid "Website:"
+msgstr ""
+
+#: website/templates/aldryn_people/includes/group.html:34
+msgid "Address:"
+msgstr ""
+
+#: website/templates/aldryn_people/includes/person.html:31
+msgid "Mobile:"
+msgstr ""
+
+#: website/templates/aldryn_people/includes/person.html:57
+msgid "Download vCard"
+msgstr ""

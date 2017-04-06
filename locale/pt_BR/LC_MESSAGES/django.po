@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-05 16:44-0300\n"
+"POT-Creation-Date: 2017-04-06 11:45-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: faca_parte/cms_apps.py:7
+msgid "Registration"
+msgstr "Faça parte"
 
 #: faca_parte/forms.py:19
 msgid "Name must be included"
@@ -34,19 +38,19 @@ msgstr "Nome"
 msgid "Interest"
 msgstr "Interesse"
 
-#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:35
+#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:57
 msgid "Schooling"
 msgstr "Escolaridade"
 
-#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:23
+#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:45
 msgid "Email"
 msgstr "Email"
 
-#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:29
+#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:51
 msgid "Date of birth"
 msgstr "Data de nascimento"
 
-#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:77
+#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:99
 msgid "How did you hear about the project?"
 msgstr "Como ficou sabendo do projeto?"
 
@@ -66,15 +70,15 @@ msgstr "Complemento"
 msgid "Number"
 msgstr "Número"
 
-#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:53
+#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:75
 msgid "District"
 msgstr "Bairro"
 
-#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:59
+#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:81
 msgid "City"
 msgstr "Cidade"
 
-#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:65
+#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:87
 msgid "State"
 msgstr "Estado"
 
@@ -82,23 +86,23 @@ msgstr "Estado"
 msgid "Country"
 msgstr "País"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:12
+#: faca_parte/templates/faca_parte/faca_parte.html:34
 msgid "Full name"
 msgstr "Nome completo"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:41
+#: faca_parte/templates/faca_parte/faca_parte.html:63
 msgid "Zipcode"
 msgstr "CEP"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:47
+#: faca_parte/templates/faca_parte/faca_parte.html:69
 msgid "Street"
 msgstr "Rua"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:71
+#: faca_parte/templates/faca_parte/faca_parte.html:93
 msgid "What is your interest?"
 msgstr "Qual seu interesse?"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:84
+#: faca_parte/templates/faca_parte/faca_parte.html:106
 msgid "Send"
 msgstr "Enviar"
 
@@ -116,10 +120,6 @@ msgstr "Ação não disponível"
 
 #: website/settings.py:162 website/settings.py:178
 msgid "Português"
-msgstr ""
-
-#: website/settings.py:163 website/settings.py:185
-msgid "English"
 msgstr ""
 
 #: website/templates/aldryn_newsblog/articles_list.html:8

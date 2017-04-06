@@ -27,82 +27,95 @@
 
         {% endfor %}
     {% endif %}
-    <form role="form" method="post">{% csrf_token %}
+    <form role="form" method="post" data-toggle="validator">{% csrf_token %}
         <div class="container">
-            <div class="col-md-6">
-                <label for="full_name" class="control-label">{% trans "Full name" %}<b style="color: red;">*</b></label>
-                <div class="form-group {% if person_form.errors.date %}has-error{% endif %}">
-                    {{ person_form.full_name }}
-                    <div class="help-block with-errors">
-                        {% if person_form.full_name.errors %}
-                            <span>{% for error in person_form.full_name.errors %}{{ error }}{% endfor %}</span>
-                        {% endif %}
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">{% trans "Full name" %} <b style="color: red;">*</b></label>
+                        {{ person_form.full_name }}
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="control-label">{% trans "Email" %} <b style="color: red;">*</b></label>
+                    <div class="form-group">
+                        {{ person_form.email }}
+                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label for="email" class="control-label">{% trans "Email" %}<b style="color: red;">*</b></label>
-                <div class="form-group">
-                    {{ person_form.email }}
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="birth" class="control-label">{% trans "Date of birth" %}</label>
+                    <div class="form-group">
+                        {{ person_form.birth }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="schooling" class="control-label">{% trans "Schooling" %}</label>
+                    <div class="form-group">
+                        {{ person_form.schooling }}
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label for="birth" class="control-label">{% trans "Date of birth" %}</label>
-                <div class="form-group">
-                    {{ person_form.birth }}
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="zipcode" class="control-label">{% trans "Zipcode" %}</label>
+                    <div class="form-group">
+                        {{ person_form.zipcode }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="schooling" class="control-label">{% trans "Street" %}</label>
+                    <div class="form-group">
+                        {{ person_form.street }}
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label for="schooling" class="control-label">{% trans "Schooling" %}</label>
-                <div class="form-group">
-                    {{ person_form.schooling }}
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="street" class="control-label">{% trans "District" %}</label>
+                    <div class="form-group">
+                        {{ person_form.district }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="city" class="control-label">{% trans "City" %}</label>
+                    <div class="form-group">
+                        {{ person_form.city }}
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label for="zipcode" class="control-label">{% trans "Zipcode" %}</label>
-                <div class="form-group">
-                    {{ person_form.zipcode }}
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="state" class="control-label">{% trans "State" %}</label>
+                    <div class="form-group">
+                        {{ person_form.state }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="select_interest" class="control-label">{% trans "What is your interest?" %}</label>
+                    <div class="form-group">
+                        {{ person_form.select_interest }}
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label for="schooling" class="control-label">{% trans "Street" %}</label>
-                <div class="form-group">
-                    {{ person_form.street }}
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="note" class="control-label">{% trans "How did you hear about the project?" %}</label>
+                    <div class="form-group">
+                        {{ person_form.note }}
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label for="street" class="control-label">{% trans "District" %}</label>
-                <div class="form-group">
-                    {{ person_form.district }}
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="city" class="control-label">{% trans "City" %}</label>
-                <div class="form-group">
-                    {{ person_form.city }}
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="state" class="control-label">{% trans "State" %}</label>
-                <div class="form-group">
-                    {{ person_form.state }}
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="select_interest" class="control-label">{% trans "What is your interest?" %}</label>
-                <div class="form-group">
-                    {{ person_form.select_interest }}
-                </div>
-            </div>
-            <div class="col-md-12">
-                <label for="note" class="control-label">{% trans "How did you hear about the project?" %}</label>
-                <div class="form-group">
-                    {{ person_form.note }}
-                </div>
-            </div>
-            <div class="btn-toolbar">
-                <div class="btn-group pull-right">
-                    <button type="submit" name="action" value="send" class="btn btn-primary">{% trans "Send" %}</button>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="btn-toolbar">
+                        <div class="btn-group pull-right">
+                            <button type="submit" name="action" value="send" class="btn btn-primary">{% trans "Send" %}</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

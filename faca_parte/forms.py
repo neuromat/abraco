@@ -18,7 +18,7 @@ class PersonForm(ModelForm):
             'full_name': TextInput(attrs={'class': 'form-control', 'autofocus': "true", 'required': "",
                                           'data-error': _('Name must be included')}),
             'email': TextInput(attrs={
-                'class': 'form-control', 'type': 'email', 'data-error': _('Incorrect e-mail'), 'required': "",
+                'class': 'form-control', 'type': 'email', 'data-error': _('Invalid email address'), 'required': "",
                 'pattern': '^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$'}),
             'birth': DateInput(attrs={'class': 'form-control datepicker'}),
             'zipcode': TextInput(attrs={'class': 'form-control', 'onBlur': 'pesquisacep(this.value);',

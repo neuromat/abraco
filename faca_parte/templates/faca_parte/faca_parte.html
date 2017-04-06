@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load i18n admin_static %}
+{% load i18n cms_tags menu_tags sekizai_tags staticfiles %}
 {% block extrahead %}
     <script src="{% static 'js/cep.js' %}"></script>
     <script src="{% static 'js/datepicker.js' %}"></script>
@@ -27,6 +27,13 @@
 
         {% endfor %}
     {% endif %}
+
+    <div class="container">
+        <div class="col-md-12">
+            {% placeholder "Texto" %}
+        </div>
+    </div>
+
     <form role="form" method="post" data-toggle="validator">{% csrf_token %}
         <div class="container">
             <div class="row">

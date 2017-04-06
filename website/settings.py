@@ -192,7 +192,8 @@ CMS_TEMPLATES = (
     ('base.html', 'Base CMS'),
     ('index.html', 'Index CMS'),
     ('blog.html', 'Blog CMS'),
-    ('quem_somos.html', 'Quem Somos CMS')
+    ('quem_somos.html', 'Quem Somos CMS'),
+    ('faca_parte.html', 'Faça parte CMS')
 )
 
 CMS_PERMISSION = True

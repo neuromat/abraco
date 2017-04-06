@@ -19,7 +19,7 @@ def registration(request, template_name="faca_parte/faca_parte.html"):
 
                 person_form.save()
                 messages.success(request, _('Registration created successfully!'))
-                redirect_url = reverse("registration")
+                redirect_url = reverse("faca_parte:registration")
                 return HttpResponseRedirect(redirect_url)
 
             else:

@@ -159,8 +159,8 @@ INSTALLED_APPS = (
 )
 
 LANGUAGES = (
-    ('pt-br', gettext('Português')),
-    # ('en', gettext('English')),
+    ('pt-br', gettext('pt-br')),
+    # ('en', gettext('en')),
 )
 
 CMS_LANGUAGES = {
@@ -175,7 +175,7 @@ CMS_LANGUAGES = {
             'code': 'pt-br',
             'public': True,
             'hide_untranslated': False,
-            'name': gettext('Português'),
+            'name': gettext('pt-br'),
             'redirect_on_fallback': True,
         },
         # {
@@ -193,7 +193,8 @@ CMS_TEMPLATES = (
     ('index.html', 'Index CMS'),
     ('blog.html', 'Blog CMS'),
     ('quem_somos.html', 'Quem Somos CMS'),
-    ('faca_parte.html', 'Faça parte CMS')
+    ('faca_parte.html', 'Faça parte CMS'),
+    ('pesquisa.html', 'Pesquisa CMS')
 )
 
 CMS_PERMISSION = True

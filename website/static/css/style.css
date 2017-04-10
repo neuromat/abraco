@@ -44,7 +44,7 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
 /*Texto de introducao*/
 
-.aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 228px; padding: 40px 40px 10px 40px; margin-bottom: 10px;}
+.aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 255px; padding: 40px 40px 10px 40px; margin-bottom: 10px;}
 .aIntroduction p {color: #FFFFFF; font-size: 19px; font-weight: 300; margin-bottom: 20px;}
 
 /*Links Acoes*/
@@ -55,9 +55,7 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
 /*Ilustracao do braco*/
 
-.aIlustracao {
-    padding: 0 40px;
-}
+.aIlustracao {padding: 0 40px;}
 .aIlustracao img {width: 100%;}
 
 /*Area de novidades*/
@@ -143,10 +141,12 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .aLogo {width: 75%; margin: 0.5em 0;}
-  .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 317px; padding: 40px 20px 10px 20px; margin-bottom: 0px;}
+  .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 20px 10px 20px; margin-bottom: 0px;}
 
   /*Links Acoes*/
   #aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc {margin-top: 5px; margin-bottom: 10px;}
+
+  .aIlustracao {padding: 0; margin-top: 20px;}
 }
 
 /* Portrait phones and smaller */
@@ -156,9 +156,9 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
 .aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}
 
-.aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 423px; padding: 40px 10px 10px 10px; margin-bottom: 0px;}
+.aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 10px 10px 10px; margin-bottom: 0px;}
 
-.aIlustracao {padding: 0;}
+.aIlustracao {padding: 0; margin-top: 20px;}
 .aIlustracao img {width: 100%; padding: 0;} 
 .aIlustracaoMob {padding-right: 0px; padding-left: 0px;}  
 }

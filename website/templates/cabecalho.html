@@ -1,16 +1,36 @@
 {% load  menu_tags staticfiles %}
 
 <!--Barra superior-->
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">
-                <img class="aLogo" alt="Brand" src="{% static 'img/logo.png' %}">
-            </a>
-            <button class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#itensmenu"></button>
-            <ul id="itensmenu" class="nav navbar-nav collapse navbar-collapse">
-                {% show_menu 0 100 100 100 'menu.html' %}
-            </ul>
-        </div>
-    </div>
-</nav>
+    <header>
+        <nav class="row">
+            <div class="container aNav">
+                <div class="col-xs-9 col-sm-9 col-md-9">
+                    <a href="index.html">
+                        <img class="aLogo" alt="Logo da iniciativa abraço" src="../static/img/logo.png">
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 aMenu">
+                    <button href="#" class="menu-hamburger btn"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
+                    <div class="aMenuAbraco">
+                        <ul>
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Lesão do Plexo Braquial</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pesquisa<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Publicações</a></li>
+                                    <li><a href="#">Projetos de pesquisa</a></li>
+                                    <li><a href="#">Atividades</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Recursos Educacionais</a></li>
+                            <li><a href="#">Faça Parte</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- botao menu -->
+    <script src="../static/js/menu.js"></script>

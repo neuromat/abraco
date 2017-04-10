@@ -55,7 +55,9 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
 /*Ilustracao do braco*/
 
-.aIlustracao {padding: 0 40px;}
+.aIlustracao {
+    padding: 0 40px;
+}
 .aIlustracao img {width: 100%;}
 
 /*Area de novidades*/
@@ -120,6 +122,8 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 }
 
 /*Footer*/
+
+.footer{ margin-top: 20px;}
 
 .aRodape { background-color: #115960; padding-top: 10px;}
 .aRodape h3, .aRodape ul, .aRodape a {color: #FFFFFF;}

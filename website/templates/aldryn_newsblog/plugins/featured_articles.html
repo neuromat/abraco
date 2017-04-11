@@ -1,36 +1,40 @@
 {% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail %}
 
+
 <!--Novidades-->
-<h2>Novidades</h2>
-<div class="carousel slide multi-item-carousel" id="Carousel">
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="col-md-4">
-                <a href="#">
-                    <div class="aNovidade aNovidadeTexto">
-                        <h3>Título da novidade 1</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
-                            a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto enim, doloremque.
-                            Voluptates ea, tempora recusandae ipsa voluptas aspernatur nam.
-                        </p>
-                    </div>
-                </a>
+<div class="row aSection">
+    <div class="container aSecaoNovidades">
+        <h2>Novidades</h2>
+        <div class="carousel slide multi-item-carousel" id="Carousel">
+            <div class="carousel-inner">
+                {% for article in articles_list %}
+                    {% if forloop.first %}
+                        <div class="item active">
+                            <div class="col-md-4">
+                                <a href="{{ article.get_absolute_url }}"></a>
+                                <div class="aNovidade aNovidadeTexto">
+                                    <h3>{% render_model article "title" %}</h3>
+                                    <p> {% render_model article "lead_in" "" "" "truncatewords_html:'40'" %} </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="item">
+                            <div class="col-md-4">
+                                <a href="{{ article.get_absolute_url }}"></a>
+                                <div class="aNovidade aNovidadeTexto">
+                                    <h3>{% render_model article "title" %}</h3>
+                                    <p> {% render_model article "lead_in" "" "" "truncatewords_html:'40'" %} </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% empty %}
+                    <p>There' nothing here. </p>
+                {% endfor %}
             </div>
+            <a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
         </div>
-        {% for article in articles_list %}
-        <div class="item">
-            <div class="col-md-4">
-                <a href="#"></a>
-                <div class="aNovidade aNovidadeTexto">
-                    <h3>{% render_model article "title" %}</h3>
-                    <p> {% render_model article "lead_in" "" "" "truncatewords_html:'40'" %} </p>
-                </div>
-            </div>
-        </div>
-        {% empty %}
-            <p>Nada mi patrón...</p>
-        {% endfor %}
     </div>
-    <a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-    <a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
 </div>

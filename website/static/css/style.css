@@ -60,11 +60,7 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
 /*Area de novidades*/
 
-.aSection .container {padding: 0px;}
-
-.aNovidadesAbraco {background-image: url(../img/bg_cinza.png); padding: 15px 40px; margin-top: 20px;}
-
-.aSecaoNovidades {margin-top: 20px;}
+.aSecaoNovidades {margin-top: 20px; background-color: #e5e5e5; padding: 10px;}
 
 .aNovidades {background-color: #ececec; padding-top: 10px; padding-bottom: 20px; margin-top: 20px; margin-bottom: 20px;}
 .aNovidades h2 {padding: 0; text-align: center;}

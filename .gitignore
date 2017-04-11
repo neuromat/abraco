@@ -24,6 +24,8 @@ project.db
 venv/
 media
 
+atlassian-ide-plugin.xml
+
 docs/build*
 docs/source/_static/
 docs/source/_templates/

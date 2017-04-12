@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-
-import os
-
-gettext = lambda s: s
-DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 """
 Django settings for website project.
 
@@ -15,13 +10,16 @@ https://docs.djangoproject.com/en/1.8/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.8/ref/settings/
 """
+import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
+
+# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -29,114 +27,26 @@ DEBUG = False
 
 ALLOWED_HOSTS = []
 
+
 # Application definition
 
-ROOT_URLCONF = 'website.urls'
-
-WSGI_APPLICATION = 'website.wsgi.application'
-
-# Database
-# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
-
-# Internationalization
-# https://docs.djangoproject.com/en/1.8/topics/i18n/
-
-LANGUAGE_CODE = 'pt-br'
-
-TIME_ZONE = 'America/Sao_Paulo'
-
-USE_I18N = True
-
-USE_L10N = True
-
-USE_TZ = True
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.8/howto/static-files/
-
-STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
-STATIC_ROOT = os.path.join(DATA_DIR, 'static')
-
-# Add all apps static files below
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, '/website/static'),
-)
-
-SITE_ID = 1
-
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'website', 'templates'), ],
-        'OPTIONS': {
-            'context_processors': [
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-                'django.core.context_processors.i18n',
-                'django.core.context_processors.debug',
-                'django.core.context_processors.request',
-                'django.core.context_processors.media',
-                'django.core.context_processors.csrf',
-                'django.core.context_processors.tz',
-                'sekizai.context_processors.sekizai',
-                'django.core.context_processors.static',
-                'cms.context_processors.cms_settings'
-            ],
-            'loaders': [
-                'django.template.loaders.filesystem.Loader',
-                'django.template.loaders.app_directories.Loader',
-                'django.template.loaders.eggs.Loader'
-            ],
-        },
-    },
-]
-
-MIDDLEWARE_CLASSES = (
-    'cms.middleware.utils.ApphookReloadMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'cms.middleware.user.CurrentUserMiddleware',
-    'cms.middleware.page.CurrentPageMiddleware',
-    'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.language.LanguageCookieMiddleware'
-)
-
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     'djangocms_admin_style',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.admin',
-    'django.contrib.sites',
-    'django.contrib.sitemaps',
-    'django.contrib.staticfiles',
     'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.sites',
     'cms',
     'menus',
-    'sekizai',
     'treebeard',
-    'djangocms_text_ckeditor',
+    'sekizai',
     'filer',
     'easy_thumbnails',
-    'djangocms_column',
-    'djangocms_link',
-    'cmsplugin_filer_file',
-    'cmsplugin_filer_folder',
-    'cmsplugin_filer_image',
-    'cmsplugin_filer_utils',
-    'djangocms_style',
-    'djangocms_snippet',
-    'djangocms_googlemap',
-    'djangocms_video',
-    'website',
+    'mptt',
+    'djangocms_text_ckeditor',
     'faca_parte',
 
     # for aldryn-newsblog
@@ -150,56 +60,69 @@ INSTALLED_APPS = (
     'parler',
     'sortedm2m',
     'taggit',
-
-    # for aldryn-newsblog
     'reversion',
+]
 
-    # bootstrap3
-    'aldryn_bootstrap3',
-)
+MIDDLEWARE_CLASSES = [
+    'cms.middleware.utils.ApphookReloadMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.language.LanguageCookieMiddleware',
+]
 
-LANGUAGES = (
-    ('pt-br', gettext('pt-br')),
-    # ('en', gettext('en')),
-)
+ROOT_URLCONF = 'website.urls'
 
-CMS_LANGUAGES = {
-    'default': {
-        'fallbacks': ['pt-br'],
-        'public': True,
-        'hide_untranslated': False,
-        'redirect_on_fallback': True,
-    },
-    1: [
-        {
-            'code': 'pt-br',
-            'public': True,
-            'hide_untranslated': False,
-            'name': gettext('pt-br'),
-            'redirect_on_fallback': True,
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+                'cms.context_processors.cms_settings',
+                'sekizai.context_processors.sekizai',
+                'django.template.context_processors.static',
+            ],
         },
-        # {
-        #     'code': 'en',
-        #     'public': True,
-        #     'hide_untranslated': False,
-        #     'name': gettext('English'),
-        #     'redirect_on_fallback': True,
-        # },
-    ],
-}
+    },
+]
 
-CMS_TEMPLATES = (
+CMS_TEMPLATES = [
     ('base.html', 'Base CMS'),
     ('index.html', 'Index CMS'),
     ('blog.html', 'Blog CMS'),
     ('quem_somos.html', 'Quem Somos CMS'),
-    ('faca_parte.html', 'Faça parte CMS'),
+    ('faca_parte.html', 'Faca parte CMS'),
     ('pesquisa.html', 'Pesquisa CMS')
+]
+
+THUMBNAIL_HIGH_RESOLUTION = True
+
+THUMBNAIL_PROCESSORS = (
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters'
 )
 
-CMS_PERMISSION = True
+WSGI_APPLICATION = 'website.wsgi.application'
 
-CMS_PLACEHOLDER_CONF = {}
+
+# Database
+# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -211,33 +134,59 @@ DATABASES = {
     }
 }
 
-MIGRATION_MODULES = {
 
-}
+# Password validation
+# https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
-THUMBNAIL_PROCESSORS = (
-    'easy_thumbnails.processors.colorspace',
-    'easy_thumbnails.processors.autocrop',
-    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
-    'easy_thumbnails.processors.filters'
-)
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
+]
+
+
+# Internationalization
+# https://docs.djangoproject.com/en/1.10/topics/i18n/
+
+LANGUAGE_CODE = 'pt-br'
+
+LANGUAGES = [
+    #('en', 'English'),
+    ('pt-br', 'Portuguese'),
+]
 
 # specify path for translation files
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 
-# Aldryn Bootstrap
+TIME_ZONE = 'UTC'
 
-ALDRYN_BOOTSTRAP3_CAROUSEL_STYLES = [
-    ('feature', 'Featured Version'),
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = True
+
+SITE_ID = 1
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.10/howto/static-files/
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
 ]
 
-ALDRYN_BOOTSTRAP3_ICONSETS = [
-    ('glyphicons', 'glyphicons', 'Glyphicons'),
-    ('fontawesome', 'fa', 'Font Awesome'),
-    ('icons', 'icon', 'Custom Icons'),
-]
-
-ALDRYN_BOOTSTRAP3_GRID_SIZE = 12
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 try:
     from settings_local import *

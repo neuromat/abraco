@@ -1,20 +1,31 @@
 {% load  menu_tags staticfiles %}
 
 <!--Barra superior-->
+
+    <!--Barra superior-->
     <header>
         <nav class="row">
             <div class="container aNav">
-                <div class="col-xs-9 col-sm-9 col-md-9">
+                <!--Espaço do logo lado esquerdo-->
+                <div class="col-xs-7 col-sm-5 col-md-3">
                     <a href="/">
-                        <img class="aLogo" alt="Logo da iniciativa abraço" src="{% static 'img/logo.png'%}">
+                        <img class="aLogo" alt="Logo da iniciativa" src="{% static 'img/logo.png'%}">
                     </a>
                 </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 aMenu">
+                <!--Espaço do icone do lado direito-->
+                <div class="col-xs-5 col-sm-7 col-md-9 aMenu">
+
                     <button href="#" class="menu-hamburger btn"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
-                    <div class="aMenuAbraco">
+                    <div class="aMenuAbraco animated fadeIn">
                         <ul>
                             {% show_menu 0 100 100 100 'menu.html' %}
                         </ul>
+                    </div>
+                    <div id="pesquisar" class="hidden-xs">
+                        <form>
+                            <input type="text" name="s" id="buscar">
+                            <button type="submit">&#xe003</button>
+                        </form>
                     </div>
                 </div>
             </div>

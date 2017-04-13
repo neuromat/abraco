@@ -2,8 +2,8 @@
 
 <!--Novidades-->
 <h2>Novidades</h2>
-<div class="carousel slide multi-item-carousel" id="Carousel">
-    <div class="carousel-inner">
+<div class="carousel slide multi-item-carousel" id="Carousel" data-ride="carousel">
+    <div class="carousel-inner onebyone-carosel">
         {% for article in articles_list %}
             {% if forloop.first %}
                 <div class="item active">

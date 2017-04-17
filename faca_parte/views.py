@@ -7,7 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 from forms import PersonForm
 
 
-def registration(request, template_name="faca_parte/faca_parte.html"):
+def registration(request, template_name="faca_parte.html"):
 
     person_form = PersonForm(request.POST or None)
 

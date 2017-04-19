@@ -1,8 +1,16 @@
 {% extends CMS_TEMPLATE %}
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
 
 {% block content %}
     <div class="container">
-        {% block newsblog_content %}
-        {% endblock %}
+        <div class="row">
+            <div class="col-md-2">
+                {% static_placeholder 'menu' %}
+            </div>
+            <div class="col-md-10">
+                {% block newsblog_content %}
+                {% endblock %}
+            </div>
+        </div>
     </div>
 {% endblock content %}

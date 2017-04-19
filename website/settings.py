@@ -108,7 +108,6 @@ CMS_TEMPLATES = [
     ('quem_somos.html', 'Quem Somos CMS'),
     ('faca_parte.html', 'Faca parte CMS'),
     ('pesquisa.html', 'Pesquisa CMS'),
-    ('publicacoes.html', 'Publicacoes CMS')
 ]
 
 THUMBNAIL_HIGH_RESOLUTION = True

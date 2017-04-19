@@ -1,11 +1,150 @@
-{% extends "base.html" %}
-{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% extends "base.html" %}{% load cms_tags menu_tags sekizai_tags staticfiles %}
 
-/*{% block content %}
-    <div class="container">
-        {% placeholder "Texto superior" %}
+{% block content %}
+    <!-- Quem somos -->
+    <div class="row">
+        <div class="container quem_box">
+            <h1 class="h1_quem">Quem somos</h1>
+            <div class="aText_box">
+                <p>Os acidentes motociclísticos são reconhecidamente um problema de saúde pública no Brasil. Uma de suas possíveis
+                    consequências é a lesão do plexo braquial, que pode levar a incapacidades físicas em pessoas jovens em idade
+                    produtiva. Em muitos casos, há falta ou atraso de diagnóstico e consequentemente tratamento, por que as informações
+                    sobre a doença não chegam até pacientes e profissionais da saúde.</p>
+                <p>A ABRAÇO - Ação NeuroMat para a Lesão do Plexo Braquial é uma rede de apoio e acolhimento para pacientes, e seus
+                    familiares, que sofrem com o problema. Além de fornecer informações para que profissionais da área consigam
+                    diagnosticar e tratar melhor a condição.</p>
+                <p>Na frente de transferência tecnológica, a ABRAÇO desenvolverá novas ferramentas para documentar a lesão através
+                    de um banco de dados detalhado. Na área de disseminação, além de fornecer informações sobre a lesão do plexo
+                    braquial, pretendemos produzir pastas e vídeos dirigidos a pacientes, cuidadores e profissionais de saúde.</p>
+                <hr>
+                <p>As ações ABRAÇO em prol do tratamento e reabilitação da lesão traumática do plexo braquial em adultos incluem:</p>
+                <div class="aMeio col-md-6 col-sm-6 col-xs-12">
+                    <strong>Para pacientes e familiares:</strong>
+                    <ul>
+                        <li>videos educativos </li>
+                        <li>palestras com profissionais e especialistas </li>
+                        <li>cartilhas educativas</li>
+                    </ul>
+                </div>
+                <div class="aMeio col-md-6 col-sm-6 col-xs-12">
+                    <strong>Para estudantes e profissionais:</strong>
+                    <ul>
+                        <li>video-aulas</li>
+                        <li>palestras/aulas com pesquisadores e profissionais especializados</li>
+                        <li>cartilhas educativas</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>A ABRAÇO é uma iniciativa do Centro de Pesquisa, Inovação e Difusão em Neuromatemática (CEPID NeuroMat),
+                        com apoio da FAPESP, e do Núcleo de Pesquisas em Neurociências e Reabilitação (NPNR) do Instituto de
+                        Neurologia Deolindo Couto (INDC) da Universidade Federal do Rio de Janeiro (UFRJ).</p>
+                </div>
+                <hr>
+            </div>
+        </div>
     </div>
-    <div class="container">
-        {% placeholder "Pessoas etc" %}
+    <div class="row">
+        <div class="equipe container">
+            <h2 class="h2_equipe">Equipe</h2>
+            <div id="aCoordenacao" class="col-md-12 col-sm-12 col-xs-12">
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/5430021088108855" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Antonio Galves</h5>
+                    <span>Probabilista, Coordenador do Centro de Pesquisa, Inovação e Difusão em Neuromatemática (NeuroMat), apoiado pela FAPESP. Professor Titular da Universidade de São Paulo, membro titular da Academia Brasileira de Ciências e Comendador e Grã-Cruz da Ordem Nacional do Mérito Científico.</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/1019505555117852" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Claudia Domingues Vargas</h5>
+                    <span>Neurocientista, Prof. Associada Universidade Federal do rio de Janeiro, Coordenadora do Núcleo de Pesquisa em Neurociências e Reabilitação – INDC/UFRJ. Pesquisadora Principal do CEPID NeuroMat.</span>
+                </div>
+            </div>
+            <div id="outros" class="col-md-12 col-sm-12 col-xs-12">
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/0609252739647499" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Bia Ramalho dos Santos Lima</h5>
+                    <span>Biomédica (UFRJ), Mestre em Ciências Biológicas - Fisiologia (UFRJ) e Doutoranda em Ciências Biológicas - Fisiologia (UFRJ).</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/7970710600354432" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Cissa Nunes Soares</h5>
+                    <span>Acadêmica de medicina (sexto período - UFRJ), Bacharel em Engenharia de Alimentos (UNI-BH), Iniciação científica no Núcleo de Pesquisa em Neurociências e Reabilitação - INDC/UFRJ.</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/4154662816500723" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Cristiane Borges Patroclo</h5>
+                    <span>Médica (UNIRIO), Residência em Neurologia (HC-FMUSP), Mestre em Neurologia (UNIRIO), Doutoranda em Ciências - Fisiologia (UFRJ).</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/0805603283750944" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Fernanda de Figueiredo Torres</h5>
+                    <span>Médica (UFRJ), Residencia em Medicina Física e Reabilitação (HSE/RJ),  Fisioterapeuta (IBMR), Doutoranda em Cíências Biológicas (UFRJ), Núcleo de Pesquisa em Neurociências e Reabilitação (INDC/UFRJ).</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/9978636046255507" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Gabriel Freire Miranda</h5>
+                    <span>Fisioterapeuta (UFRJ), Mestrando em Ciências – Fisiologia (UFRJ), Núcleo de Pesquisa em Neurociências e Reabilitação - INDC/UFRJ.</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/6640651072023226" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Juliana da Silva Maia</h5>
+                    <span>Fisioterapeuta (UNESA), Colaboradora no Núcleo de Pesquisa em Neurociências e Reabilitação - INDC/UFRJ.</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/0080516149926317 " target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Fernanda Guimarães de Andrade</h5>
+                    <span>Fisioterapeuta (UFRJ), Professora de Fisioterapia NeuroFuncional do IFRJ, Mestrado e Doutorado em Saúde Coletiva (UFRJ), Pesquisadora no Núcleo de Pesquisa em Neurociências e Reabilitação - INDC/UFRJ.</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/5560441608723267" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Lidiane Souza</h5>
+                    <span>Fisioterapeuta (UFRJ),Mestrado em Ciências Biológicas - Fisiologia (UFRJ), Doutoranda em Ciências Biológicas - Fisiologia (UFRJ).</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/8371635984022703" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>Maria Luíza Rangel</h5>
+                    <span>Fisioterapeuta (UNESA),Mestrado em Neurociências (UFF),Doutorado em Ciências (UFRJ), Pesquisadora no Núcleo de Pesquisa em Neurociências e Reabilitação - INDC/UFRJ.</span>
+                </div>
+                <div class="aMembro">
+                    <a href="http://lattes.cnpq.br/0792532774444086" target="_blank">
+                        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+                        <img src="">
+                    </a>
+                    <h5>José Vicente Martins</h5>
+                    <span>Fisioterapeuta (IBMR), Mestrado em Ciências (UFRJ), Professor de Fisioterapia Neurológica  (UFRJ), Chefe do Setor de Fisioterapia do Instituto de Neurologia Deolindo Couto, Pesquisador no Núcleo de Pesquisa em Neurociências e Reabilitação - INDC/UFRJ.</span>
+                </div>
+        </div>
     </div>
-{% endblock content %}*
+{% endblock content %}

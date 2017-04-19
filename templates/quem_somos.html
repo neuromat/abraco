@@ -1,11 +1,24 @@
-{% extends "base.html" %}
-{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% extends "base.html" %}{% load cms_tags menu_tags sekizai_tags staticfiles %}
 
-/*{% block content %}
-    <div class="container">
-        {% placeholder "Texto superior" %}
+{% block content %}
+    <!-- Quem somos -->
+    <div class="row">
+        <div class="container quem_box">
+            <h1 class="h1_quem">Quem somos</h1>
+            <div class="aText_box">
+                {% placeholder "Texto" %}
+            </div>
+        </div>
     </div>
-    <div class="container">
-        {% placeholder "Pessoas etc" %}
+    <div class="row">
+        <div class="equipe container">
+            <h2 class="h2_equipe">Equipe</h2>
+            <div id="aCoordenacao" class="col-md-12 col-sm-12 col-xs-12">
+                {% placeholder "Coordenadores" %}
+            </div>
+            <div id="outros" class="col-md-12 col-sm-12 col-xs-12">
+                {% placeholder "Outros" %}
+            </div>
+        </div>
     </div>
-{% endblock content %}*
+{% endblock content %}

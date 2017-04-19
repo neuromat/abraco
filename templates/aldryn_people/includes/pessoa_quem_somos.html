@@ -1,0 +1,10 @@
+{% load cms_tags i18n thumbnail aldryn_people_tags %}
+
+<div class="aMembro">
+    <a href="{{ person.website }}" target="_blank">
+        <div><img src="assets/img/lattes.png"><span>currículo lattes</span></div>
+        <img src="{% thumbnail person.visual 400x300 crop subject_location=person.visual.subject_location %}" alt="{{ person.name }}">
+    </a>
+    <h5>{% render_model person 'name' %}</h5>
+    <span>{{ person.description|safe }}</span>
+</div>

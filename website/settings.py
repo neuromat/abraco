@@ -84,7 +84,8 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 os.path.join(BASE_DIR, 'faca_parte/templates/faca_parte'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -106,7 +107,8 @@ CMS_TEMPLATES = [
     ('blog.html', 'Blog CMS'),
     ('quem_somos.html', 'Quem Somos CMS'),
     ('faca_parte.html', 'Faca parte CMS'),
-    ('pesquisa.html', 'Pesquisa CMS')
+    ('pesquisa.html', 'Pesquisa CMS'),
+    ('publicacoes.html', 'Publicacoes CMS')
 ]
 
 THUMBNAIL_HIGH_RESOLUTION = True

@@ -8,21 +8,23 @@
             {% if forloop.first %}
                 <div class="item active">
                     <div class="col-md-4">
-                        <a href="{{ article.get_absolute_url }}"></a>
-                        <div class="aNovidade aNovidadeTexto">
-                            <h3>{% render_model article "title" %}</h3>
-                            <p> {% render_model article "lead_in" "" "" "truncatewords_html:'40'" %} </p>
-                        </div>
+                        <a href="{{ article.get_absolute_url }}">
+                            <div class="aNovidade aNovidadeTexto">
+                                <h3>{% render_model article "title" %}</h3>
+                                <p> {% render_model article "lead_in" "" "" "truncatewords_html:'40'" %} </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             {% else %}
                 <div class="item">
                     <div class="col-md-4">
-                        <a href="{{ article.get_absolute_url }}"></a>
-                        <div class="aNovidade aNovidadeTexto">
-                            <h3>{% render_model article "title" %}</h3>
-                            <p> {% render_model article "lead_in" "" "" "truncatewords_html:'40'" %} </p>
-                        </div>
+                        <a href="{{ article.get_absolute_url }}">
+                            <div class="aNovidade aNovidadeTexto">
+                                <h3>{% render_model article "title" %}</h3>
+                                <p> {% render_model article "lead_in" "" "" "truncatewords_html:'40'" %} </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             {% endif %}

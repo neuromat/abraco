@@ -2,7 +2,41 @@
 {% load cms_tags menu_tags sekizai_tags staticfiles %}
 
 {% block content %}
-    <div class="container">
-        {% placeholder "Conteudo" %}
+    <!-- Pesquisa -->
+    <div class="row">
+        <div class="container">
+            {% placeholder "Conteudo" %}
+        </div>
+    </div>
+    <div class="row aPesq">
+        <div class="container">
+            <a href="#">
+                <div class="col-md-4">
+                    <div class="aOpcoesPesq">
+                    <h3>Publicações</h3>
+                    <p>Lista de contribuições acadêmicas da equipe da ABRAÇO</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="col-md-4">
+                    <div class="aOpcoesPesq">
+                    <h3>Projetos de pesquisa</h3>
+                    <p>Informações sobre grupos de trabalho e objetivos de pesquisa da ABRAÇO</p>
+                    </div>
+                </div>
+
+            </a>
+            <a href="#">
+                <div class="col-md-4">
+                    <div class="aOpcoesPesq">
+                    <h3>Atividades</h3>
+                    <p>Eventos científicos e treinamentos passados e por vir</p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 {% endblock content %}
+
+

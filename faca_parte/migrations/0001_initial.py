@@ -11,13 +11,6 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Interest',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('name', models.CharField(max_length=255, verbose_name='Name')),
-            ],
-        ),
-        migrations.CreateModel(
             name='Person',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
@@ -36,6 +29,13 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
+            name='Role',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('name', models.CharField(max_length=255, verbose_name='Name')),
+            ],
+        ),
+        migrations.CreateModel(
             name='Schooling',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
@@ -49,7 +49,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='person',
-            name='select_interest',
-            field=models.ForeignKey(verbose_name='Interest', blank=True, to='faca_parte.Interest', null=True),
+            name='select_role',
+            field=models.ForeignKey(verbose_name='Role', blank=True, to='faca_parte.Role', null=True),
         ),
     ]

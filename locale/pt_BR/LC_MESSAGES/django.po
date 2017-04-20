@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-06 15:19-0300\n"
+"POT-Creation-Date: 2017-04-20 21:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,35 +22,43 @@ msgstr ""
 msgid "Registration"
 msgstr "Faça parte"
 
-#: faca_parte/forms.py:19
+#: faca_parte/forms.py:17
+msgid "Role must be included"
+msgstr "O campo perfil deve ser preenchido"
+
+#: faca_parte/forms.py:20
 msgid "Name must be included"
 msgstr "O campo nome deve ser preenchido"
 
-#: faca_parte/forms.py:21
+#: faca_parte/forms.py:22
 msgid "Invalid email address"
 msgstr "Endereço de email inválido"
+
+#: faca_parte/forms.py:27
+msgid "Enter your zip code that we will try to find your address"
+msgstr "Digite o CEP para o sitema buscar seu endereço"
 
 #: faca_parte/models.py:6 faca_parte/models.py:22
 msgid "Name"
 msgstr "Nome"
 
-#: faca_parte/models.py:20
-msgid "Interest"
-msgstr "Interesse"
+#: faca_parte/models.py:20 faca_parte/templates/faca_parte/faca_parte.html:58
+msgid "Role"
+msgstr "Perfil"
 
-#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:56
+#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:73
 msgid "Schooling"
 msgstr "Escolaridade"
 
-#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:41
+#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:49
 msgid "Email"
 msgstr "Email"
 
-#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:50
+#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:65
 msgid "Date of birth"
 msgstr "Data de nascimento"
 
-#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:106
+#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:115
 msgid "How did you hear about the project?"
 msgstr "Como ficou sabendo do projeto?"
 
@@ -70,15 +78,15 @@ msgstr "Complemento"
 msgid "Number"
 msgstr "Número"
 
-#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:78
+#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:93
 msgid "District"
 msgstr "Bairro"
 
-#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:84
+#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:101
 msgid "City"
 msgstr "Cidade"
 
-#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:92
+#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:107
 msgid "State"
 msgstr "Estado"
 
@@ -86,23 +94,19 @@ msgstr "Estado"
 msgid "Country"
 msgstr "País"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:35
+#: faca_parte/templates/faca_parte/faca_parte.html:43
 msgid "Full name"
 msgstr "Nome completo"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:64
+#: faca_parte/templates/faca_parte/faca_parte.html:79
 msgid "Zipcode"
 msgstr "CEP"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:70
+#: faca_parte/templates/faca_parte/faca_parte.html:87
 msgid "Street"
 msgstr "Rua"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:98
-msgid "What is your interest?"
-msgstr "Qual seu interesse?"
-
-#: faca_parte/templates/faca_parte/faca_parte.html:116
+#: faca_parte/templates/faca_parte/faca_parte.html:125
 msgid "Send"
 msgstr "Enviar"
 
@@ -118,55 +122,99 @@ msgstr "O cadastro não foi criado"
 msgid "Action not available."
 msgstr "Ação não disponível"
 
-#: website/settings.py:162 website/settings.py:178
-msgid "Português"
+#: templates/aldryn_newsblog/article_detail.html:15
+msgid "Previous Article"
 msgstr ""
 
-#: website/templates/aldryn_newsblog/articles_list.html:8
+#: templates/aldryn_newsblog/article_detail.html:17
+msgid "Back to Overview"
+msgstr ""
+
+#: templates/aldryn_newsblog/article_detail.html:19
+msgid "Next Article"
+msgstr ""
+
+#: templates/aldryn_newsblog/articles_list.html:8
+#: templates/aldryn_newsblog/plugins/archive.html:22
+#: templates/aldryn_newsblog/plugins/authors.html:9
+#: templates/aldryn_newsblog/plugins/latest_articles.html:6
+#: templates/aldryn_newsblog/plugins/related_articles.html:11
 msgid "No items available"
 msgstr ""
 
-#: website/templates/aldryn_newsblog/includes/pagination.html:8
+#: templates/aldryn_newsblog/includes/pagination.html:8
 msgid "Previous"
 msgstr ""
 
-#: website/templates/aldryn_newsblog/includes/pagination.html:42
+#: templates/aldryn_newsblog/includes/pagination.html:42
 msgid "Next"
 msgstr ""
 
-#: website/templates/aldryn_people/group_list.html:13
-#: website/templates/aldryn_people/plugins/standard/people_list.html:26
+#: templates/aldryn_newsblog/includes/search_results.html:6
+#, python-format
+msgid "Most recent articles containing \"<strong>%(query)s</strong>\""
+msgstr ""
+
+#: templates/aldryn_newsblog/includes/search_results.html:21
+msgid "No articles found"
+msgstr ""
+
+#: templates/aldryn_newsblog/includes/search_results.html:23
+msgid "Enter a query above"
+msgstr ""
+
+#: templates/aldryn_newsblog/plugins/article_search.html:6
+msgid "Keyword search"
+msgstr ""
+
+#: templates/aldryn_newsblog/plugins/article_search.html:7
+msgid "Keyword"
+msgstr ""
+
+#: templates/aldryn_newsblog/plugins/article_search.html:10
+msgid "Go"
+msgstr ""
+
+#: templates/aldryn_newsblog/plugins/related_articles.html:8
+msgid "by"
+msgstr ""
+
+#: templates/aldryn_newsblog/plugins/tags.html:5
+msgid "All"
+msgstr ""
+
+#: templates/aldryn_people/group_list.html:13
 msgid "Ungrouped"
 msgstr ""
 
-#: website/templates/aldryn_people/includes/group.html:13
-#: website/templates/aldryn_people/includes/person.html:27
+#: templates/aldryn_people/includes/group.html:13
+#: templates/aldryn_people/includes/person.html:27
 msgid "Phone:"
 msgstr ""
 
-#: website/templates/aldryn_people/includes/group.html:17
-#: website/templates/aldryn_people/includes/person.html:35
+#: templates/aldryn_people/includes/group.html:17
+#: templates/aldryn_people/includes/person.html:35
 msgid "Fax:"
 msgstr ""
 
-#: website/templates/aldryn_people/includes/group.html:21
-#: website/templates/aldryn_people/includes/person.html:39
+#: templates/aldryn_people/includes/group.html:21
+#: templates/aldryn_people/includes/person.html:39
 msgid "Email:"
 msgstr ""
 
-#: website/templates/aldryn_people/includes/group.html:26
-#: website/templates/aldryn_people/includes/person.html:44
+#: templates/aldryn_people/includes/group.html:26
+#: templates/aldryn_people/includes/person.html:44
 msgid "Website:"
 msgstr ""
 
-#: website/templates/aldryn_people/includes/group.html:34
+#: templates/aldryn_people/includes/group.html:34
 msgid "Address:"
 msgstr ""
 
-#: website/templates/aldryn_people/includes/person.html:31
+#: templates/aldryn_people/includes/person.html:31
 msgid "Mobile:"
 msgstr ""
 
-#: website/templates/aldryn_people/includes/person.html:57
+#: templates/aldryn_people/includes/person.html:57
 msgid "Download vCard"
 msgstr ""

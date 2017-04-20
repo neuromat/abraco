@@ -104,7 +104,6 @@ TEMPLATES = [
 CMS_TEMPLATES = [
     ('base.html', 'Base CMS'),
     ('index.html', 'Index CMS'),
-    ('blog.html', 'Blog CMS'),
     ('quem_somos.html', 'Quem Somos CMS'),
     ('faca_parte.html', 'Faca parte CMS'),
     ('pesquisa.html', 'Pesquisa CMS'),

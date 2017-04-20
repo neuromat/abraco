@@ -10,8 +10,8 @@
                     <div class="col-md-4">
                         <a href="{{ article.get_absolute_url }}">
                             <div class="aNovidade aNovidadeTexto">
-                                <h3>{% render_model article "title" %}</h3>
-                                <p> {% render_model article "lead_in" "" "" "truncatewords_html:'40'" %} </p>
+                                <h3>{{ article.title|safe }}</h3>
+                                <p>{{ article.lead_in|safe|truncatewords:40 }}</p>
                             </div>
                         </a>
                     </div>
@@ -21,8 +21,8 @@
                     <div class="col-md-4">
                         <a href="{{ article.get_absolute_url }}">
                             <div class="aNovidade aNovidadeTexto">
-                                <h3>{% render_model article "title" %}</h3>
-                                <p> {% render_model article "lead_in" "" "" "truncatewords_html:'40'" %} </p>
+                                <h3>{{ article.title|safe }}</h3>
+                                <p>{{ article.lead_in|safe|truncatewords:40 }}</p>
                             </div>
                         </a>
                     </div>

@@ -130,9 +130,10 @@ div#aCoordenacao {padding: 10px; margin: 20px 0px; border: 1px solid #006271; te
 
 .aMembro a > img {max-width: 100%; position: absolute; top: 0; min-width: 100%; left: 0;}
 
-.aMembro {width: 20%; display: inline-block; padding: 0px 15px; min-height: 450px; /* float: left; */ text-align: center;vertical-align: top;}
+.aMembro {width: 20%; display: inline-block; padding: 0px 15px; min-height: 400px; /* float: left; */ text-align: center;vertical-align: top;}
 .aMembro h5 {font-size: 15px; color: #333; font-weight: 600; margin-bottom: 5px;}
 .aMembro span {font-size: 13px; line-height: 15px; color: #333;}
+.aMembro p {font-size: 13px; line-height: 15px; color: #333;}
 
 div#outros {text-align: left;width: 80%;margin-left: 10%;}
 

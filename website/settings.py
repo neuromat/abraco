@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'sortedm2m',
     'taggit',
     'reversion',
+    'aldryn_video',
 ]
 
 MIDDLEWARE_CLASSES = [

@@ -11,7 +11,13 @@
                         <a href="{{ article.get_absolute_url }}">
                             <div class="aNovidade aNovidadeTexto">
                                 <h3>{{ article.title|safe }}</h3>
-                                <p>{{ article.lead_in|safe|truncatewords:40 }}</p>
+                                {% if article.content.get_plugins %}
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        {% render_placeholder article.content language placeholder_language %}
+                                    </div>
+                                {% else %}
+                                    <p>{{ article.lead_in|safe|truncatewords:40 }}</p>
+                                {% endif %}
                             </div>
                         </a>
                     </div>
@@ -22,7 +28,13 @@
                         <a href="{{ article.get_absolute_url }}">
                             <div class="aNovidade aNovidadeTexto">
                                 <h3>{{ article.title|safe }}</h3>
-                                <p>{{ article.lead_in|safe|truncatewords:40 }}</p>
+                                {% if article.content.get_plugins %}
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        {% render_placeholder article.content language placeholder_language %}
+                                    </div>
+                                {% else %}
+                                    <p>{{ article.lead_in|safe|truncatewords:40 }}</p>
+                                {% endif %}
                             </div>
                         </a>
                     </div>

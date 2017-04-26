@@ -158,6 +158,24 @@ div#aCoordenacao:before {content: "Coordenação"; display: inline-block; positi
 .aOpcoesPesq { background-color: #e5e5e5; border-top: 1px solid #75b2b7; border-bottom: 5px solid #125F65; border-radius: 2px; padding: 5px; height: 120px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
 .aOpcoesPesq:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 8px}
 
+/*Subpaginas Pesquisa (Blog)*/
+#aLateral h2 {color: #000; font-size: 20px; margin: 0px; margin-top: 30px;}
+#aLateral ul {margin: 0px; padding: 0px; list-style: none;}
+#aLateral ul li {display: block; padding: 5px 15px;}
+#aLateral ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
+#aLateral ul li.active {background: #75B2B7; border-right: 13px solid #125F65;}
+#aLateral ul li:hover {background: #75B2B7;}
+#aLateral ul li.aAbracoAcademico a {color: #8E6C6C;}
+#aLateral ul li.aAbracoAcademico {border-top: 1px solid #755454;}
+#aLateral ul li.aAbracoAcademico:hover a {color: #000;}
+
+div#aLoopPosts {padding-left: 30px;}
+.aItemPost {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; padding: 10px 15px; font-size: 16px; background: rgba(18, 134, 146, 0.01); float: left; width: 100%;}
+.aItemPost img {float: left; margin: 0px 10px 5px 0px;}
+
+p:last-child {margin: 0px;}
+img{max-width: 100%;}
+
 /*Ajustes dispositivos*/
 
 /* Large desktops and laptops */
@@ -192,18 +210,28 @@ div#aCoordenacao:before {content: "Coordenação"; display: inline-block; positi
   img.aLogo {height: 85px; width: auto!important;}
   .aMenuAbraco {right: 10px!important;}
   header {margin-top: 0px;}
+  /* PAGINA Quem somos*/
   .aMembro {width: 49%;}
   #outros > .aMembro {width: 49%;}
   .aMembro a div{padding: 35% 0px;}
 }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+  /* PAGINA Cabeçalho*/
   .aLogo {width: 80%; margin: 0.5em 0;}
   .aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}
+  /* PAGINA Principal*/
   .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 10px 10px 10px; margin-bottom: 0px;}
   .aIlustracao {padding: 0; margin-top: 20px;}
   .aIlustracao img {width: 100%; padding: 0;}
   .aIlustracaoMob {padding-right: 0px; padding-left: 0px;}
+  /* PAGINA Quem somos*/
   .aMembro, #outros > .aMembro { width: 100%; margin-bottom: 25px; min-height: 1px;}
   .aMembro a div {padding: 20% 0px;}
+}
+/*Subpaginas Pesquisa (Blog)*/
+@media (max-width: 798px){
+	#aLateral *{text-align: center;	}
+	div#aLoopPosts {padding-left: 0px;padding-right: 0px;}
+	.aItemPost{font-size: 13px}
 }

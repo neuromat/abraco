@@ -1,4 +1,4 @@
-{% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail %}
+{% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail extra_tags_abraco %}
 
 <!--Novidades-->
 <h2>Novidades</h2>
@@ -11,7 +11,7 @@
                         <a href="{{ article.get_absolute_url }}">
                             <div class="aNovidade aNovidadeTexto">
                                 <h3>{{ article.title|safe }}</h3>
-                                {% if article.content.get_plugins %}
+                                {% if article|placeholder_has_video %}
                                     <div class="embed-responsive embed-responsive-16by9">
                                         {% render_placeholder article.content language placeholder_language %}
                                     </div>
@@ -28,7 +28,7 @@
                         <a href="{{ article.get_absolute_url }}">
                             <div class="aNovidade aNovidadeTexto">
                                 <h3>{{ article.title|safe }}</h3>
-                                {% if article.content.get_plugins %}
+                                {% if article|placeholder_has_video %}
                                     <div class="embed-responsive embed-responsive-16by9">
                                         {% render_placeholder article.content language placeholder_language %}
                                     </div>

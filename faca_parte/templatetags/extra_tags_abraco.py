@@ -9,8 +9,8 @@ def placeholder_has_video(article):
     plugin_list = content.get_plugins_list()
 
     for plugin in plugin_list:
-        cl = plugin.get_plugin_class()
-        name = cl.name
+        get_class = plugin.get_plugin_class()
+        name = get_class.name
 
         if name.__str__() == 'Video':
             return True

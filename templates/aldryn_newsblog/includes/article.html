@@ -1,60 +1,65 @@
 {% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail %}
 
-<article class="container aldryn-newsblog-article{% if article.is_featured %} aldryn-newsblog-featured{% endif %}{% if not article.published %} unpublished{% endif %}{% if article.future %} future{% endif %}">
-{#    {% if article.categories %}#}
-{#        <p class="category">#}
-{#            {% for category in article.categories.all %}#}
-{#                <a href="{% namespace_url 'article-list-by-category' category.slug namespace=namespace default='' %}">{{ category.name }}</a>{% if not forloop.last %}, {% endif %}#}
-{#            {% endfor %}#}
-{#        </p>#}
-{#    {% endif %}#}
-
-    <h2>
-        {% if not detail_view %}
+<!-- Resumo dos posts -->
+{% if not detail_view %}
+    <div class="item_post">
+        <h2>
             <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a>
-        {% else %}
-            {% render_model article "title" %}
-        {% endif %}
-    </h2>
+        </h2>
 
-    {% if article.featured_image_id and detail_view %}
-        <p class="visual">
-            {% if not detail_view %}
-                <a href="{{ article.get_absolute_url }}">
-            {% endif %}
-            <img src="{% thumbnail article.featured_image 800x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}" class="img-responsive">
-            {% if not detail_view %}
-                </a>
-            {% endif %}
-        </p>
-    {% endif %}
-
-    {% if not detail_view %}
         <div class="lead">
             {{ article.lead_in|safe|truncatewords:80 }}
         </div>
-    {% endif %}
 
-    {% if detail_view %}
+        <div class="read-more">
+            <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">Leia mais</a>
+        </div>
+    </div>
+
+<!-- Conteúdo completo de um post -->
+{% else %}
+    <div class="item_post">
+        <h2>
+            <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a>
+        </h2>
+
+        {% if article.featured_image_id %}
+            <p class="visual">
+                {% if not detail_view %}
+                    <a href="{{ article.get_absolute_url }}">
+                {% endif %}
+                <img src="{% thumbnail article.featured_image 800x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}" class="img-responsive">
+                {% if not detail_view %}
+                    </a>
+                {% endif %}
+            </p>
+        {% endif %}
+
         <div class="lead">
             {{ article.lead_in|safe }}
         </div>
-    {% endif %}
 
-    {% if article.tags and detail_view %}
-        <p class="tags">
-            {% for tag in article.tags.all %}
-                <a href="{% namespace_url 'article-list-by-tag' tag=tag.slug namespace=namespace default='' %}">{{ tag.name }}</a> |
-            {% endfor %}
-        </p>
-    {% endif %}
-
-    {% if detail_view %}
         <div class="content">
             {% render_placeholder article.content language placeholder_language %}
         </div>
-    {% endif %}
 
-</article>
+        {% if article.tags %}
+            <p class="tags">
+                {% for tag in article.tags.all %}
+                    <a href="{% namespace_url 'article-list-by-tag' tag=tag.slug namespace=namespace default='' %}">{{ tag.name }}</a>
+                {% endfor %}
+            </p>
+        {% endif %}
+    </div>
+{% endif %}
 
-{% addtoblock "css" %}<link rel="stylesheet" href="{% static 'css/aldryn-newsblog/article.css' %}">{% endaddtoblock %}
+{#    <article class="container aldryn-newsblog-article{% if article.is_featured %} aldryn-newsblog-featured{% endif %}{% if not article.published %} unpublished{% endif %}{% if article.future %} future{% endif %}">#}
+{#        {% if article.categories %}#}
+{#            <p class="category">#}
+{#                {% for category in article.categories.all %}#}
+{#                    <a href="{% namespace_url 'article-list-by-category' category.slug namespace=namespace default='' %}">{{ category.name }}</a>{% if not forloop.last %}, {% endif %}#}
+{#                {% endfor %}#}
+{#            </p>#}
+{#        {% endif %}#}
+{#    </article>#}
+{#{% addtoblock "css" %}<link rel="stylesheet" href="{% static 'css/aldryn-newsblog/article.css' %}">{% endaddtoblock %}#}

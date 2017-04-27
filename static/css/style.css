@@ -80,7 +80,7 @@ div#pesquisar input, #pesquisar button {background: #E8E8E8; border: none; heigh
 .active{ &.left{ left:-33%; } &.right{ left:33%; }} .next{left: 33%;}
 .prev{left: -33%;}
     @media all and (transform-3d), (-webkit-transform-3d) { >
-.item{transition: 500ms ease-in-out left; transition: 500ms ease-in-out all; backface-visibility: visible; transform: none!important;}}}
+.item{ transition: 500ms ease-in-out left; transition: 500ms ease-in-out all; backface-visibility: visible; transform: none!important;}}}
 
 .carouse-control{&.left, &.right{background-image: none;}}}
 .carousel-control {opacity: 0.2;}
@@ -159,19 +159,19 @@ div#aCoordenacao:before {content: "Coordenação"; display: inline-block; positi
 .aOpcoesPesq:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 8px}
 
 /*Subpaginas Pesquisa (Blog)*/
-#aLateral h2 {color: #000; font-size: 20px; margin: 0px; margin-top: 30px;}
-#aLateral ul {margin: 0px; padding: 0px; list-style: none;}
-#aLateral ul li {display: block; padding: 5px 15px;}
-#aLateral ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
-#aLateral ul li.active {background: #75B2B7; border-right: 13px solid #125F65;}
-#aLateral ul li:hover {background: #75B2B7;}
-#aLateral ul li.aAbracoAcademico a {color: #8E6C6C;}
-#aLateral ul li.aAbracoAcademico {border-top: 1px solid #755454;}
-#aLateral ul li.aAbracoAcademico:hover a {color: #000;}
+#lateral h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 30px;}
+#lateral ul {margin: 0px; padding: 0px; list-style: none;}
+#lateral ul li {display: block; padding: 5px 15px;}
+#lateral ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
+#lateral ul li.active {background: #75B2B7; border-right: 13px solid #125F65;}
+#lateral ul li:hover {background: #75B2B7;}
+#lateral ul li.abraco_academico a {color: #8E6C6C;}
+#lateral ul li.abraco_academico {border-top: 1px solid #755454;}
+#lateral ul li.abraco_academico:hover a {color: #000;}
 
-div#aLoopPosts {padding-left: 30px;}
-.aItemPost {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; padding: 10px 15px; font-size: 16px; background: rgba(18, 134, 146, 0.01); float: left; width: 100%;}
-.aItemPost img {float: left; margin: 0px 10px 5px 0px;}
+div#loop_posts {padding-left: 30px;}
+.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; padding: 10px 15px; font-size: 16px; background: rgba(18, 134, 146, 0.01); float: left; width: 100%;}
+.item_post img {float: left;margin: 0px 10px 5px 0px;}
 
 p:last-child {margin: 0px;}
 img{max-width: 100%;}
@@ -231,7 +231,7 @@ img{max-width: 100%;}
 }
 /*Subpaginas Pesquisa (Blog)*/
 @media (max-width: 798px){
-	#aLateral *{text-align: center;	}
-	div#aLoopPosts {padding-left: 0px;padding-right: 0px;}
-	.aItemPost{font-size: 13px}
+	#lateral *{text-align: center;	}
+	div#loop_posts {padding-left: 0px;padding-right: 0px;	}
+	.item_post{font-size: 13px}
 }

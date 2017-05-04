@@ -192,6 +192,25 @@ div#loop_posts {padding-left: 30px;}
 p:last-child {margin: 0px;}
 img{max-width: 100%;}
 
+.read-more a {
+    color: #125F65;
+    background-color: #E8E8E8;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.read-more a:hover {
+    color: #ffffff;
+    background-color: #125F65;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/*Ajustes na paginacao do bootstrap*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {background-color: #75B2B7; border-color: #75B2B7;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: #125F65;}
+.pagination>li>a, .pagination>li>span {color: #125F65;}
 /*Ajustes dispositivos*/
 
 /* Large desktops and laptops */

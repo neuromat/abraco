@@ -3,7 +3,7 @@
 
 .row {margin-right: 0; margin-left: 0;}
 
-h1, h2, h3, h4, p {font-family: 'Open Sans', sans-serif;color: #525758;}
+h1, h2, h3, h4, p, ol, ul{font-family: 'Open Sans', sans-serif;color: #525758;}
 
 h1 {font-size: 30px; text-transform: uppercase;}
 .aSecaoNovidades h2 {font-size: 20px;text-transform: uppercase;text-align: center;font-weight: bold;color: #313535;letter-spacing: 5px;margin: 60px 0px 20px;}
@@ -16,7 +16,8 @@ a:hover h2, a:hover h3 {font-weight: 600;}
 a:focus, a:hover {color: #000000; text-decoration: none;}
 
 hr {margin-top: 0; margin-bottom:0;}
-h2 {    font-size: 20px;    text-transform: uppercase;    font-weight: 600;    color: #313131;}
+h2 {font-size: 20px;    text-transform: uppercase; font-weight: 600; color: #313131;}
+ol, ul { margin-left: 20px; margin-bottom: 10px; font-size: 15px;}
 
 /*Cabeçalho*/
 header {margin-top: 25px;}
@@ -152,6 +153,19 @@ div#aCoordenacao:before {content: "Coordenação"; display: inline-block; positi
 
 .aMembro a div span {color: #fff; font-weight: bold; text-transform: capitalize; text-shadow: 1px 2px 3px #000;}
 
+/* PAGINA lesao do Plexo Braquial*/
+.item_PlexoBraq {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; border-right: 1px solid #125F65; border-bottom: 1px solid #125F65; border-top: 1px solid #125F65; padding: 10px 15px; font-size: 16px; float: left; width: 100%;}
+.PlexoBraqdireita {float: right; margin: 0px 10px 5px 0px; width: 60%;}
+p:last-child {margin: 0px;}
+img{max-width: 100%;}
+
+/*Ajustes do Accordion do Bootstrap */
+.panel-default {border-color: #75B2B7;}
+.panel-default>.panel-heading {background-color: #75B2B7;}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {border-top-color: #75B2B7;}
+
+.panel-group .panel {margin-bottom: 0; border-radius: 2px;}
+
 /* PAGINA Pesquisa*/
 .aPesq {margin-bottom: 50px;}
 
@@ -164,7 +178,7 @@ div#aCoordenacao:before {content: "Coordenação"; display: inline-block; positi
 #lateral ul li {display: block; padding: 5px 15px;}
 #lateral ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
 #lateral ul li.active {background: #75B2B7; border-right: 13px solid #125F65;}
-#lateral ul li:hover {background: #75B2B7;}
+#lateral ul li:hover {background: #75B2B7; border-top: 1px solid #ffffff;}
 #lateral ul li.abraco_academico a {color: #8E6C6C;}
 #lateral ul li.abraco_academico {border-top: 1px solid #755454;}
 #lateral ul li.abraco_academico:hover a {color: #000;}
@@ -214,7 +228,7 @@ img{max-width: 100%;}
   .aMembro {width: 49%;}
   #outros > .aMembro {width: 49%;}
   .aMembro a div{padding: 35% 0px;}
-}
+  }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   /* PAGINA Cabeçalho*/
@@ -230,8 +244,10 @@ img{max-width: 100%;}
   .aMembro a div {padding: 20% 0px;}
 }
 /*Subpaginas Pesquisa (Blog)*/
-@media (max-width: 798px){
-	#lateral *{text-align: center;	}
-	div#loop_posts {padding-left: 0px;padding-right: 0px;	}
-	.item_post{font-size: 13px}
-}
+@media (max-width: 798px) {
+  #lateral * {text-align: center;}
+  div#loop_posts {padding-left: 0px; padding-right: 0px;}
+  .item_post {font-size: 13px}
+  .item_PlexoBraq {font-size: 13px}
+  .PlexoBraqdireita {width: 100%;}
+  }

@@ -180,11 +180,12 @@ img{max-width: 100%;}
 #lateral ul li.active {background: #75B2B7; border-right: 13px solid #125F65;}
 #lateral ul li:hover {background: #75B2B7; border-top: 1px solid #ffffff;}
 #lateral ul li.abraco_academico a {color: #8E6C6C;}
-#lateral ul li.abraco_academico {border-top: 1px solid #755454;}
+#lateral ul li.abraco_academico {border-top: 1px solid #BE6837;}
 #lateral ul li.abraco_academico:hover a {color: #000;}
+#lateral ul li.abraco_academico:active a {color: #000;}
 
 div#loop_posts {padding-left: 30px;}
-.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; padding: 10px 15px; font-size: 16px; background: rgba(18, 134, 146, 0.01); float: left; width: 100%;}
+.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; border-right: 1px solid #125F65; border-bottom: 1px solid #125F65; border-top: 1px solid #125F65; padding: 10px 15px; font-size: 16px; background: rgba(18, 134, 146, 0.01); float: left; width: 100%;}
 .item_post img {float: left;margin: 0px 10px 5px 0px;}
 
 p:last-child {margin: 0px;}

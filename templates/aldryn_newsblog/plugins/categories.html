@@ -1,9 +1,28 @@
 {% load i18n apphooks_config_tags %}
 
+{#<ul>#}
+{#    {% for category in categories %}#}
+{#        <li{% if newsblog_category.id == category.id %} class="active"{% endif %}>#}
+{#            <a href="{% namespace_url "article-list-by-category" category.slug namespace=instance.app_config.namespace default='' %}">{{ category.name }}</a>#}
+{#        </li>#}
+{#    {% endfor %}#}
+{#</ul>#}
+
+<h2>Pesquisa</h2>
 <ul>
-    {% for category in categories %}
-        <li{% if newsblog_category.id == category.id %} class="active"{% endif %}>
-            <a href="{% namespace_url "article-list-by-category" category.slug namespace=instance.app_config.namespace default='' %}">{{ category.name }}</a>
-        </li>
-    {% endfor %}
+    <li {% if newsblog_category.slug == 'artigos' %} class="active"{% endif %}><a href="/blog/category/artigos/">Artigos</a></li>
+    <li {% if newsblog_category.slug == 'capitulos-de-livro' %} class="active"{% endif %}><a href="/blog/category/capitulos-de-livro/">Capítulos de Livro</a></li>
+{#    <li {% if newsblog_category.slug == 'dissertacoes-de-mestrado' %} class="active"{% endif %}><a href="#">Dissertações de Mestrado</a></li>#}
+{#    <li {% if newsblog_category.slug == 'teses-de-doutorado' %} class="active"{% endif %}><a href="#">Teses de Doutorado</a></li>#}
+    <li class="abraco_academico"><a href="/blog/category/abraco-academico">Abraço Acadêmico</a></li>
+</ul>
+
+<h2>Projetos de Pesquisa</h2>
+<ul>
+    <li {% if newsblog_category.slug == 'projetos-de-pesquisa' %} class="active"{% endif %}><a href="/blog/category/projetos-de-pesquisa/">Projetos</a></li>
+</ul>
+
+<h2>Atividades</h2>
+<ul>
+    <li {% if newsblog_category.slug == 'atividades' %} class="active"{% endif %}><a href="/blog/category/atividades/">Atividades</a></li>
 </ul>

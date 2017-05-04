@@ -17,11 +17,13 @@
     <li {% if newsblog_category.slug == 'abraco-academico' %}
             class="abraco_academico active"
         {% else %}
+            class="abraco_academico
             {% for category in article.categories.all %}
                 {% if category.slug == 'abraco-academico' %}
-                    class="abraco_academico active"
+                    active
                 {% endif %}
             {% endfor %}
+            "
         {% endif %}>
         <a href="/blog/category/abraco-academico">Abraço Acadêmico</a></li>
 </ul>

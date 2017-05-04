@@ -10,19 +10,28 @@
 
 <h2>Publicações</h2>
 <ul>
-    <li {% if newsblog_category.slug == 'artigos' %} class="active"{% endif %}><a href="/blog/category/artigos/">Artigos</a></li>
-    <li {% if newsblog_category.slug == 'capitulos-de-livro' %} class="active"{% endif %}><a href="/blog/category/capitulos-de-livro/">Capítulos de Livro</a></li>
+    <li {% if newsblog_category.slug == 'artigos' %} class="active"{% endif %}{% for category in article.categories.all %}{% if category.slug == 'artigos' %} class="active"{% endif %}{% endfor %}><a href="/blog/category/artigos/">Artigos</a></li>
+    <li {% if newsblog_category.slug == 'capitulos-de-livro' %} class="active"{% endif %}{% for category in article.categories.all %}{% if category.slug == 'capitulos-de-livro' %} class="active"{% endif %}{% endfor %}><a href="/blog/category/capitulos-de-livro/">Capítulos de Livro</a></li>
 {#    <li {% if newsblog_category.slug == 'dissertacoes-de-mestrado' %} class="active"{% endif %}><a href="#">Dissertações de Mestrado</a></li>#}
 {#    <li {% if newsblog_category.slug == 'teses-de-doutorado' %} class="active"{% endif %}><a href="#">Teses de Doutorado</a></li>#}
-    <li class="abraco_academico"><a href="/blog/category/abraco-academico">Abraço Acadêmico</a></li>
+    <li {% if newsblog_category.slug == 'abraco-academico' %}
+            class="abraco_academico active"
+        {% else %}
+            {% for category in article.categories.all %}
+                {% if category.slug == 'abraco-academico' %}
+                    class="abraco_academico active"
+                {% endif %}
+            {% endfor %}
+            {% endif %}>
+        <a href="/blog/category/abraco-academico">Abraço Acadêmico</a></li>
 </ul>
 
 <h2>Projetos de Pesquisa</h2>
 <ul>
-    <li {% if newsblog_category.slug == 'projetos-de-pesquisa' %} class="active"{% endif %}><a href="/blog/category/projetos-de-pesquisa/">Projetos</a></li>
+    <li {% if newsblog_category.slug == 'projetos-de-pesquisa' %} class="active"{% endif %}{% for category in article.categories.all %}{% if category.slug == 'projetos-de-pesquisa' %} class="active"{% endif %}{% endfor %}><a href="/blog/category/projetos-de-pesquisa/">Projetos</a></li>
 </ul>
 
 <h2>Atividades</h2>
 <ul>
-    <li {% if newsblog_category.slug == 'atividades' %} class="active"{% endif %}><a href="/blog/category/atividades/">Atividades</a></li>
+    <li {% if newsblog_category.slug == 'atividades' %} class="active"{% endif %}{% for category in article.categories.all %}{% if category.slug == 'atividades' %} class="active"{% endif %}{% endfor %}><a href="/blog/category/atividades/">Atividades</a></li>
 </ul>

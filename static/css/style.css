@@ -171,10 +171,11 @@ img{max-width: 100%;}
 
 /* PAGINA Pesquisa*/
 .aPesq {margin-bottom: 50px;}
-.aPesquisa p {padding-left: 15px; padding-right: 15px;}
+.aPesquisa p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesPesq { background-color: #e5e5e5; border-top: 1px solid #3758C1; border-bottom: 5px solid #3758C1; border-radius: 2px; padding: 5px; height: 120px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
-.aOpcoesPesq:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 8px}
+.aOpcoesPesq { background-color: #e5e5e5; border-top: 3px solid #3758C1; border-bottom: 5px solid #3758C1; border-radius: 2px; padding: 20px; height: 170px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
+.aOpcoesPesq:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 15px}
+.aOpcoesPesq img {max-width: 12%;}
 
 /*Subpaginas Pesquisa (Blog)*/
 #lateral h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}

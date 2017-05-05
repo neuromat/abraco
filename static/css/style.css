@@ -19,6 +19,9 @@ hr {margin-top: 0; margin-bottom:0;}
 h2 {font-size: 20px;    text-transform: uppercase; font-weight: 600; color: #313131;}
 ol, ul { margin-left: 20px; margin-bottom: 10px; font-size: 15px;}
 
+h1.h1_aPadrao {font-size: 23px; background-color: #E8E8E8; color: #006271; padding-bottom: 10px; padding-top: 10px; border-left: 10px solid #006271; font-weight: 600; padding-left: 10px; margin-top: 15px margin-bottom: 20px;}
+h1.h1_aPesquisa {font-size: 23px; background-color: #E8E8E8; color: #3758C1; padding-bottom: 10px; padding-top: 10px; border-left: 10px solid #3758C1; font-weight: 600; padding-left: 10px; margin-top: 15px margin-bottom: 20px;}
+
 /*Cabeçalho*/
 header {margin-top: 25px;}
 .aNav{ padding: 0;}
@@ -44,7 +47,7 @@ header .aMenuAbraco ul li:first-child a:hover span {border-color: transparent tr
 header .aMenuAbraco ul li:first-child a:hover {border-radius: 2px 2px 0 0; }
 header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
-.breadcrumb {padding: 8px 0px; margin-bottom: 20px; margin-left: 13px; list-style: none; background-color: #ffffff;}
+.breadcrumb {margin-left: 0px; margin-bottom: 20px; padding: 8px 20px; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
 
 /* Pesquisar */
 div#pesquisar {float: right; margin-top: 3px; margin-right: 5px;}
@@ -117,8 +120,6 @@ div#pesquisar input, #pesquisar button {background: #E8E8E8; border: none; heigh
 
 /* PAGINA Quem somos*/
 
-h1.h1_quem {font-size: 23px; color: #006271; padding-bottom: 10px; border-bottom: 2px solid #006271; font-weight: 600; padding-left: 10px; margin-top: 15px margin-bottom: 20px;}
-
 .aText_box {float: left; width: 100%; padding: 0px 15px; color: #333;}
 .aText_box hr {width: 95%; border-color: #ccc; margin: 25px auto 23px;}
 .aText_box strong {color: #333; display: block; margin-top: 10px;}
@@ -170,9 +171,11 @@ img{max-width: 100%;}
 
 /* PAGINA Pesquisa*/
 .aPesq {margin-bottom: 50px;}
+.aPesquisa p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesPesq { background-color: #e5e5e5; border-top: 1px solid #75b2b7; border-bottom: 5px solid #125F65; border-radius: 2px; padding: 5px; height: 120px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
-.aOpcoesPesq:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 8px}
+.aOpcoesPesq { background-color: #e5e5e5; border-top: 3px solid #3758C1; border-bottom: 5px solid #3758C1; border-radius: 2px; padding: 20px; height: 170px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
+.aOpcoesPesq:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 15px}
+.aOpcoesPesq img {max-width: 12%;}
 
 /*Subpaginas Pesquisa (Blog)*/
 #lateral h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}

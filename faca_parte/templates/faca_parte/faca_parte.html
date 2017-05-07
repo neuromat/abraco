@@ -29,14 +29,16 @@
     {% endif %}
 
     <div class="container">
-        <h1 class="h1_quem">Faça Parte</h1>
+        <h1 class="h1_aPadrao">Faça Parte</h1>
         <div class="col-md-12">
             {% placeholder "Texto" %}
         </div>
     </div>
 
+    <br>
+
     <form role="form" method="post" data-toggle="validator">{% csrf_token %}
-        <div class="container">
+        <div class="container aFormulario">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">

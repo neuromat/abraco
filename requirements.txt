@@ -3,3 +3,4 @@ django-filer
 djangocms-text-ckeditor
 psycopg2
 aldryn-newsblog
+aldryn_video

@@ -8,17 +8,22 @@
 {% block content %}
     <div class="row">
         <div class="container">
-            <h1 class="h1_quem">Pesquisa</h1>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item"><a href="/pesquisa">Pesquisa</a></li>
-                {%  if newsblog_category %}
-                    <li class="breadcrumb-item active">{{ newsblog_category.name }}</li>
+            <!--Check the correct breadcrumb to use-->
+            {% if newsblog_category %}
+                {% if newsblog_category.slug == 'abraco-academico' %}
+                    {% include "breadcrumb_recursos_educacionais.html" %}
                 {% else %}
-                    <li class="breadcrumb-item">{% for category in article.categories.all %}<a href="/content/category/{{ category.slug }}">{{ category.name }} {% endfor %}</a></li>
-                    <li class="breadcrumb-item active">{{ article.title }}</li>
+                    {% include "breadcrumb_pesquisa.html" %}
                 {% endif %}
-            </ol>
+            {% elif article %}
+                {% for category in article.categories.all %}
+                    {% if category.slug == 'abraco-academico' %}
+                        {% include "breadcrumb_recursos_educacionais.html" %}
+                    {% else %}
+                        {% include "breadcrumb_pesquisa.html" %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
     <div class="container">

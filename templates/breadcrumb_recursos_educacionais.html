@@ -1,0 +1,11 @@
+<h1 class="h1_quem">Recursos Educacionais</h1>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item">Recursos Educacionais</li>
+    {%  if newsblog_category %}
+        <li class="breadcrumb-item active">{{ newsblog_category.name }}</li>
+    {% else %}
+        <li class="breadcrumb-item">{% for category in article.categories.all %}<a href="/content/category/{{ category.slug }}">{{ category.name }} {% endfor %}</a></li>
+        <li class="breadcrumb-item active">{{ article.title }}</li>
+    {% endif %}
+</ol>

@@ -110,6 +110,7 @@ CMS_TEMPLATES = [
     ('pesquisa.html', 'Pesquisa CMS'),
     ('plexo_braquial.html', 'Plexo Braquial CMS'),
     ('plexo_braquial_tratamento.html', 'Plexo Braquial Tratamento CMS'),
+    ('recursos_educacionais.html', 'Recursos Educacionais CMS'),
 ]
 
 THUMBNAIL_HIGH_RESOLUTION = True

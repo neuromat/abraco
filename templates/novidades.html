@@ -1,0 +1,19 @@
+{% load cms_tags extra_tags_abraco %}
+
+<div class="col-md-4">
+    <a href="{{ article.get_absolute_url }}">
+        <div class="aNovidade aNovidadeTexto">
+            {% for category in article.categories.all %}
+                <p>{{ category.name }}</p>
+            {% endfor %}
+            <h3>{{ article.title|safe }}</h3>
+            {% if article|placeholder_has_video %}
+                <div class="embed-responsive embed-responsive-16by9">
+                    {% render_placeholder article.content language placeholder_language %}
+                </div>
+            {% else %}
+                <p>{{ article.lead_in|safe|truncatewords:40 }}</p>
+            {% endif %}
+        </div>
+    </a>
+</div>

@@ -4,7 +4,9 @@
     <a href="{{ article.get_absolute_url }}">
         <div class="aNovidade aNovidadeTexto">
             {% for category in article.categories.all %}
+                <div class="aCategoria">
                 <p>{{ category.name }}</p>
+                </div>
             {% endfor %}
             <h3>{{ article.title|safe }}</h3>
             {% if article|placeholder_has_video %}

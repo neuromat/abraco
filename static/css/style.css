@@ -82,7 +82,7 @@ div#pesquisar input, #pesquisar button {background: #E8E8E8; border: none; heigh
 .aNovidadeTexto p{text-align: left; padding: 7px; font-weight: 300;}
 
 .aCategoria {width: 50%; background-color: #125F65; border-radius: 4px;}
-.aCategoria p{text-align: center; color: #FFFFFF;}
+.aCategoria p{text-align: center; color: #FFFFFF; font-size: 13px;}
 
 /*Slider da area de novidades*/
 .multi-item-carousel{.carousel-inner{ > .item{ transition: 900ms ease-in-out left; }

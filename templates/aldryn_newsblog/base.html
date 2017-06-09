@@ -28,9 +28,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div id="lateral" class="col-md-3 col-sm-4 col-xs-12">
-                {% static_placeholder 'menu' %}
-            </div>
+            {% static_placeholder 'menu' %}
             <div id="loop_posts" class="pull-right col-md-9 col-sm-8 col-xs-12">
                 {% block newsblog_content %}
                 {% endblock %}

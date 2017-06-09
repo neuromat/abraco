@@ -19,9 +19,9 @@ hr {margin-top: 0; margin-bottom:0;}
 h2 {font-size: 20px;    text-transform: uppercase; font-weight: 600; color: #313131;}
 ol, ul { margin-left: 20px; margin-bottom: 10px; font-size: 15px;}
 
-h1.h1_aPadrao {font-size: 23px; background-color: #E8E8E8; color: #006271; padding-bottom: 10px; padding-top: 10px; border-left: 10px solid #006271; font-weight: 600; padding-left: 10px; margin-top: 15px margin-bottom: 20px;}
-h1.h1_aPesquisa {font-size: 23px; background-color: #E8E8E8; color: #3758C1; padding-bottom: 10px; padding-top: 10px; border-left: 10px solid #3758C1; font-weight: 600; padding-left: 10px; margin-top: 15px margin-bottom: 20px;}
-h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #E8E8E8; color: #BE6837; padding-bottom: 10px; padding-top: 10px; border-left: 10px solid #BE6837; font-weight: 600; padding-left: 10px; margin-top: 15px margin-bottom: 20px;}
+h1.h1_aPadrao {font-size: 23px; background-color: #F6F6F6; color: #006271; padding-bottom: 10px; padding-top: 10px; border-left: 10px solid #006271; font-weight: 600; padding-left: 10px; margin-top: 15px margin-bottom: 20px;}
+h1.h1_aPesquisa {font-size: 23px; background-color: #F6F6F6; color: #3758C1; padding-bottom: 10px; padding-top: 10px; border-left: 10px solid #3758C1; font-weight: 600; padding-left: 10px; margin-top: 15px margin-bottom: 20px;}
+h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; color: #BE6837; padding-bottom: 10px; padding-top: 10px; border-left: 10px solid #BE6837; font-weight: 600; padding-left: 10px; margin-top: 15px margin-bottom: 20px;}
 
 /*Cabeçalho*/
 header {margin-top: 25px;}
@@ -40,11 +40,11 @@ header .aMenu button {float: right;background: transparent;padding-right: 0px;}
 header .aMenuAbraco {position: absolute;z-index: 999;display: none;margin-top: 5px;top: 100%;right: -1px;border: 1px solid rgba(0,0,0,.075);box-shadow: -1px 2px 3px rgba(0,0,0,.5);}
 header .aMenuAbraco li:first-child a span { width: 0; height: 0; border: inset 0.5rem; border-color: transparent transparent #ffffff; border-bottom-style: solid; border-top-width: 0; bottom: 100%; position: absolute; left: 4%; }
 header .aMenuAbraco ul { list-style: none; margin: 0; background-color: #ffffff; border-radius: 2px; }
-header .aMenuAbraco ul li {border-bottom: 1px solid #ccc;}
+header .aMenuAbraco ul li {border-bottom: 1px solid #E4E1E1;}
 header .aMenuAbraco ul li:last-child {border-bottom: none;}
 header .aMenuAbraco ul li a {display: block; padding: .4em 4em .4em 1em;}
-header .aMenuAbraco ul li a:hover {background-color: #ccc;}
-header .aMenuAbraco ul li:first-child a:hover span {border-color: transparent transparent #ccc;}
+header .aMenuAbraco ul li a:hover {background-color: #E4E1E1;}
+header .aMenuAbraco ul li:first-child a:hover span {border-color: transparent transparent #E4E1E1;}
 header .aMenuAbraco ul li:first-child a:hover {border-radius: 2px 2px 0 0; }
 header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
@@ -54,8 +54,8 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 div#pesquisar {float: right; margin-top: 3px; margin-right: 5px;}
 
 button.menu-hamburger.btn:active {-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);}
-div#pesquisar input, #pesquisar button {background: #E8E8E8; border: none; height: 35px; padding: 5px 10px; line-height: 35px; color: #363636; width: 350px; max-width: 90%;}
-#pesquisar form button {background: #D8D8D8; width: 40px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px;    font-size: 27px; padding: 0px; color: #115c61;}
+div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; height: 35px; padding: 5px 10px; line-height: 35px; color: #363636; width: 350px; max-width: 90%;}
+#pesquisar form button {background: #E4E1E1; width: 40px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px;    font-size: 27px; padding: 0px; color: #115c61;}
 
 /*PAGINA Principal*/
 
@@ -181,7 +181,7 @@ img{max-width: 100%;}
 .aOpcoesPesq:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 15px}
 .aOpcoesPesq img {max-width: 12%;}
 
-/*Subpaginas Pesquisa (Blog)*/
+/*Subpaginas (Lesão)*/
 #lateral h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
 #lateral ul {margin: 0px; padding: 0px; list-style: none;}
 #lateral ul li {display: block; padding: 5px 15px;}
@@ -192,8 +192,30 @@ img{max-width: 100%;}
 #lateral ul li.abraco_academico {border-top: 1px solid #BE6837;}
 #lateral ul li.abraco_academico:hover a {color: #000;}
 
+/*Subpaginas Pesquisa (Blog)*/
+#lateralp h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
+#lateralp ul {margin: 0px; padding: 0px; list-style: none;}
+#lateralp ul li {display: block; padding: 5px 15px;}
+#lateralp ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
+#lateralp ul li.active {background: #C8D1EC; border-right: 13px solid #3758C1;}
+#lateralp ul li:hover {background: #C8D1EC; border-top: 1px solid #ffffff;}
+#lateralp ul li.abraco_academico a {color: #000;}
+#lateralp ul li.abraco_academico {border-top: 1px solid #BE6837;}
+#lateralp ul li.abraco_academico:hover a {color: #000;}
+
+/*Subpaginas Recursos Educacionais (Blog)*/
+#lateralr h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
+#lateralr ul {margin: 0px; padding: 0px; list-style: none;}
+#lateralr ul li {display: block; padding: 5px 15px;}
+#lateralr ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
+#lateralr ul li.active {background: #E1AB8D; border-right: 13px solid #BE6837;}
+#lateralr ul li:hover {background: #E1AB8D; border-top: 1px solid #ffffff;}
+#lateralr ul li.abraco_academico a {color: #000;}
+#lateralr ul li.abraco_academico {border-top: 1px solid #BE6837;}
+#lateralr ul li.abraco_academico:hover a {color: #000;}
+
 div#loop_posts {padding-left: 30px;}
-.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; border-right: 1px solid #125F65; border-bottom: 1px solid #125F65; border-top: 1px solid #125F65; padding: 10px 15px; font-size: 16px; background: rgba(18, 134, 146, 0.01); float: left; width: 100%;}
+.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #E8E8E8; border-right: 1px solid #F6F6F6; border-bottom: 1px solid #F6F6F6; border-top: 1px solid #F6F6F6; padding: 10px 15px; font-size: 16px; background: #F6F6F6; float: left; width: 100%;}
 .item_post img {float: left;margin: 0px 10px 5px 0px;}
 
 p:last-child {margin: 0px;}

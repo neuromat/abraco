@@ -254,7 +254,7 @@ img{max-width: 100%;}
   div#outros {width: 100%; margin: 0px;}
   #outros > .aMembro {width: 24%;}
   .aMembro a div{padding: 20% 0px;}
-}
+  }
 @media (max-width: 991px) {
   .container.aIntroduction {background-size: 100% 100%;}
   .aSection a > div {margin-bottom: 15px;}
@@ -262,6 +262,8 @@ img{max-width: 100%;}
   div#outros {width: 100%; margin: 0px;}
   #outros > .aMembro { width: 32%;}
   .aMembro a div{padding: 20% 0px;}
+  .aOpcoesRec img {max-width: 9%;}
+  .aOpcoesPesq img {max-width: 9%;}
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
@@ -279,6 +281,8 @@ img{max-width: 100%;}
   .aMembro {width: 49%;}
   #outros > .aMembro {width: 49%;}
   .aMembro a div{padding: 35% 0px;}
+  .aOpcoesRec img {max-width: 10%;}
+  .aOpcoesPesq img {max-width: 7%;}
   }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
@@ -293,6 +297,8 @@ img{max-width: 100%;}
   /* PAGINA Quem somos*/
   .aMembro, #outros > .aMembro { width: 100%; margin-bottom: 25px; min-height: 1px;}
   .aMembro a div {padding: 20% 0px;}
+  .aOpcoesRec img {max-width: 20%;}
+  .aOpcoesPesq img {max-width: 15%;}
 }
 /*Subpaginas Pesquisa (Blog)*/
 @media (max-width: 798px) {

@@ -291,6 +291,7 @@ img{max-width: 100%;}
   .aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}
   /* PAGINA Principal*/
   .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 10px 10px 10px; margin-bottom: 0px;}
+  .aIntroduction a {color: #FFFFFF; font-style: italic;}
   .aIlustracao {padding: 0; margin-top: 20px;}
   .aIlustracao img {width: 100%; padding: 0;}
   .aIlustracaoMob {padding-right: 0px; padding-left: 0px;}

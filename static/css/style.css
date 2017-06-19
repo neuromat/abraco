@@ -61,7 +61,7 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 
 /*Texto de introducao*/
 .aIntroduction {background-image: url(../img/bg_verde.png);background-repeat: repeat-x;background-size: 255px;padding: 40px 40px 10px 40px;margin-bottom: 10px;}
-.aIntroduction p {color: #FFFFFF; font-size: 19px; font-weight: 300; margin-bottom: 20px;}
+.aIntroduction p {color: #FFFFFF; font-size: 19px; font-weight: 300; margin-bottom: 20px!important;}
 .aIntrod a {color: #FFFFFF; font-style: italic;}
 .aIntrod a:focus, a:hover {color: #FFFFFF; text-decoration: none; font-style: normal;}
 /*Links Acoes*/

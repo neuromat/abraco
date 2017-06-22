@@ -63,7 +63,7 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 .aIntroduction {background-image: url(../img/bg_verde.png);background-repeat: repeat-x;background-size: 255px;padding: 40px 40px 10px 40px;margin-bottom: 10px;}
 .aIntroduction p {color: #FFFFFF; font-size: 19px; font-weight: 300; margin-bottom: 20px!important;}
 .aIntrod a {color: #FFFFFF; font-style: italic;}
-.aIntrod a:focus, a:hover {color: #FFFFFF; text-decoration: none; font-style: normal;}
+.aIntrod a:hover {color: #FFFFFF; text-decoration: none; font-style: normal;}
 /*Links Acoes*/
 #aBotaoLesao {background-color: #F8F8F8;border-bottom: 10px solid #137B7B;border-radius: 2px;box-shadow: 1px 0px 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0px 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0px 10px rgba(0,0,0,.5);padding: 10px;}
 #aBotaoPesquisa {background-color: #F8F8F8;border-bottom: 10px solid #3758C1;-moz-box-shadow: 1px -1px 2px #4c4e4c;padding: 10px;box-shadow: 1px 0px 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0px 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0px 10px rgba(0,0,0,.5);}

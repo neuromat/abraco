@@ -214,7 +214,8 @@ img{max-width: 100%;}
 .aOpcoesRec img {max-width: 17%;}
 
 /* Excluir estilo quando houver conteúdo disponivel em eventos e cartilhas*/
-span {color: #BE6837; font-weight: lighter; font-size: 13px;}
+span {color: #FFFFFF; font-weight: lighter; font-size: 13px; background-color: #BE6837; padding: 7px; border-radius: 20px;}
+
 
 #lateralr h2 {color: #2c2626; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
 #lateralr ul {margin: 0px; padding: 0px; list-style: none;}

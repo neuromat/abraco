@@ -183,15 +183,15 @@ img{max-width: 100%;}
 .aOpcoesPesq img {max-width: 12%;}
 
 /*Subpaginas (Lesão)*/
-#lateral h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
-#lateral ul {margin: 0px; padding: 0px; list-style: none;}
-#lateral ul li {display: block; padding: 5px 15px;}
-#lateral ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
-#lateral ul li.active {background: #75B2B7; border-right: 13px solid #125F65;}
-#lateral ul li:hover {background: #75B2B7; border-top: 1px solid #ffffff;}
-#lateral ul li.abraco_academico a {color: #000;}
-#lateral ul li.abraco_academico {border-top: 1px solid #BE6837;}
-#lateral ul li.abraco_academico:hover a {color: #000;}
+#lateralt h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
+#lateralt ul {margin: 0px; padding: 0px; list-style: none;}
+#lateralt ul li {display: block; padding: 5px 15px;}
+#lateralt ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
+#lateralt ul li.active {background: #75B2B7; border-right: 13px solid #125F65;}
+#lateralt ul li:hover {background: #75B2B7; border-top: 1px solid #ffffff;}
+#lateralt ul li.abraco_academico a {color: #000;}
+#lateralt ul li.abraco_academico {border-top: 1px solid #BE6837;}
+#lateralt ul li.abraco_academico:hover a {color: #000;}
 
 /*Subpaginas Pesquisa (Blog)*/
 #lateralp h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}

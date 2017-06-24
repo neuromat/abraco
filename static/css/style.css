@@ -26,7 +26,7 @@ h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; color: 
 /*Cabeçalho*/
 header {margin-top: 25px;}
 .aNav{ padding: 0;}
-.aLogo {width: 100%;margin: 0.5em 0;}
+.aLogo {width: 110%;margin: 0.5em 0;}
 
 .btn {background-color: #115960;}
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0px auto -webkit-focus-ring-color;}
@@ -278,7 +278,7 @@ img{max-width: 100%;}
   #aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc {margin-top: 5px; margin-bottom: 10px;}
   .aIlustracao {padding: 0; margin-top: 20px;}
   .aMenu {padding-right: 15px!important; margin-top: 30px!important;}
-  img.aLogo {height: 85px; width: auto!important;}
+  img.aLogo {height: 65px; width: auto!important;}
   .aMenuAbraco {right: 10px!important;}
   header {margin-top: 0px;}
   /* PAGINA Quem somos*/

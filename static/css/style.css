@@ -210,7 +210,7 @@ img{max-width: 100%;}
 .aRec {margin-bottom: 50px;}
 .aRecEducacionais p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesRec {background-color: #e5e5e5; border-top: 3px solid #BE6837; border-bottom: 5px solid #BE6837; border-radius: 2px; padding: 20px; height: 190px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
+.aOpcoesRec {background-color: #e5e5e5; border-top: 3px solid #BE6837; border-bottom: 5px solid #BE6837; border-radius: 2px; padding: 20px; height: 210px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
 .aOpcoesRec:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 15px}
 .aOpcoesRec img {max-width: 17%;}
 

@@ -1,3 +1,4 @@
+import re
 from django import template
 
 register = template.Library()
@@ -16,3 +17,10 @@ def placeholder_has_video(article):
             return True
 
     return False
+
+
+@register.filter
+def clean_query_url(request_full_path):
+    s = str(request_full_path)
+    m = re.search(r"\/?q\=(.*?)(?:\&|$)", s)
+    return '?q=' + m.group(1)

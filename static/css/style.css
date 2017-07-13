@@ -119,10 +119,11 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 
 .aRodape {background-color: #115960; padding-top: 10px;}
 .aRodape h3, .aRodape ul, .aRodape a {color: #FFFFFF;}
+.aRodape a:hover {text-decoration: underline;}
 .aRodape p {color: #FFFFFF; font-weight: 300;}
 .aRodape img {vertical-align: bottom; padding-top: 10px;}
 .aRodape li {list-style-type:none; font-weight: 300;}
-.aLicensa p {font-size: 12px; text-align: right;}
+.aLicensa p {font-size: 12px; text-align: right; padding-bottom: 20px;}
 
 /* PAGINA Quem somos*/
 

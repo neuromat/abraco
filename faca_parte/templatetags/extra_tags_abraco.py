@@ -21,6 +21,8 @@ def placeholder_has_video(article):
 
 @register.filter
 def clean_query_url(request_full_path):
-    s = str(request_full_path)
-    m = re.search(r"\/?q\=(.*?)(?:\&|$)", s)
-    return '?q=' + m.group(1)
+
+    regex_result = re.search(r"\/?q\=(.*?)(?:\&|$)", str(request_full_path))
+    query_typed_by_user = regex_result.group(1)
+
+    return '?q=' + query_typed_by_user

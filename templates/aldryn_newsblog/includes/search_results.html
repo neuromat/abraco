@@ -16,7 +16,6 @@
     <div class="row">
         <div class="container">
             <ul>
-                <h3>{% blocktrans with query=query %}Most recent articles containing "<strong>{{ query }}</strong>"{% endblocktrans %}</h3>
                 {% for article in object_list %}
                     <li{% if not article.is_published %} class="unpublished"{% endif %}>
                         <a href="{% namespace_url "article-detail" article.slug namespace=view.app_config.namespace default='' %}">
@@ -31,9 +30,9 @@
                     </li>
                 {% empty %}
                     {% if query %}
-                        <p>{% blocktrans with query=query %}No articles found{% endblocktrans %}</p>
+                        <p>{% blocktrans with query=query %}Sorry we didn't find any results for "<strong>{{ query }}</strong>"{% endblocktrans %}</p>
                     {% else %}
-                        <p>{% trans "Enter a query above" %}</p>
+                        <p>{% trans "We could not perform this search. Search text is required." %}</p>
                     {% endif %}
                 {% endfor %}
             </ul>

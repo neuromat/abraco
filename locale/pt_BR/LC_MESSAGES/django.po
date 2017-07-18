@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 21:36+0000\n"
+"POT-Creation-Date: 2017-07-18 19:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,23 +42,23 @@ msgstr "Digite o CEP para o sitema buscar seu endereço"
 msgid "Name"
 msgstr "Nome"
 
-#: faca_parte/models.py:20 faca_parte/templates/faca_parte/faca_parte.html:58
+#: faca_parte/models.py:20 faca_parte/templates/faca_parte/faca_parte.html:61
 msgid "Role"
 msgstr "Perfil"
 
-#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:73
+#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:76
 msgid "Schooling"
 msgstr "Escolaridade"
 
-#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:49
+#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:52
 msgid "Email"
 msgstr "Email"
 
-#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:65
+#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:68
 msgid "Date of birth"
 msgstr "Data de nascimento"
 
-#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:115
+#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:118
 msgid "How did you hear about the project?"
 msgstr "Como ficou sabendo do projeto?"
 
@@ -78,15 +78,15 @@ msgstr "Complemento"
 msgid "Number"
 msgstr "Número"
 
-#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:93
+#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:96
 msgid "District"
 msgstr "Bairro"
 
-#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:101
+#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:104
 msgid "City"
 msgstr "Cidade"
 
-#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:107
+#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:110
 msgid "State"
 msgstr "Estado"
 
@@ -94,19 +94,19 @@ msgstr "Estado"
 msgid "Country"
 msgstr "País"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:43
+#: faca_parte/templates/faca_parte/faca_parte.html:46
 msgid "Full name"
 msgstr "Nome completo"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:79
+#: faca_parte/templates/faca_parte/faca_parte.html:82
 msgid "Zipcode"
 msgstr "CEP"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:87
+#: faca_parte/templates/faca_parte/faca_parte.html:90
 msgid "Street"
 msgstr "Rua"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:125
+#: faca_parte/templates/faca_parte/faca_parte.html:128
 msgid "Send"
 msgstr "Enviar"
 
@@ -122,54 +122,42 @@ msgstr "O cadastro não foi criado"
 msgid "Action not available."
 msgstr "Ação não disponível"
 
-#: templates/aldryn_newsblog/article_detail.html:15
-msgid "Previous Article"
-msgstr ""
-
-#: templates/aldryn_newsblog/article_detail.html:17
-msgid "Back to Overview"
-msgstr ""
-
-#: templates/aldryn_newsblog/article_detail.html:19
-msgid "Next Article"
-msgstr ""
-
 #: templates/aldryn_newsblog/articles_list.html:8
 #: templates/aldryn_newsblog/plugins/archive.html:22
 #: templates/aldryn_newsblog/plugins/authors.html:9
 #: templates/aldryn_newsblog/plugins/latest_articles.html:6
 #: templates/aldryn_newsblog/plugins/related_articles.html:11
 msgid "No items available"
-msgstr ""
+msgstr "Nenhum item disponível"
 
+#: templates/aldryn_newsblog/includes/paginate_search.html:8
 #: templates/aldryn_newsblog/includes/pagination.html:8
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
+#: templates/aldryn_newsblog/includes/paginate_search.html:42
 #: templates/aldryn_newsblog/includes/pagination.html:42
 msgid "Next"
-msgstr ""
+msgstr "Próximo"
 
-#: templates/aldryn_newsblog/includes/search_results.html:6
+#: templates/aldryn_newsblog/includes/search_results.html:33
 #, python-format
-msgid "Most recent articles containing \"<strong>%(query)s</strong>\""
+msgid "Sorry we didn't find any results for \"<strong>%(query)s</strong>\""
 msgstr ""
+"Desculpe, não encontramos nenhum resultado para \"<strong>%(query)s</strong>"
+"\""
 
-#: templates/aldryn_newsblog/includes/search_results.html:21
-msgid "No articles found"
-msgstr ""
-
-#: templates/aldryn_newsblog/includes/search_results.html:23
-msgid "Enter a query above"
-msgstr ""
+#: templates/aldryn_newsblog/includes/search_results.html:35
+msgid "We could not perform this search. Search text is required."
+msgstr "Você precisa digitar alguma palavra para realizarmos a busca."
 
 #: templates/aldryn_newsblog/plugins/article_search.html:6
 msgid "Keyword search"
-msgstr ""
+msgstr "Pesquisa por palavra-chave"
 
 #: templates/aldryn_newsblog/plugins/article_search.html:7
 msgid "Keyword"
-msgstr ""
+msgstr "Palavra-chave"
 
 #: templates/aldryn_newsblog/plugins/article_search.html:10
 msgid "Go"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 20:33+0000\n"
+"POT-Creation-Date: 2017-07-18 20:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,24 +122,15 @@ msgstr "O cadastro não foi criado"
 msgid "Action not available."
 msgstr "Ação não disponível"
 
-#: templates/404.html:9
+#: templates/404.html:9 templates/404.html.py:12
 msgid "Error 404"
 msgstr "Erro 404"
 
-#: templates/404.html:14
 msgid ""
 "Sorry, but the page you are looking for was either not found or does not "
-"exist. <br/>\n"
-"                Try refreshing the page or click the button below to go back "
-"to the Homepage. "
+"exist."
 msgstr ""
-"Desculpe, mas a página que você está procurando não foi encontrada. <br/>\n"
-"                        Tente atualizar a página ou clique no botão abaixo "
-"para voltar à página inicial. "
-
-#: templates/404.html:18
-msgid "Take me home"
-msgstr "Página inicial"
+"Desculpe, mas a página que você está procurando não foi encontrada."
 
 #: templates/aldryn_newsblog/articles_list.html:8
 #: templates/aldryn_newsblog/plugins/archive.html:22

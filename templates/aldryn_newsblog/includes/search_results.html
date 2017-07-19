@@ -30,9 +30,19 @@
                     </li>
                 {% empty %}
                     {% if query %}
-                        <p>{% blocktrans with query=query %}Sorry we didn't find any results for "<strong>{{ query }}</strong>"{% endblocktrans %}</p>
+                        <div class="text-center">
+                            <br>
+                            <span style="font-size: 30px" class="glyphicon glyphicon-search"></span>
+                            <p>{% blocktrans with query=query %}Sorry we didn't find any results for "<strong>{{ query }}</strong>"{% endblocktrans %}</p>
+                            <br><br>
+                        </div>
                     {% else %}
-                        <p>{% trans "We could not perform this search. Search text is required." %}</p>
+                        <div class="text-center">
+                            <br>
+                            <span style="font-size: 30px" class="glyphicon glyphicon-search"></span>
+                            <p>{% trans "We could not perform this search. Search text is required." %}</p>
+                            <br><br>
+                        </div>
                     {% endif %}
                 {% endfor %}
             </ul>

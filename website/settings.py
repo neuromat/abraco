@@ -31,14 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'djangocms_admin_style',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'django.contrib.sites',
+
+    'haystack',
+    'spurl',
+
     'cms',
     'menus',
     'treebeard',
@@ -46,10 +42,8 @@ INSTALLED_APPS = [
     'filer',
     'easy_thumbnails',
     'mptt',
-    'djangocms_text_ckeditor',
     'faca_parte',
 
-    # for aldryn-newsblog
     'aldryn_apphooks_config',
     'aldryn_categories',
     'aldryn_common',
@@ -57,11 +51,22 @@ INSTALLED_APPS = [
     'aldryn_people',
     'aldryn_reversion',
     'aldryn_translation_tools',
+    'aldryn_search',
+    'aldryn_video',
     'parler',
     'sortedm2m',
     'taggit',
     'reversion',
-    'aldryn_video',
+
+    'djangocms_admin_style',
+    'djangocms_text_ckeditor',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -191,6 +196,27 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+#  Haystack stuff
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
+    },
+
+    'pt-br': {
+        'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
+    },
+}
+
+#  Aldryn_search
+HAYSTACK_ROUTERS = ['aldryn_search.router.LanguageRouter',]
+ALDRYN_SEARCH_LANGUAGE_FROM_ALIAS = lambda alias: alias.split('-')[-1]
+ALDRYN_SEARCH_REGISTER_APPHOOK = True
+
+#  Aldryn_newsblog, search
+ALDRYN_NEWSBLOG_SEARCH = True
+
 
 try:
     from settings_local import *

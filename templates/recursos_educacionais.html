@@ -1,15 +1,15 @@
 {% extends "base.html" %}
-{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load cms_tags i18n menu_tags sekizai_tags staticfiles %}
 
 {% block content %}
     <!-- Recursos educacionais -->
     <div class="row">
         <div class="container  aRecEducacionais">
             <hr>
-            <h1 class="h1_aRecursosEducacionais">Recursos Educacionais</h1>
+            <h1 class="h1_aRecursosEducacionais">{% trans "Educational resources" %}</h1>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item active">Recursos Educacionais</li>
+                <li class="breadcrumb-item active">{% trans "Educational resources" %}</li>
             </ol>
             {% placeholder "Conteudo" %}
         </div>
@@ -31,7 +31,7 @@
                         <img src="/static/img/notebook.svg" alt="">
                         <h3>Cartilhas</h3>
                         <p>Folhetos informativos sobre a lesão do plexo braquial</p>
-                        <span>Disponível em breve</span>
+                        <span>{% trans "Available soon" %}</span>
                     </div>
                 </div>
             <!-- fechar tag a -->
@@ -39,18 +39,18 @@
                 <div class="col-md-3">
                     <div class="aOpcoesRec">
                         <img src="/static/img/viral-marketing.svg" alt="">
-                        <h3>Eventos</h3>
+                        <h3>{% trans "Events" %}</h3>
                         <p>Palestras educativas oferecidas pela equipe da ABRAÇO</p>
-                        <span>Disponível em breve</span>
+                        <span>{% trans "Available soon" %}</span>
                     </div>
                 </div>
             <!-- Incluir tag a quando houver conteúdo -->
                 <div class="col-md-3">
                     <div class="aOpcoesRec">
                         <img src="/static/img/video-player.svg" alt="">
-                        <h3>Vídeos</h3>
+                        <h3>{% trans "Videos" %}</h3>
                         <p>Filmes sobre a lesão do plexo braquial e a ABRAÇO</p>
-                        <span>Disponível em breve</span>
+                        <span>{% trans "Available soon" %}</span>
                     </div>
                 </div>
             <!-- fechar tag a -->

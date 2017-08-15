@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 20:49+0000\n"
+"POT-Creation-Date: 2017-08-15 14:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,11 +126,11 @@ msgstr "Ação não disponível"
 msgid "Error 404"
 msgstr "Erro 404"
 
+#: templates/404.html:19
 msgid ""
 "Sorry, but the page you are looking for was either not found or does not "
 "exist."
-msgstr ""
-"Desculpe, mas a página que você está procurando não foi encontrada."
+msgstr "Desculpe, mas a página que você está procurando não foi encontrada."
 
 #: templates/aldryn_newsblog/articles_list.html:8
 #: templates/aldryn_newsblog/plugins/archive.html:22
@@ -150,14 +150,14 @@ msgstr "Anterior"
 msgid "Next"
 msgstr "Próximo"
 
-#: templates/aldryn_newsblog/includes/search_results.html:33
+#: templates/aldryn_newsblog/includes/search_results.html:36
 #, python-format
 msgid "Sorry we didn't find any results for \"<strong>%(query)s</strong>\""
 msgstr ""
 "Desculpe, não encontramos nenhum resultado para \"<strong>%(query)s</strong>"
 "\""
 
-#: templates/aldryn_newsblog/includes/search_results.html:35
+#: templates/aldryn_newsblog/includes/search_results.html:43
 msgid "We could not perform this search. Search text is required."
 msgstr "Você precisa digitar alguma palavra para realizarmos a busca."
 
@@ -216,3 +216,126 @@ msgstr ""
 #: templates/aldryn_people/includes/person.html:57
 msgid "Download vCard"
 msgstr ""
+
+#: templates/breadcrumb_pesquisa.html:2 templates/breadcrumb_pesquisa.html:5
+#: templates/footer.html:27 templates/index.html:23 templates/pesquisa.html:9
+#: templates/pesquisa.html.py:12
+msgid "Research"
+msgstr "Pesquisa"
+
+#: templates/breadcrumb_recursos_educacionais.html:2
+#: templates/breadcrumb_recursos_educacionais.html:5 templates/footer.html:28
+#: templates/index.html:30 templates/recursos_educacionais.html:9
+#: templates/recursos_educacionais.html:12
+msgid "Educational resources"
+msgstr "Recursos educacionais"
+
+#: templates/footer.html:7
+msgid "Iniciative"
+msgstr "Iniciativa"
+
+#: templates/footer.html:11
+msgid "Support"
+msgstr "Apoio"
+
+#: templates/footer.html:15
+msgid "Partner"
+msgstr "Parceiro"
+
+#: templates/footer.html:25 templates/quem_somos.html:8
+msgid "Who we are"
+msgstr "Quem somos"
+
+#: templates/footer.html:26 templates/index.html:16
+#: templates/plexo_braquial.html:13 templates/plexo_braquial_tratamento.html:13
+msgid "Brachial Plexus Injury"
+msgstr "Lesão do Plexo Braquial"
+
+#: templates/footer.html:32
+msgid "Follow"
+msgstr "Siga"
+
+#: templates/footer.html:39
+msgid "Contact"
+msgstr "Contato"
+
+#: templates/footer.html:41
+msgid "Form"
+msgstr "Formulário"
+
+#: templates/footer.html:41
+msgid "Join us"
+msgstr "Faça parte"
+
+#: templates/footer.html:50
+msgid "Licensed under the terms of the"
+msgstr "Licenciado sob os termos da"
+
+#: templates/menu_pesquisa.html:3 templates/pesquisa.html:24
+msgid "Publications"
+msgstr "Publicações"
+
+#: templates/menu_pesquisa.html:5
+msgid "Articles"
+msgstr "Artigos"
+
+#: templates/menu_pesquisa.html:6
+msgid "Book chapters"
+msgstr "Capítulos de livro"
+
+#: templates/menu_pesquisa.html:7
+msgid "MSc dissertations"
+msgstr "Dissertações de mestrado"
+
+#: templates/menu_pesquisa.html:8
+msgid "PhD dissertations"
+msgstr "Teses de doutorado"
+
+#: templates/menu_pesquisa.html:12 templates/pesquisa.html:33
+msgid "Research project"
+msgstr "Projetos de pesquisa"
+
+#: templates/menu_pesquisa.html:14
+msgid "Projects"
+msgstr "Projetos"
+
+#: templates/menu_pesquisa.html:16 templates/menu_pesquisa.html.py:18
+#: templates/pesquisa.html:43
+msgid "Activities"
+msgstr "Atividades"
+
+#: templates/menu_recursos_educacionais.html:3
+msgid "Topics"
+msgstr "Tópicos"
+
+#: templates/plexo_braquial.html:16 templates/plexo_braquial.html.py:28
+#: templates/plexo_braquial_tratamento.html:28
+msgid "What is the Brachial Plexus"
+msgstr "O que é o Plexo Braquial"
+
+#: templates/plexo_braquial.html:25
+msgid "About"
+msgstr "Sobre"
+
+#: templates/plexo_braquial.html:31 templates/plexo_braquial_tratamento.html:16
+#: templates/plexo_braquial_tratamento.html:31
+msgid "Treatment"
+msgstr "Tratamento"
+
+#: templates/quem_somos.html:16
+msgid "Team"
+msgstr "Equipe"
+
+#: templates/recursos_educacionais.html:34
+#: templates/recursos_educacionais.html:44
+#: templates/recursos_educacionais.html:53
+msgid "Available soon"
+msgstr "Disponível em breve"
+
+#: templates/recursos_educacionais.html:42
+msgid "Events"
+msgstr "Eventos"
+
+#: templates/recursos_educacionais.html:51
+msgid "Videos"
+msgstr "Vídeos"

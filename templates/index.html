@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% extends "base.html" %} {% load cms_tags i18n menu_tags sekizai_tags staticfiles %}
 {% block content %}
       <!--Introdução-->
     <div class="container aIntroduction ">
@@ -13,21 +13,21 @@
                 <div class="col-md-4">
                     <a href="/lesao-do-plexo-braquial">
                         <div id="aBotaoLesao">
-                            <h2>Lesão do Plexo Braquial</h2>
+                            <h2>{% trans "Brachial Plexus Injury" %}</h2>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="/pesquisa">
                         <div id="aBotaoPesquisa">
-                            <h2>Pesquisa</h2>
+                            <h2>{% trans "Research" %}</h2>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="/recursos-educacionais">
                         <div id="aBotaoRecEduc">
-                            <h2>Recursos Educacionais</h2>
+                            <h2>{% trans "Educational resources" %}</h2>
                         </div>
                     </a>
                 </div>

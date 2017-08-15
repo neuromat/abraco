@@ -1,19 +1,20 @@
+{% load i18n %}
 <div id="lateralp" class="col-md-3 col-sm-4 col-xs-12">
-    <h2>Publicações</h2>
+    <h2>{% trans "Publications" %}</h2>
         <ul>
-            <li {% if newsblog_category.slug == 'artigos' or category.slug == 'artigos' %} class="active"{% endif %}><a href="/content/category/artigos/">Artigos</a></li>
-            <li {% if newsblog_category.slug == 'capitulos-de-livro' or category.slug == 'capitulos-de-livro' %} class="active"{% endif %}><a href="/content/category/capitulos-de-livro/">Capítulos de Livro</a></li>
-            <li {% if newsblog_category.slug == 'dissertacoes-de-mestrado' or category.slug == 'dissertacoes-de-mestrado' %} class="active"{% endif %}><a href="/content/category/dissertacoes-de-mestrado">Dissertações de Mestrado</a></li>
-            <li {% if newsblog_category.slug == 'teses-de-doutorado' or category.slug == 'teses-de-doutorado' %} class="active"{% endif %}><a href="/content/category/teses-de-doutorado">Teses de Doutorado</a></li>
-            <li class="abraco_academico"><a href="/content/category/abraco-academico">Abraço Acadêmico</a></li>
+            <li {% if newsblog_category.slug == 'artigos' or category.slug == 'artigos' %} class="active"{% endif %}><a href="/content/category/artigos/">{% trans "Articles" %}</a></li>
+            <li {% if newsblog_category.slug == 'capitulos-de-livro' or category.slug == 'capitulos-de-livro' %} class="active"{% endif %}><a href="/content/category/capitulos-de-livro/">{% trans "Book chapters" %}</a></li>
+            <li {% if newsblog_category.slug == 'dissertacoes-de-mestrado' or category.slug == 'dissertacoes-de-mestrado' %} class="active"{% endif %}><a href="/content/category/dissertacoes-de-mestrado">{% trans "MSc dissertations" %}</a></li>
+            <li {% if newsblog_category.slug == 'teses-de-doutorado' or category.slug == 'teses-de-doutorado' %} class="active"{% endif %}><a href="/content/category/teses-de-doutorado">{% trans "PhD dissertations" %}</a></li>
+            <li class="abraco_academico"><a href="/content/category/abraco-academico">Abraço acadêmico</a></li>
         </ul>
 
-    <h2>Projetos de Pesquisa</h2>
+    <h2>{% trans "Research project" %}</h2>
         <ul>
-            <li {% if newsblog_category.slug == 'projetos-de-pesquisa' or category.slug == 'projetos-de-pesquisa' %} class="active"{% endif %}><a href="/content/category/projetos-de-pesquisa/">Projetos</a></li>
+            <li {% if newsblog_category.slug == 'projetos-de-pesquisa' or category.slug == 'projetos-de-pesquisa' %} class="active"{% endif %}><a href="/content/category/projetos-de-pesquisa/">{% trans "Projects" %}</a></li>
         </ul>
-    <h2>Atividades</h2>
+    <h2>{% trans "Activities" %}</h2>
         <ul>
-            <li {% if newsblog_category.slug == 'atividades' or category.slug == 'atividades' %} class="active"{% endif %}><a href="/content/category/atividades/">Atividades</a></li>
+            <li {% if newsblog_category.slug == 'atividades' or category.slug == 'atividades' %} class="active"{% endif %}><a href="/content/category/atividades/">{% trans "Activities" %}</a></li>
         </ul>
 </div>

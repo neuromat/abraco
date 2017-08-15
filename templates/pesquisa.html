@@ -1,15 +1,15 @@
 {% extends "base.html" %}
-{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load cms_tags i18n menu_tags sekizai_tags staticfiles %}
 
 {% block content %}
     <!-- Pesquisa -->
     <div class="row">
         <div class="container  aPesquisa">
             <hr>
-            <h1 class="h1_aPesquisa">Pesquisa</h1>
+            <h1 class="h1_aPesquisa">{% trans "Research" %}</h1>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item active">Pesquisa</li>
+                <li class="breadcrumb-item active">{% trans "Research" %}</li>
             </ol>
             {% placeholder "Conteudo" %}
         </div>
@@ -21,7 +21,7 @@
                 <div class="col-md-4">
                     <div class="aOpcoesPesq">
                         <img src="/static/img/report.svg" alt="">
-                        <h3>Publicações</h3>
+                        <h3>{% trans "Publications" %}</h3>
                         <p>Lista de contribuições acadêmicas da equipe da ABRAÇO</p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                 <div class="col-md-4">
                     <div class="aOpcoesPesq">
                         <img src="/static/img/analytics.svg" alt="">
-                        <h3>Projetos de pesquisa</h3>
+                        <h3>{% trans "Research project" %}</h3>
                         <p>Informações sobre grupos de trabalho e objetivos de pesquisa da ABRAÇO</p>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                 <div class="col-md-4">
                     <div class="aOpcoesPesq">
                         <img src="/static/img/networking.svg" alt="">
-                    <h3>Atividades</h3>
+                    <h3>{% trans "Activities" %}</h3>
                     <p>Eventos científicos e treinamentos passados e por vir</p>
                     </div>
                 </div>

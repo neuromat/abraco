@@ -1,7 +1,8 @@
-<h1 class="h1_aRecursosEducacionais">Recursos Educacionais</h1>
+{% load i18n %}
+<h1 class="h1_aRecursosEducacionais">{% trans "Educational resources" %}</h1>
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">Home</a></li>
-    <li class="breadcrumb-item"><a href="/recursos-educacionais">Recursos Educacionais</a></li>
+    <li class="breadcrumb-item"><a href="/recursos-educacionais">{% trans "Educational resources" %}</a></li>
     {%  if newsblog_category %}
         <li class="breadcrumb-item active">{{ newsblog_category.name }}</li>
     {% else %}

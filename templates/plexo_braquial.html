@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load cms_tags menu_tags sekizai_tags staticfiles %}
+{% load cms_tags i18n menu_tags sekizai_tags staticfiles %}
 
 {% block extrahead %}
     <script src="{% static 'js/menulateralblog.js' %}"></script>
@@ -10,10 +10,10 @@
     <div class="row">
         <div class="container">
             <hr>
-            <h1 class="h1_aPadrao">Lesão do Plexo Braquial</h1>
+            <h1 class="h1_aPadrao">{% trans "Brachial Plexus Injury" %}</h1>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item active">O que é o Plexo Braquial</li>
+                <li class="breadcrumb-item active">{% trans "What is the Brachial Plexus" %}</li>
             </ol>
         </div>
     </div>
@@ -22,13 +22,13 @@
 		<div class="container">
             <!--Navegacao lateral-->
 			<div id="lateralt" class="col-md-3 col-sm-4 col-xs-12">
-				<h2>Sobre</h2>
+				<h2>{% trans "About" %}</h2>
                 <ul>
                     <li {% if current_page.template == "plexo_braquial.html" %}class="active"{% endif %}>
-                        <a href="/lesao-do-plexo-braquial">O que &eacute; o plexo braquial</a>
+                        <a href="/lesao-do-plexo-braquial">{% trans "What is the Brachial Plexus" %}</a>
                     </li>
                     <li {% if current_page.template == "plexo_braquial_tratamento.html" %}class="active"{% endif %}>
-                        <a href="/lesao-do-plexo-braquial-tratamento">Tratamento</a>
+                        <a href="/lesao-do-plexo-braquial-tratamento">{% trans "Treatment" %}</a>
                     </li>
                 </ul>
 			</div>

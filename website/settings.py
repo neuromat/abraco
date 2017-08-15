@@ -97,6 +97,7 @@ TEMPLATES = [
                 'cms.context_processors.cms_settings',
                 'sekizai.context_processors.sekizai',
                 'django.template.context_processors.static',
+                'website.views.google_analytics',
             ],
         },
     },

@@ -27,12 +27,15 @@ h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; color: 
 /*Cabeçalho*/
 header {margin-top: 25px;}
 .aNav{ padding: 0;}
-.aLogo {width: 110%;margin: 0.5em 0;}
+.aLogo {width: 110%; margin: 15px 0 0 0;}
+.aDescLogo {font-size: 17px; color: #006271; font-weight: 600; padding-left: 2px; padding-bottom: 10px; }
+.aEspacocabecalhol {padding-left: 0; }
+aEspacocabecalhor {padding: 0; }
 
 .btn {background-color: #115960;}
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0px auto -webkit-focus-ring-color;}
 
-header .aMenu {color: #fff;margin: 40px 0px 0px;padding: 0;position: relative;padding-right: 15px;}
+header .aMenu {color: #fff;margin: 40px 0px 0px;padding: 0;position: relative;padding-right: 0;}
 header .aMenu i{color: #115c61;font-size: 2em;transform: scaleX(1.2);}
 header .aMenu span.has-tip { border-bottom: 0; cursor: pointer }
 header .aMenu button {float: right;background: transparent;padding-right: 0px;}
@@ -52,7 +55,7 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 .breadcrumb {margin-left: 0px; margin-bottom: 20px; padding: 8px 20px; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
 
 /* Pesquisar */
-div#pesquisar {float: right; margin-top: 3px; margin-right: 5px;}
+div#pesquisar {float: right; margin-top: 3px; margin-right: 0px;}
 
 button.menu-hamburger.btn:active {-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);}
 div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; height: 35px; padding: 5px 10px; line-height: 35px; color: #363636; width: 350px; max-width: 90%;}
@@ -273,16 +276,16 @@ img{max-width: 100%;}
   .aOpcoesPesq img {max-width: 9%;}
 }
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-  .aLogo {width: 75%; margin: 0.5em 0;}
+@media (max-width: 900px) {
+  .aLogo {width: 100%; margin: 15px 0 0 0;  }
+  .aDescLogo {font-size: 13px; text-align: center; }
+  .aMenu {padding-left: 15px!important; margin-top: 30px!important;}
+  .aMenuAbraco {right: 10px!important;}
   .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 20px 10px 20px; margin-bottom: 0px;}
-  /*Links Acoes*/
 
+   /*Links Acoes*/
   #aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc {margin-top: 5px; margin-bottom: 10px;}
   .aIlustracao {padding: 0; margin-top: 20px;}
-  .aMenu {padding-right: 15px!important; margin-top: 30px!important;}
-  img.aLogo {height: 65px; width: auto!important;}
-  .aMenuAbraco {right: 10px!important;}
   header {margin-top: 0px;}
   /* PAGINA Quem somos*/
   .aMembro {width: 49%;}
@@ -291,12 +294,17 @@ img{max-width: 100%;}
   .aOpcoesRec img {max-width: 10%;}
   .aOpcoesPesq img {max-width: 7%;}
   }
+
 /* Portrait phones and smaller */
-@media (max-width: 480px) {
-  /* PAGINA Cabeçalho*/
-  .aLogo {width: 80%; margin: 0.5em 0;}
+@media (max-width: 500px) {
+  /* Cabeçalho*/
+  .aLogo {width: 100%; margin: 8px 0 0 0;}
+  .aDescLogo {font-size: 16px; padding-left: 5px; text-align: center; }
+  .aEspacocabecalhol {padding-left: 1px;}
+  .aMenu {padding: 0 4px 0 4px !important; margin-top: 6px !important; }
   .aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}
-  /* PAGINA Principal*/
+
+    /* PAGINA Principal*/
   .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 10px 10px 10px; margin-bottom: 0px;}
   .aIlustracao {padding: 0; margin-top: 20px;}
   .aIlustracao img {width: 100%; padding: 0;}
@@ -308,6 +316,7 @@ img{max-width: 100%;}
   .aOpcoesRec img {max-width: 20%;}
   .aOpcoesPesq img {max-width: 15%;}
 }
+
 /*Subpaginas Pesquisa (Blog)*/
 @media (max-width: 798px) {
   #lateral * {text-align: center;}

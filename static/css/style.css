@@ -34,7 +34,7 @@ aEspacocabecalhor {padding: 0; }
 
 .btn {background-color: #115960;}
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0px auto -webkit-focus-ring-color;}
-
+button.menu-hamburger.btn {padding-top: 4px; padding-bottom: 4px;}
 header .aMenu {color: #fff;margin: 40px 0px 0px;padding: 0;position: relative;padding-right: 0;}
 header .aMenu i{color: #115c61;font-size: 2em;transform: scaleX(1.2);}
 header .aMenu span.has-tip { border-bottom: 0; cursor: pointer }

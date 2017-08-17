@@ -3,7 +3,7 @@
 
 .row {margin-right: 0; margin-left: 0;}
 
-h1, h2, h3, h4, p, ol, ul{font-family: 'Open Sans', sans-serif;color: #525758;}
+h1, h2, h3, h4, p, ol, ul{font-family: 'Open Sans', sans-serif;color: #3a3d3f;}
 
 h1 {font-size: 30px; text-transform: uppercase;}
 .aSecaoNovidades h2 {font-size: 20px;text-transform: uppercase;text-align: center;font-weight: bold;color: #313535;letter-spacing: 5px;margin: 60px 0px 20px;}
@@ -29,8 +29,13 @@ header {margin-top: 25px;}
 .aNav{ padding: 0;}
 .aLogo {width: 110%; margin: 15px 0 0 0;}
 .aDescLogo {font-size: 17px; color: #006271; font-weight: 600; padding-left: 2px; padding-bottom: 10px; }
+.aDescLogo a {color: #006271; font-style: italic; }
+.aDescLogo a:focus, a:hover {font-style: normal;}
+
 .aEspacocabecalhol {padding-left: 0; }
-aEspacocabecalhor {padding: 0; }
+.aEspacocabecalhor {padding: 0; }
+
+
 
 .btn {background-color: #115960;}
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0px auto -webkit-focus-ring-color;}
@@ -52,7 +57,8 @@ header .aMenuAbraco ul li:first-child a:hover span {border-color: transparent tr
 header .aMenuAbraco ul li:first-child a:hover {border-radius: 2px 2px 0 0; }
 header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
-.breadcrumb {margin-left: 0px; margin-bottom: 20px; padding: 8px 20px; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
+.breadcrumb {margin-left: 0px; margin-bottom: 20px; padding: 8px 0px; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
+.breadcrumb > .active {color: #3a3d3f; }
 
 /* Pesquisar */
 div#pesquisar {float: right; margin-top: 3px; margin-right: 0px;}
@@ -118,7 +124,7 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 .onebyone-carosel:after{content: "";  background: #e5e5e5;  width: 15px;  height: 100%;  position: absolute;  top: 0px;  z-index: 99;  right: 0px;}
 
 /*Rodape*/
-.footer{margin-top: 20px;}
+.footer{margin-top: 20px; background-color: #115960;}
 
 .aRodape {background-color: #115960; padding-top: 10px;}
 .aRodape h3, .aRodape ul, .aRodape a {color: #FFFFFF;}
@@ -214,7 +220,7 @@ img{max-width: 100%;}
 .aRec {margin-bottom: 50px;}
 .aRecEducacionais p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesRec {background-color: #e5e5e5; border-top: 3px solid #BE6837; border-bottom: 5px solid #BE6837; border-radius: 2px; padding: 20px; height: 210px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
+.aOpcoesRec {background-color: #e5e5e5; border-top: 3px solid #BE6837; border-bottom: 5px solid #BE6837; border-radius: 2px; padding: 20px; height: 220px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
 .aOpcoesRec:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 15px}
 .aOpcoesRec img {max-width: 17%;}
 

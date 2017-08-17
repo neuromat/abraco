@@ -194,7 +194,13 @@ img{max-width: 100%;}
 .aOpcoesPesq:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 15px}
 .aOpcoesPesq img {max-width: 12%;}
 
-/*Subpaginas (Lesão)*/
+/*Subpaginas (BLOG geral)*/
+.aConteudopost a {color: #000; background-color: #ffdb41; border-radius: 29px; padding: 1px 10px; border-bottom: 1px solid #f6a500;}
+.aConteudopost a:hover {font-weight: 600; color: #000; background-color: #ffdb41; border-radius: 29px; padding: 1px 10px; border-bottom: 2px solid #f6a500;}
+.panel-group a {color: #000000; background-color: transparent;border-radius: 0; padding: 0; border-bottom: none;}
+.panel-group a:hover {font-weight: 600; color: #000000; background-color: transparent;border-radius: 0; padding: 0; border-bottom: none;}
+
+/*Subpaginas (BLOG Lesão)*/
 #lateralt h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
 #lateralt ul {margin: 0px; padding: 0px; list-style: none;}
 #lateralt ul li {display: block; padding: 5px 15px;}
@@ -205,7 +211,7 @@ img{max-width: 100%;}
 #lateralt ul li.abraco_academico {border-top: 1px solid #BE6837;}
 #lateralt ul li.abraco_academico:hover a {color: #000;}
 
-/*Subpaginas Pesquisa (Blog)*/
+/*Subpaginas (BLOG Pesquisa)*/
 #lateralp h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
 #lateralp ul {margin: 0px; padding: 0px; list-style: none;}
 #lateralp ul li {display: block; padding: 5px 15px;}
@@ -216,7 +222,7 @@ img{max-width: 100%;}
 #lateralp ul li.abraco_academico {border-top: 1px solid #BE6837;}
 #lateralp ul li.abraco_academico:hover a {color: #000;}
 
-/*Recursos Educacionais (Blog)*/
+/*Subpaginas (BLOG Recursos Educacionais*/
 .aRec {margin-bottom: 50px;}
 .aRecEducacionais p {padding-left: 20px; padding-right: 20px;}
 
@@ -226,7 +232,6 @@ img{max-width: 100%;}
 
 /* Excluir estilo quando houver conteúdo disponivel em eventos e cartilhas*/
 .aOpcoesRec span {color: #FFFFFF; font-weight: lighter; font-size: 13px; background-color: #BE6837; padding: 7px; border-radius: 20px;}
-
 
 #lateralr h2 {color: #2c2626; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
 #lateralr ul {margin: 0px; padding: 0px; list-style: none;}
@@ -252,11 +257,15 @@ img{max-width: 100%;}
 .tags a {color: #125F65; background-color: #E8E8E8; padding: 5px; border-radius: 4px;}
 .tags a:hover {color: #125F65; background-color: #c9cccb; padding: 5px; border-radius: 4px;}
 
+
+
 /*Ajustes na paginacao do bootstrap*/
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {background-color: #75B2B7; border-color: #75B2B7;
 }
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: #125F65;}
 .pagination>li>a, .pagination>li>span {color: #125F65;}
+
+
 
 /*Ajustes dispositivos*/
 

@@ -65,12 +65,13 @@ div#pesquisar {float: right; margin-top: 3px; margin-right: 0px;}
 
 button.menu-hamburger.btn:active {-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);}
 div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; height: 35px; padding: 5px 10px; line-height: 35px; color: #363636; width: 350px; max-width: 90%;}
-#pesquisar form button {background: #E4E1E1; width: 40px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px;    font-size: 27px; padding: 0px; color: #115c61;}
+#pesquisar form button {background: #E4E1E1; width: 40px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px; font-size: 27px; padding: 0px; color: #115c61; border-radius: 2px;}
 
 /*PAGINA Principal*/
 
 /*Texto de introducao*/
-.aIntroduction {background-image: url(../img/bg_verde.png);background-repeat: repeat-x;background-size: 185px;padding: 40px 40px 10px 40px;margin-bottom: 10px;}
+.aDelimitador {border-bottom: 1px solid #b9b9b9; margin-bottom: 5px;}
+.aIntroduction {background-image: url(../img/bg_verde.png);background-repeat: repeat-x;background-size: 185px;padding: 40px 40px 10px 40px;margin-bottom: 10px; margin-top: 15px; border-radius: 2px;}
 .aIntroduction p {color: #FFFFFF; font-size: 19px; font-weight: 300; margin-bottom: 20px!important;}
 .aIntrod a {color: #FFFFFF; font-style: italic;}
 .aIntrod a:hover {color: #FFFFFF; text-decoration: none; font-style: normal;}
@@ -80,7 +81,7 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 #aBotaoRecEduc {background-color: #F8F8F8;border-bottom: 10px solid #BE6837;border-radius: 2px;padding: 10px;box-shadow: 1px 0px 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0px 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0px 10px rgba(0,0,0,.5);}
 
 /*Ilustracao do braco*/
-.aIlustracaoMob {    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAADCAYAAAC56t6BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAATSURBVBhXY3j69Ol/EEZnPP0PAClOFhW8TqRvAAAAAElFTkSuQmCC);background-size: 100% 50%;    background-repeat: no-repeat;    background-position: bottom center;}
+.aIlustracaoMob {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAADCAYAAAC56t6BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAATSURBVBhXY3j69Ol/EEZnPP0PAClOFhW8TqRvAAAAAElFTkSuQmCC);background-size: 100% 50%; background-repeat: no-repeat; background-position: bottom center;}
 .aIlustracao {padding: 0 40px;}
 .aIlustracao img {width: 100%;box-shadow: 0px 5px 10px rgba(0,0,0,.5);-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.5);-moz-box-shadow: 0px 5px 10px rgba(0,0,0,.5);.7)}
 

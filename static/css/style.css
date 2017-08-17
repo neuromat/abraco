@@ -27,7 +27,7 @@ h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; color: 
 /*Cabeçalho*/
 header {margin-top: 25px;}
 .aNav{ padding: 0; margin-bottom: 5px;}
-.aLogo {width: 100%; margin: 17px 0 0 0;}
+.aLogo {width: 100%; margin: 14px 0 0 0;}
 .aAbraco {font-size: 47px; color: #178787; font-weight: 600; margin: 0;}
 .aAbraco span {color: #006271;}
 .aDescLogo {font-size: 17px; color: #137B7B; font-weight: 600;}
@@ -244,7 +244,7 @@ img{max-width: 100%;}
 #lateralr ul li.abraco_academico:hover a {color: #2c2626;}
 
 div#loop_posts {padding-left: 30px;}
-.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #E8E8E8; border-right: 1px solid #F6F6F6; border-bottom: 1px solid #F6F6F6; border-top: 1px solid #F6F6F6; padding: 0px 15px 20px 15px; font-size: 16px; background: #F6F6F6; float: left; width: 100%; border-radius: 2px;}
+.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #E8E8E8; border-right: 1px solid #F6F6F6; border-bottom: 1px solid #F6F6F6; border-top: 1px solid #F6F6F6; padding: 0px 15px 20px 15px; font-size: 16px; background: #F6F6F6; float: left; width: 100%;}
 .item_post img {float: left;margin: 0px 10px 5px 0px;}
 .item_post a {color: #2c2626;;}
 
@@ -317,7 +317,7 @@ img{max-width: 100%;}
 @media (max-width: 500px) {
   /* Cabeçalho*/
   .aAbraco {font-size: 20px; margin: 6px 0 0 0;}
-  .aLogo {width: 100%; margin: 16px 0 0 0;}
+  .aLogo {width: 100%; margin: 12px 0 0 0;}
   .aDescLogo {font-size: 11px; }
   .aEspacocabecalhol {padding-left: 4px;}
   .aMenu {padding: 0 4px 0 4px !important; margin-top: 6px !important; }

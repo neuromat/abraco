@@ -3,7 +3,7 @@
 
 .row {margin-right: 0; margin-left: 0;}
 
-h1, h2, h3, h4, p, ol, ul{font-family: 'Open Sans', sans-serif;color: #525758;}
+h1, h2, h3, h4, p, ol, ul{font-family: 'Open Sans', sans-serif;color: #3a3d3f;}
 
 h1 {font-size: 30px; text-transform: uppercase;}
 .aSecaoNovidades h2 {font-size: 20px;text-transform: uppercase;text-align: center;font-weight: bold;color: #313535;letter-spacing: 5px;margin: 60px 0px 20px;}
@@ -27,12 +27,20 @@ h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; color: 
 /*Cabeçalho*/
 header {margin-top: 25px;}
 .aNav{ padding: 0;}
-.aLogo {width: 110%;margin: 0.5em 0;}
+.aLogo {width: 110%; margin: 15px 0 0 0;}
+.aDescLogo {font-size: 17px; color: #006271; font-weight: 600; padding-left: 2px; padding-bottom: 10px; }
+.aDescLogo a {color: #006271; font-style: italic; }
+.aDescLogo a:focus, a:hover {font-style: normal;}
+
+.aEspacocabecalhol {padding-left: 0; }
+.aEspacocabecalhor {padding: 0; }
+
+
 
 .btn {background-color: #115960;}
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0px auto -webkit-focus-ring-color;}
-
-header .aMenu {color: #fff;margin: 40px 0px 0px;padding: 0;position: relative;padding-right: 15px;}
+button.menu-hamburger.btn {padding-top: 4px; padding-bottom: 4px;}
+header .aMenu {color: #fff;margin: 40px 0px 0px;padding: 0;position: relative;padding-right: 0;}
 header .aMenu i{color: #115c61;font-size: 2em;transform: scaleX(1.2);}
 header .aMenu span.has-tip { border-bottom: 0; cursor: pointer }
 header .aMenu button {float: right;background: transparent;padding-right: 0px;}
@@ -49,19 +57,21 @@ header .aMenuAbraco ul li:first-child a:hover span {border-color: transparent tr
 header .aMenuAbraco ul li:first-child a:hover {border-radius: 2px 2px 0 0; }
 header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
-.breadcrumb {margin-left: 0px; margin-bottom: 20px; padding: 8px 20px; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
+.breadcrumb {margin-left: 0px; margin-bottom: 20px; padding: 8px 0px; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
+.breadcrumb > .active {color: #3a3d3f; }
 
 /* Pesquisar */
-div#pesquisar {float: right; margin-top: 3px; margin-right: 5px;}
+div#pesquisar {float: right; margin-top: 3px; margin-right: 0px;}
 
 button.menu-hamburger.btn:active {-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);}
 div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; height: 35px; padding: 5px 10px; line-height: 35px; color: #363636; width: 350px; max-width: 90%;}
-#pesquisar form button {background: #E4E1E1; width: 40px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px;    font-size: 27px; padding: 0px; color: #115c61;}
+#pesquisar form button {background: #E4E1E1; width: 40px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px; font-size: 27px; padding: 0px; color: #115c61; border-radius: 2px;}
 
 /*PAGINA Principal*/
 
 /*Texto de introducao*/
-.aIntroduction {background-image: url(../img/bg_verde.png);background-repeat: repeat-x;background-size: 185px;padding: 40px 40px 10px 40px;margin-bottom: 10px;}
+.aDelimitador {border-bottom: 1px solid #E2DEDA; margin-bottom: 5px;}
+.aIntroduction {background-image: url(../img/bg_verde.png);background-repeat: repeat-x;background-size: 185px;padding: 40px 40px 10px 40px;margin-bottom: 10px; margin-top: 15px; border-radius: 2px;}
 .aIntroduction p {color: #FFFFFF; font-size: 19px; font-weight: 300; margin-bottom: 20px!important;}
 .aIntrod a {color: #FFFFFF; font-style: italic;}
 .aIntrod a:hover {color: #FFFFFF; text-decoration: none; font-style: normal;}
@@ -71,7 +81,7 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 #aBotaoRecEduc {background-color: #F8F8F8;border-bottom: 10px solid #BE6837;border-radius: 2px;padding: 10px;box-shadow: 1px 0px 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0px 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0px 10px rgba(0,0,0,.5);}
 
 /*Ilustracao do braco*/
-.aIlustracaoMob {    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAADCAYAAAC56t6BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAATSURBVBhXY3j69Ol/EEZnPP0PAClOFhW8TqRvAAAAAElFTkSuQmCC);background-size: 100% 50%;    background-repeat: no-repeat;    background-position: bottom center;}
+.aIlustracaoMob {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAADCAYAAAC56t6BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAATSURBVBhXY3j69Ol/EEZnPP0PAClOFhW8TqRvAAAAAElFTkSuQmCC);background-size: 100% 50%; background-repeat: no-repeat; background-position: bottom center;}
 .aIlustracao {padding: 0 40px;}
 .aIlustracao img {width: 100%;box-shadow: 0px 5px 10px rgba(0,0,0,.5);-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.5);-moz-box-shadow: 0px 5px 10px rgba(0,0,0,.5);.7)}
 
@@ -115,7 +125,7 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 .onebyone-carosel:after{content: "";  background: #e5e5e5;  width: 15px;  height: 100%;  position: absolute;  top: 0px;  z-index: 99;  right: 0px;}
 
 /*Rodape*/
-.footer{margin-top: 20px;}
+.footer{margin-top: 20px; background-color: #115960;}
 
 .aRodape {background-color: #115960; padding-top: 10px;}
 .aRodape h3, .aRodape ul, .aRodape a {color: #FFFFFF;}
@@ -211,7 +221,7 @@ img{max-width: 100%;}
 .aRec {margin-bottom: 50px;}
 .aRecEducacionais p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesRec {background-color: #e5e5e5; border-top: 3px solid #BE6837; border-bottom: 5px solid #BE6837; border-radius: 2px; padding: 20px; height: 210px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
+.aOpcoesRec {background-color: #e5e5e5; border-top: 3px solid #BE6837; border-bottom: 5px solid #BE6837; border-radius: 2px; padding: 20px; height: 220px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
 .aOpcoesRec:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 15px}
 .aOpcoesRec img {max-width: 17%;}
 
@@ -273,16 +283,16 @@ img{max-width: 100%;}
   .aOpcoesPesq img {max-width: 9%;}
 }
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-  .aLogo {width: 75%; margin: 0.5em 0;}
+@media (max-width: 900px) {
+  .aLogo {width: 100%; margin: 15px 0 0 0;  }
+  .aDescLogo {font-size: 13px; text-align: center; }
+  .aMenu {padding-left: 15px!important; margin-top: 30px!important;}
+  .aMenuAbraco {right: 10px!important;}
   .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 20px 10px 20px; margin-bottom: 0px;}
-  /*Links Acoes*/
 
+   /*Links Acoes*/
   #aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc {margin-top: 5px; margin-bottom: 10px;}
   .aIlustracao {padding: 0; margin-top: 20px;}
-  .aMenu {padding-right: 15px!important; margin-top: 30px!important;}
-  img.aLogo {height: 65px; width: auto!important;}
-  .aMenuAbraco {right: 10px!important;}
   header {margin-top: 0px;}
   /* PAGINA Quem somos*/
   .aMembro {width: 49%;}
@@ -291,12 +301,17 @@ img{max-width: 100%;}
   .aOpcoesRec img {max-width: 10%;}
   .aOpcoesPesq img {max-width: 7%;}
   }
+
 /* Portrait phones and smaller */
-@media (max-width: 480px) {
-  /* PAGINA Cabeçalho*/
-  .aLogo {width: 80%; margin: 0.5em 0;}
+@media (max-width: 500px) {
+  /* Cabeçalho*/
+  .aLogo {width: 100%; margin: 8px 0 0 0;}
+  .aDescLogo {font-size: 16px; padding-left: 5px; text-align: center; }
+  .aEspacocabecalhol {padding-left: 1px;}
+  .aMenu {padding: 0 4px 0 4px !important; margin-top: 6px !important; }
   .aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}
-  /* PAGINA Principal*/
+
+    /* PAGINA Principal*/
   .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 10px 10px 10px; margin-bottom: 0px;}
   .aIlustracao {padding: 0; margin-top: 20px;}
   .aIlustracao img {width: 100%; padding: 0;}
@@ -308,6 +323,7 @@ img{max-width: 100%;}
   .aOpcoesRec img {max-width: 20%;}
   .aOpcoesPesq img {max-width: 15%;}
 }
+
 /*Subpaginas Pesquisa (Blog)*/
 @media (max-width: 798px) {
   #lateral * {text-align: center;}

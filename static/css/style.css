@@ -70,7 +70,7 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 /*PAGINA Principal*/
 
 /*Texto de introducao*/
-.aDelimitador {border-bottom: 1px solid #b9b9b9; margin-bottom: 5px;}
+.aDelimitador {border-bottom: 1px solid #E2DEDA; margin-bottom: 5px;}
 .aIntroduction {background-image: url(../img/bg_verde.png);background-repeat: repeat-x;background-size: 185px;padding: 40px 40px 10px 40px;margin-bottom: 10px; margin-top: 15px; border-radius: 2px;}
 .aIntroduction p {color: #FFFFFF; font-size: 19px; font-weight: 300; margin-bottom: 20px!important;}
 .aIntrod a {color: #FFFFFF; font-style: italic;}

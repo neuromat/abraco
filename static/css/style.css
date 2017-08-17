@@ -26,16 +26,17 @@ h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; color: 
 
 /*Cabeçalho*/
 header {margin-top: 25px;}
-.aNav{ padding: 0;}
-.aLogo {width: 110%; margin: 15px 0 0 0;}
-.aDescLogo {font-size: 17px; color: #006271; font-weight: 600; padding-left: 2px; padding-bottom: 10px; }
-.aDescLogo a {color: #006271; font-style: italic; }
-.aDescLogo a:focus, a:hover {font-style: normal;}
+.aNav{ padding: 0; margin-bottom: 5px;}
+.aLogo {width: 100%; margin: 17px 0 0 0;}
+.aAbraco {font-size: 47px; color: #178787; font-weight: 600; margin: 0;}
+.aAbraco span {color: #006271;}
+.aDescLogo {font-size: 17px; color: #137B7B; font-weight: 600;}
+.aDescLogo span {color: #006271;}
+.aDescLogo a {color: #137B7B;}
+.aDescLogo a:focus, a:hover {font-style: italic;}
 
-.aEspacocabecalhol {padding-left: 0; }
-.aEspacocabecalhor {padding: 0; }
-
-
+.aEspacocabecalhol {padding: 0 0; }
+.aEspacocabecalhor {padding: 0 0 0 8px; }
 
 .btn {background-color: #115960;}
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0px auto -webkit-focus-ring-color;}
@@ -217,7 +218,6 @@ img{max-width: 100%;}
 #lateralp ul li.abraco_academico:hover a {color: #000;}
 
 /*Recursos Educacionais (Blog)*/
-
 .aRec {margin-bottom: 50px;}
 .aRecEducacionais p {padding-left: 20px; padding-right: 20px;}
 
@@ -258,15 +258,17 @@ img{max-width: 100%;}
 }
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: #125F65;}
 .pagination>li>a, .pagination>li>span {color: #125F65;}
+
 /*Ajustes dispositivos*/
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
   .container {width: 1200px;}
-}
+  }
 @media (min-width: 990px) and (max-width: 1200px){
   div#aBotaoPesquisa {height: 104px;}
   div#aBotaoPesquisa h2 {line-height: 44px;}
+
   .aMembro {width: 25%;}
   div#outros {width: 100%; margin: 0px;}
   #outros > .aMembro {width: 24%;}
@@ -281,16 +283,17 @@ img{max-width: 100%;}
   .aMembro a div{padding: 20% 0px;}
   .aOpcoesRec img {max-width: 9%;}
   .aOpcoesPesq img {max-width: 9%;}
-}
+  }
 /* Landscape phones and portrait tablets */
-@media (max-width: 900px) {
-  .aLogo {width: 100%; margin: 15px 0 0 0;  }
-  .aDescLogo {font-size: 13px; text-align: center; }
+@media (max-width: 995px) {
+  .aAbraco {font-size: 35px; margin: 24px 0 0 0;}
+  .aLogo {width: 100%; margin: 35px 0 0 0; }
+  .aDescLogo {font-size: 13px; }
   .aMenu {padding-left: 15px!important; margin-top: 30px!important;}
   .aMenuAbraco {right: 10px!important;}
   .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 20px 10px 20px; margin-bottom: 0px;}
 
-   /*Links Acoes*/
+  /*Links Acoes*/
   #aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc {margin-top: 5px; margin-bottom: 10px;}
   .aIlustracao {padding: 0; margin-top: 20px;}
   header {margin-top: 0px;}
@@ -305,9 +308,10 @@ img{max-width: 100%;}
 /* Portrait phones and smaller */
 @media (max-width: 500px) {
   /* Cabeçalho*/
-  .aLogo {width: 100%; margin: 8px 0 0 0;}
-  .aDescLogo {font-size: 16px; padding-left: 5px; text-align: center; }
-  .aEspacocabecalhol {padding-left: 1px;}
+  .aAbraco {font-size: 20px; margin: 6px 0 0 0;}
+  .aLogo {width: 100%; margin: 16px 0 0 0;}
+  .aDescLogo {font-size: 11px; }
+  .aEspacocabecalhol {padding-left: 4px;}
   .aMenu {padding: 0 4px 0 4px !important; margin-top: 6px !important; }
   .aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}
 
@@ -322,7 +326,7 @@ img{max-width: 100%;}
   .aMembro a div {padding: 20% 0px;}
   .aOpcoesRec img {max-width: 20%;}
   .aOpcoesPesq img {max-width: 15%;}
-}
+  }
 
 /*Subpaginas Pesquisa (Blog)*/
 @media (max-width: 798px) {

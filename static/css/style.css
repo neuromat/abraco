@@ -244,15 +244,15 @@ img{max-width: 100%;}
 #lateralr ul li.abraco_academico:hover a {color: #2c2626;}
 
 div#loop_posts {padding-left: 30px;}
-.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #E8E8E8; border-right: 1px solid #F6F6F6; border-bottom: 1px solid #F6F6F6; border-top: 1px solid #F6F6F6; padding: 10px 15px; font-size: 16px; background: #F6F6F6; float: left; width: 100%;}
+.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #E8E8E8; border-right: 1px solid #F6F6F6; border-bottom: 1px solid #F6F6F6; border-top: 1px solid #F6F6F6; padding: 0px 15px 20px 15px; font-size: 16px; background: #F6F6F6; float: left; width: 100%; border-radius: 2px;}
 .item_post img {float: left;margin: 0px 10px 5px 0px;}
 .item_post a {color: #2c2626;;}
 
 p:last-child {margin: 0px;}
 img{max-width: 100%;}
 
-.read-more a {color: #125F65; background-color: #E8E8E8; padding: 5px; border-radius: 4px;}
-.read-more a:hover {color: #125F65; background-color: #E8E8E8; padding: 5px; border-radius: 4px; border-bottom: solid 1px #125F65;}
+.read-more a {color: #3a3d3f; background-color: #D7D7D7; padding: 5px 10px; border-radius: 4px; border-bottom: solid 1px #969696}
+.read-more a:hover {color: #3a3d3f; background-color: #D7D7D7; padding: 6px 11px; border-radius: 4px; border-bottom: solid 2px #969696;}
 
 .tags a {color: #125F65; background-color: #E8E8E8; padding: 5px; border-radius: 4px;}
 .tags a:hover {color: #125F65; background-color: #c9cccb; padding: 5px; border-radius: 4px;}

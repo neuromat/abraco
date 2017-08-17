@@ -33,7 +33,6 @@ header {margin-top: 25px;}
 .aDescLogo {font-size: 17px; color: #137B7B; font-weight: 600;}
 .aDescLogo span {color: #006271;}
 .aDescLogo a {color: #137B7B;}
-.aDescLogo a:focus, a:hover {font-style: italic;}
 
 .aEspacocabecalhol {padding: 0 0; }
 .aEspacocabecalhor {padding: 0 0 0 8px; }

@@ -195,7 +195,7 @@ img{max-width: 100%;}
 .aOpcoesPesq img {max-width: 12%;}
 
 /*Subpaginas (BLOG geral)*/
-.aConteudopost p a {color: #000; background-color: #ffdb41; border-radius: 29px; padding: 1px 10px;}
+.aConteudopost p a {color: #000; background-color: #ffdb41; border-radius: 29px; padding: 1px 10px; border-bottom: 1px solid #f6a500;}
 .aConteudopost p a:hover {font-weight: 600; color: #000; background-color: #ffdb41; border-radius: 29px; padding: 1px 10px; border-bottom: 2px solid #f6a500;}
 .panel-group a {color: #000000; background-color: transparent;border-radius: 0; padding: 0; border-bottom: none;}
 .panel-group a:hover {font-weight: 600; color: #000000; background-color: transparent;border-radius: 0; padding: 0; border-bottom: none;}

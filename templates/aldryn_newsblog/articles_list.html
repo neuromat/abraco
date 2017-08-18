@@ -5,7 +5,7 @@
     {% for article in article_list %}
         {% include "aldryn_newsblog/includes/article.html" %}
     {% empty %}
-        <p>{% trans "No items available" %}</p>
+        <p>{% trans "No items available." %}</p>
     {% endfor %}
     {% include "aldryn_newsblog/includes/pagination.html" %}
 {% endblock %}

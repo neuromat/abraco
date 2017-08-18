@@ -8,7 +8,6 @@
 {% block content %}
     <div class="row">
         <div class="container">
-        <hr>
             <!--Check the correct breadcrumb to use-->
             {% if newsblog_category %}
                 {% if newsblog_category.slug == 'abraco-academico' %}
@@ -30,7 +29,7 @@
     <div class="container">
         <div class="row">
             {% static_placeholder 'menu' %}
-            <div id="loop_posts" class="pull-right col-md-9 col-sm-8 col-xs-12">
+            <div id="loop_posts" class="pull-right col-md-9 col-sm-8 col-xs-12 aConteudopost">
                 {% block newsblog_content %}
                 {% endblock %}
             </div>

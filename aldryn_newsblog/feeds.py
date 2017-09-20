@@ -18,7 +18,8 @@ from aldryn_newsblog.utils.utilities import get_valid_languages
 
 class LatestArticlesFeed(Feed):
 
-    description_template = 'feeds/test.html'
+    title_template = 'feed/title.html'
+    description_template = 'feed/test.html'
 
     def __call__(self, request, *args, **kwargs):
         self.namespace, self.config = get_app_instance(request)

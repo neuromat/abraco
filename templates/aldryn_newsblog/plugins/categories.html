@@ -8,7 +8,7 @@
     {% endif %}
 {% elif article %}
     {% for category in article.categories.all %}
-        {% if category.slug == 'abraco-academico' or newsblog_category.slug == 'videos' %}
+        {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
             {% include "menu_recursos_educacionais.html" %}
         {% else %}
             {% include "menu_pesquisa.html" %}

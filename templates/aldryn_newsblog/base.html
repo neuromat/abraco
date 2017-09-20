@@ -17,7 +17,7 @@
                 {% endif %}
             {% elif article %}
                 {% for category in article.categories.all %}
-                    {% if category.slug == 'abraco-academico' or newsblog_category.slug == 'videos' %}
+                    {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
                         {% include "breadcrumb_recursos_educacionais.html" %}
                     {% else %}
                         {% include "breadcrumb_pesquisa.html" %}

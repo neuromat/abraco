@@ -1,4 +1,11 @@
-{% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail %}
+{% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail extra_tags_abraco %}
+
+<script>
+   $(function(){
+       $('iframe').attr('id','id_video');
+       $('#id_video').addClass('embed-responsive-item');
+   });
+</script>
 
 <!-- Resumo dos posts -->
 {% if not detail_view %}
@@ -7,9 +14,16 @@
             <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a>
         </h2>
 
-        <div class="lead">
-            {{ article.lead_in|safe|truncatewords:80 }}
-        </div>
+        {% if article|placeholder_has_video %}
+            <div class="embed-responsive embed-responsive-16by9">
+                {% render_placeholder article.content language placeholder_language %}
+            </div>
+            <br>
+        {% else  %}
+            <div class="lead">
+                {{ article.lead_in|safe|truncatewords:80 }}
+            </div>
+        {% endif %}
 
         <div class="read-more">
             <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">Leia mais</a>
@@ -39,9 +53,12 @@
             {{ article.lead_in|safe }}
         </div>
 
-        <div class="content">
-            {% render_placeholder article.content language placeholder_language %}
-        </div>
+        {% if article|placeholder_has_video %}
+            <div class="content embed-responsive embed-responsive-16by9">
+                {% render_placeholder article.content language placeholder_language %}
+            </div>
+            <br>
+        {% endif %}
 
         {% if article.tags %}
             <p class="tags">

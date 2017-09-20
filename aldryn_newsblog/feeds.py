@@ -15,9 +15,13 @@ from aldryn_categories.models import Category
 from aldryn_newsblog.models import Article
 from aldryn_newsblog.utils.utilities import get_valid_languages
 
+# our feed, work in progress
+from feed.feed import NeuroMatFeed
+
 
 class LatestArticlesFeed(Feed):
 
+    feed_type = NeuroMatFeed
     title_template = 'feed/title.html'
     description_template = 'feed/test.html'
 

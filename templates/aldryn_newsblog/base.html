@@ -10,14 +10,14 @@
         <div class="container">
             <!--Check the correct breadcrumb to use-->
             {% if newsblog_category %}
-                {% if newsblog_category.slug == 'abraco-academico' %}
+                {% if newsblog_category.slug == 'abraco-academico' or newsblog_category.slug == 'videos' %}
                     {% include "breadcrumb_recursos_educacionais.html" %}
                 {% else %}
                     {% include "breadcrumb_pesquisa.html" %}
                 {% endif %}
             {% elif article %}
                 {% for category in article.categories.all %}
-                    {% if category.slug == 'abraco-academico' %}
+                    {% if category.slug == 'abraco-academico' or newsblog_category.slug == 'videos' %}
                         {% include "breadcrumb_recursos_educacionais.html" %}
                     {% else %}
                         {% include "breadcrumb_pesquisa.html" %}

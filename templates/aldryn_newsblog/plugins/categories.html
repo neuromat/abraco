@@ -1,14 +1,14 @@
 {% load i18n apphooks_config_tags %}
 
 {% if newsblog_category %}
-    {% if newsblog_category.slug == 'abraco-academico' %}
+    {% if newsblog_category.slug == 'abraco-academico' or newsblog_category.slug == 'videos' %}
         {% include "menu_recursos_educacionais.html" %}
     {% else %}
         {% include "menu_pesquisa.html" %}
     {% endif %}
 {% elif article %}
     {% for category in article.categories.all %}
-        {% if category.slug == 'abraco-academico' %}
+        {% if category.slug == 'abraco-academico' or newsblog_category.slug == 'videos' %}
             {% include "menu_recursos_educacionais.html" %}
         {% else %}
             {% include "menu_pesquisa.html" %}

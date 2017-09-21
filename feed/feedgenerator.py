@@ -8,7 +8,7 @@ from django.utils.encoding import force_text, iri_to_uri
 from django.utils.six import StringIO
 # from django.utils.six.moves.urllib.parse import urlparse
 from django.utils.timezone import is_aware
-from django.utils.xmlutils import SimplerXMLGenerator
+from .simple_xml import SimplerXMLGenerator
 
 
 def rfc2822_date(date):
@@ -239,154 +239,6 @@ class RssFeed(SyndicationFeed):
         handler.endElement("channel")
 
 
-class RssUserland091Feed(RssFeed):
-    _version = "0.91"
-
-    def add_item_elements(self, handler, item):
-        handler.addQuickElement("title", item['title'])
-        handler.addQuickElement("link", item['link'])
-        if item['description'] is not None:
-            handler.addQuickElement("description", item['description'])
-
-
-class Rss201rev2Feed(RssFeed):
-    # Spec: http://blogs.law.harvard.edu/tech/rss
-    _version = "2.0"
-
-    def add_item_elements(self, handler, item):
-        handler.addQuickElement("title", item['title'])
-        handler.addQuickElement("link", item['link'])
-        if item['description'] is not None:
-            handler.addQuickElement("description", item['description'])
-
-        # Author information.
-        if item["author_name"] and item["author_email"]:
-            handler.addQuickElement("author", "%s (%s)" %
-                (item['author_email'], item['author_name']))
-        elif item["author_email"]:
-            handler.addQuickElement("author", item["author_email"])
-        elif item["author_name"]:
-            handler.addQuickElement("dc:creator", item["author_name"],
-                {"xmlns:dc": "http://purl.org/dc/elements/1.1/"})
-
-        if item['pubdate'] is not None:
-            handler.addQuickElement("pubDate", rfc2822_date(item['pubdate']))
-        if item['comments'] is not None:
-            handler.addQuickElement("comments", item['comments'])
-        if item['unique_id'] is not None:
-            guid_attrs = {}
-            if isinstance(item.get('unique_id_is_permalink'), bool):
-                guid_attrs['isPermaLink'] = str(
-                    item['unique_id_is_permalink']).lower()
-            handler.addQuickElement("guid", item['unique_id'], guid_attrs)
-        if item['ttl'] is not None:
-            handler.addQuickElement("ttl", item['ttl'])
-
-        # Enclosure.
-        if item['enclosure'] is not None:
-            handler.addQuickElement("enclosure", '',
-                {"url": item['enclosure'].url, "length": item['enclosure'].length,
-                    "type": item['enclosure'].mime_type})
-
-        # Categories.
-        for cat in item['categories']:
-            handler.addQuickElement("category", cat)
-
-
-class Atom1Feed(SyndicationFeed):
-    # Spec: http://atompub.org/2005/07/11/draft-ietf-atompub-format-10.html
-    mime_type = 'application/atom+xml; charset=utf-8'
-    ns = "http://www.w3.org/2005/Atom"
-
-    def write(self, outfile, encoding):
-        handler = SimplerXMLGenerator(outfile, encoding)
-        handler.startDocument()
-        handler.startElement('feed', self.root_attributes())
-        self.add_root_elements(handler)
-        self.write_items(handler)
-        handler.endElement("feed")
-
-    def root_attributes(self):
-        if self.feed['language'] is not None:
-            return {"xmlns": self.ns, "xml:lang": self.feed['language']}
-        else:
-            return {"xmlns": self.ns}
-
-    def add_root_elements(self, handler):
-        handler.addQuickElement("title", self.feed['title'])
-        handler.addQuickElement("link", "", {"rel": "alternate", "href": self.feed['link']})
-        if self.feed['feed_url'] is not None:
-            handler.addQuickElement("link", "", {"rel": "self", "href": self.feed['feed_url']})
-        handler.addQuickElement("id", self.feed['id'])
-        handler.addQuickElement("updated", rfc3339_date(self.latest_post_date()))
-        if self.feed['author_name'] is not None:
-            handler.startElement("author", {})
-            handler.addQuickElement("name", self.feed['author_name'])
-            if self.feed['author_email'] is not None:
-                handler.addQuickElement("email", self.feed['author_email'])
-            if self.feed['author_link'] is not None:
-                handler.addQuickElement("uri", self.feed['author_link'])
-            handler.endElement("author")
-        if self.feed['subtitle'] is not None:
-            handler.addQuickElement("subtitle", self.feed['subtitle'])
-        for cat in self.feed['categories']:
-            handler.addQuickElement("category", "", {"term": cat})
-        if self.feed['feed_copyright'] is not None:
-            handler.addQuickElement("rights", self.feed['feed_copyright'])
-
-    def write_items(self, handler):
-        for item in self.items:
-            handler.startElement("entry", self.item_attributes(item))
-            self.add_item_elements(handler, item)
-            handler.endElement("entry")
-
-    def add_item_elements(self, handler, item):
-        handler.addQuickElement("title", item['title'])
-        handler.addQuickElement("link", "", {"href": item['link'], "rel": "alternate"})
-
-        if item['pubdate'] is not None:
-            handler.addQuickElement('published', rfc3339_date(item['pubdate']))
-
-        if item['updateddate'] is not None:
-            handler.addQuickElement('updated', rfc3339_date(item['updateddate']))
-
-        # Author information.
-        if item['author_name'] is not None:
-            handler.startElement("author", {})
-            handler.addQuickElement("name", item['author_name'])
-            if item['author_email'] is not None:
-                handler.addQuickElement("email", item['author_email'])
-            if item['author_link'] is not None:
-                handler.addQuickElement("uri", item['author_link'])
-            handler.endElement("author")
-
-        # Unique ID.
-        if item['unique_id'] is not None:
-            unique_id = item['unique_id']
-        else:
-            unique_id = get_tag_uri(item['link'], item['pubdate'])
-        handler.addQuickElement("id", unique_id)
-
-        # Summary.
-        if item['description'] is not None:
-            handler.addQuickElement("summary", item['description'], {"type": "html"})
-
-        # Enclosure.
-        if item['enclosure'] is not None:
-            handler.addQuickElement("link", '',
-                {"rel": "enclosure",
-                 "href": item['enclosure'].url,
-                 "length": item['enclosure'].length,
-                 "type": item['enclosure'].mime_type})
-
-        # Categories.
-        for cat in item['categories']:
-            handler.addQuickElement("category", "", {"term": cat})
-
-        # Rights.
-        if item['item_copyright'] is not None:
-            handler.addQuickElement("rights", item['item_copyright'])
-
 class NeuroMatFeed(RssFeed):
     _version = "2.0"
 
@@ -431,4 +283,4 @@ class NeuroMatFeed(RssFeed):
 
 # This isolates the decision of what the system default is, so calling code can
 # do "feedgenerator.DefaultFeed" instead of "feedgenerator.Rss201rev2Feed".
-DefaultFeed = Rss201rev2Feed
+DefaultFeed = NeuroMatFeed

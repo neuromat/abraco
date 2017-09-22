@@ -30,8 +30,6 @@ def escape(data, entities={}):
 
     # must do ampersand first
     data = data.replace("&", "&amp;")
-    data = data.replace(">", "&gt;")
-    data = data.replace("<", "&lt;")
     if entities:
         data = __dict_replace(data, entities)
     return data

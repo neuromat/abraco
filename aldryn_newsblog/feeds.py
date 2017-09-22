@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from django.contrib.sites.models import Site
-from django.contrib.syndication.views import Feed
 try:
     from django.contrib.sites.shortcuts import get_current_site
 except ImportError:

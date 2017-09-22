@@ -203,7 +203,7 @@ class RssFeed(SyndicationFeed):
         handler.startDocument()
         handler.startElement("rss", self.rss_attributes())
         handler.startElement("channel", self.root_attributes())
-        self.add_root_elements(handler)
+        # self.add_root_elements(handler)
         self.write_items(handler)
         self.endChannelElement(handler)
         handler.endElement("rss")
@@ -239,14 +239,15 @@ class RssFeed(SyndicationFeed):
         handler.endElement("channel")
 
 
-class NeuroMatFeed(RssFeed):
+class InstantArticlestFeed(RssFeed):
     _version = "2.0"
 
     def add_item_elements(self, handler, item):
         handler.addQuickElement("title", item['title'])
         handler.addQuickElement("link", item['link'])
-        if item['description'] is not None:
-            handler.addQuickElement("description", item['description'])
+
+        if item['pubdate'] is not None:
+            handler.addQuickElement("pubDate", rfc2822_date(item['pubdate']))
 
         # Author information.
         if item["author_name"] and item["author_email"]:
@@ -258,29 +259,15 @@ class NeuroMatFeed(RssFeed):
             handler.addQuickElement("dc:creator", item["author_name"],
                                     {"xmlns:dc": "http://purl.org/dc/elements/1.1/"})
 
-        if item['pubdate'] is not None:
-            handler.addQuickElement("pubDate", rfc2822_date(item['pubdate']))
-        if item['comments'] is not None:
-            handler.addQuickElement("comments", item['comments'])
-        if item['unique_id'] is not None:
-            guid_attrs = {}
-            if isinstance(item.get('unique_id_is_permalink'), bool):
-                guid_attrs['isPermaLink'] = str(
-                    item['unique_id_is_permalink']).lower()
-            handler.addQuickElement("guid", item['unique_id'], guid_attrs)
-        if item['ttl'] is not None:
-            handler.addQuickElement("ttl", item['ttl'])
+        handler.startElement("content:encoded", self.item_attributes(item))
+        handler.startElement("![CDATA[", self.item_attributes(item))
 
-        # Enclosure.
-        if item['enclosure'] is not None:
-            handler.addQuickElement("enclosure", '',
-                                    {"url": item['enclosure'].url, "length": item['enclosure'].length,
-                                     "type": item['enclosure'].mime_type})
+        if item['description'] is not None:
+            handler.addQuickElement("!doctype html", item['description'])
 
-        # Categories.
-        for cat in item['categories']:
-            handler.addQuickElement("category", cat)
+        handler.endElement("]]")
+        handler.endElement("content:encoded")
 
 # This isolates the decision of what the system default is, so calling code can
 # do "feedgenerator.DefaultFeed" instead of "feedgenerator.Rss201rev2Feed".
-DefaultFeed = NeuroMatFeed
+DefaultFeed = InstantArticlestFeed

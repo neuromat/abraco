@@ -33,7 +33,7 @@ class FeedDoesNotExist(ObjectDoesNotExist):
 
 
 class Feed(object):
-    feed_type = feedgenerator.NeuroMatFeed
+    feed_type = feedgenerator.InstantArticlestFeed
     title_template = None
     description_template = None
 

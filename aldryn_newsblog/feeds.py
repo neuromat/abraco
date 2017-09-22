@@ -21,9 +21,6 @@ from feed.views import Feed
 
 class LatestArticlesFeed(Feed):
 
-    title_template = 'feed/title.html'
-    description_template = 'feed/test.html'
-
     def __call__(self, request, *args, **kwargs):
         self.namespace, self.config = get_app_instance(request)
         language = get_language_from_request(request)

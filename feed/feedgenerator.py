@@ -239,7 +239,7 @@ class RssFeed(SyndicationFeed):
         handler.endElement("channel")
 
 
-class InstantArticlestFeed(RssFeed):
+class InstantArticlesFeed(RssFeed):
     _version = "2.0"
 
     def add_item_elements(self, handler, item):
@@ -263,11 +263,11 @@ class InstantArticlestFeed(RssFeed):
         handler.startElement("![CDATA[", self.item_attributes(item))
 
         if item['description'] is not None:
-            handler.addQuickElement("!doctype html", item['description'])
+            handler.addDescription("!doctype html", item['description'])
 
         handler.endElement("]]")
         handler.endElement("content:encoded")
 
 # This isolates the decision of what the system default is, so calling code can
 # do "feedgenerator.DefaultFeed" instead of "feedgenerator.Rss201rev2Feed".
-DefaultFeed = InstantArticlestFeed
+DefaultFeed = InstantArticlesFeed

@@ -185,6 +185,11 @@ class XMLGenerator(handler.ContentHandler):
             content = unicode(content, self._encoding)
         self._write(escape(content))
 
+    def descriptionCharacters(self, content):
+        if not isinstance(content, unicode):
+            content = unicode(content, self._encoding)
+        self._write(unescape(content))
+
     def ignorableWhitespace(self, content):
         if not isinstance(content, unicode):
             content = unicode(content, self._encoding)

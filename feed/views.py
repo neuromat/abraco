@@ -33,7 +33,7 @@ class FeedDoesNotExist(ObjectDoesNotExist):
 
 
 class Feed(object):
-    feed_type = feedgenerator.InstantArticlestFeed
+    feed_type = feedgenerator.InstantArticlesFeed
     title_template = None
     description_template = None
 

@@ -65,7 +65,7 @@ div#pesquisar {float: right; margin-top: 3px; margin-right: 0px;}
 
 button.menu-hamburger.btn:active {-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);}
 div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; height: 35px; padding: 5px 10px; line-height: 35px; color: #363636; width: 350px; max-width: 90%;}
-#pesquisar form button {background: #E4E1E1; width: 40px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px; font-size: 27px; padding: 0px; color: #115c61; border-radius: 2px;}
+#pesquisar form button {background: linear-gradient(to right, #115c61, #207d7d); width: 68px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px; font-size: 27px; padding: 0px; color: #F6F6F6; border-radius: 2px;}
 
 /*PAGINA Principal*/
 
@@ -125,9 +125,9 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 .onebyone-carosel:after{content: "";  background: #e5e5e5;  width: 15px;  height: 100%;  position: absolute;  top: 0px;  z-index: 99;  right: 0px;}
 
 /*Rodape*/
-.footer{margin-top: 20px; background-color: #115960;}
+.footer{margin-top: 20px; background: linear-gradient(to right, #115c61, #178787);}
 
-.aRodape {background-color: #115960; padding-top: 10px;}
+.aRodape {padding-top: 10px;}
 .aRodape h3, .aRodape ul, .aRodape a {color: #FFFFFF;}
 .aRodape a:hover {text-decoration: underline;}
 .aRodape p {color: #FFFFFF; font-weight: 300;}

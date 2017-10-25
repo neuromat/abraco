@@ -20,9 +20,9 @@ h2 {font-size: 20px;    text-transform: uppercase; font-weight: 600; color: #222
 ol { margin-left: 20px; margin-bottom: 10px; font-size: 15px;}
 ul { margin-left: 20px; margin-bottom: 10px; font-size: 15px; list-style-type:square;}
 
-h1.h1_aPadrao {font-size: 25px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #006271; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
-h1.h1_aPesquisa {font-size: 25px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #3758C1; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
-h1.h1_aRecursosEducacionais {font-size: 25px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #BE6837; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
+h1.h1_aPadrao {font-size: 23px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #006271; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
+h1.h1_aPesquisa {font-size: 23px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #3758C1; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
+h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #BE6837; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
 
 /*Cabeçalho*/
 header {margin-top: 25px;}

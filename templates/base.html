@@ -42,6 +42,8 @@
 
         {% include "cabecalho.html" %}
 
+        <a class='top' href='javascript:topo();'> <span class="glyphicon glyphicon-chevron-up"></span> </a>
+
         {% block content %}{% endblock content %}
 
         {% include "footer.html" %}
@@ -50,6 +52,8 @@
 
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+        <!--Botao para o usuario voltar  para o topo do site-->
+        <script src="{% static 'js/botaotopo.js'%}"></script>
         <!--Slider com 3 colunas-->
         <script src="{% static 'js/slider.js'%}"></script>
     </body>

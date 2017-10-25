@@ -3,10 +3,10 @@
 
 .row {margin-right: 0; margin-left: 0;}
 
-h1, h2, h3, h4, p, ol, ul{font-family: 'Open Sans', sans-serif;color: #3a3d3f;}
+h1, h2, h3, h4, p, ol, ul{font-family: 'Open Sans', sans-serif;color: #222527;}
 
 h1 {font-size: 30px; text-transform: uppercase;}
-.aSecaoNovidades h2 {font-size: 20px;text-transform: uppercase;text-align: center;font-weight: bold;color: #313535;letter-spacing: 5px;margin: 60px 0px 20px;}
+.aSecaoNovidades h2 {font-size: 20px;text-transform: uppercase;text-align: center;font-weight: bold;color: #222527;letter-spacing: 5px;margin: 60px 0px 20px;}
 h3 {font-size: 15px;text-transform: uppercase;}
 p {font-size: 15px;}
 
@@ -16,13 +16,13 @@ a:hover h2, a:hover h3 {font-weight: 600;}
 a:focus, a:hover {color: #000000; text-decoration: none;}
 
 hr {margin-top: 0; margin-bottom:0;}
-h2 {font-size: 20px;    text-transform: uppercase; font-weight: 600; color: #313131;}
+h2 {font-size: 20px;    text-transform: uppercase; font-weight: 600; color: #222527;}
 ol { margin-left: 20px; margin-bottom: 10px; font-size: 15px;}
 ul { margin-left: 20px; margin-bottom: 10px; font-size: 15px; list-style-type:square;}
 
-h1.h1_aPadrao {font-size: 23px; background-color: #F6F6F6; color: #006271; padding-bottom: 10px; padding-top: 10px; border-left: 15px solid #006271; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
-h1.h1_aPesquisa {font-size: 23px; background-color: #F6F6F6; color: #3758C1; padding-bottom: 10px; padding-top: 10px; border-left: 15px solid #3758C1; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
-h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; color: #BE6837; padding-bottom: 10px; padding-top: 10px; border-left: 15px solid #BE6837; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
+h1.h1_aPadrao {font-size: 25px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #006271; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
+h1.h1_aPesquisa {font-size: 25px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #3758C1; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
+h1.h1_aRecursosEducacionais {font-size: 25px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #BE6837; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
 
 /*Cabeçalho*/
 header {margin-top: 25px;}
@@ -60,12 +60,16 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 .breadcrumb {margin-left: 0px; margin-bottom: 20px; padding: 8px 0px; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
 .breadcrumb > .active {color: #3a3d3f; }
 
+.top,  a.top:focus, a.top:visited {background: #115c61; width: 30px; height: 30px; position: fixed; bottom: 15px; right: 23px; font-size: 20px; opacity: 0.5; transition: all 0.3s ease-out; display: none; z-index: 996; padding: 3px 6px; color: white;}
+
+a.top:hover {opacity: 1; color: white;}
+
 /* Pesquisar */
 div#pesquisar {float: right; margin-top: 3px; margin-right: 0px;}
 
 button.menu-hamburger.btn:active {-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);}
 div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; height: 35px; padding: 5px 10px; line-height: 35px; color: #363636; width: 350px; max-width: 90%;}
-#pesquisar form button {background: linear-gradient(to right, #115c61, #207d7d); width: 68px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px; font-size: 27px; padding: 0px; color: #F6F6F6; border-radius: 2px;}
+#pesquisar form button {background-color: #207d7d; width: 68px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px; font-size: 27px; padding: 0px; color: #F6F6F6; border-radius: 2px;}
 
 /*PAGINA Principal*/
 
@@ -90,12 +94,21 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 .aNovidades {background-color: #ececec; padding-top: 10px; padding-bottom: 20px; margin-top: 20px; margin-bottom: 20px;}
 .aNovidades h2 {padding: 0; text-align: center;}
 
-.aNovidade{background-color: #FFFFFF;border-top: 1px solid #75b2b7;border-bottom: 10px solid #125F65;border-radius: 2px;padding: 10px;margin-top: 5px; height: 400px;}
+.aNovidade{background-color: #FFFFFF; border-bottom: 10px solid #125F65; border-radius: 2px; padding: 10px; margin-top: 5px;  height: 400px; box-shadow: 1px 2px 6px rgba(0,0,0,.5);-webkit-box-shadow: 1px 2px 6px rgba(0,0,0,.5);-moz-box-shadow: 1px 2px 6px rgba(0,0,0,.5);}
 .aNovidadeTexto {margin-top: 10px;}
 .aNovidadeTexto p{text-align: left; padding: 7px; font-weight: 300;}
 
 .aCategoria {width: 50%; background-color: #125F65; border-radius: 4px;}
 .aCategoria p{text-align: center; color: #FFFFFF; font-size: 13px;}
+
+.aCategorial {width: 50%; background-color: #137B7B; border-radius: 4px;}
+.aCategorial p{text-align: center; color: #FFFFFF; font-size: 13px;}
+
+.aCategoriap {width: 50%; background-color: #3758C1; border-radius: 4px;}
+.aCategoriap p{text-align: center; color: #FFFFFF; font-size: 13px;}
+
+.aCategoriar {width: 50%; background-color: #BE6837; border-radius: 4px;}
+.aCategoriar p{text-align: center; color: #FFFFFF; font-size: 13px;}
 
 /*Slider da area de novidades*/
 .multi-item-carousel{.carousel-inner{ > .item{ transition: 900ms ease-in-out left; }
@@ -173,15 +186,15 @@ div#aCoordenacao:before {content: "Coordenação"; display: inline-block; positi
 .aMembro a div span {color: #fff; font-weight: bold; text-transform: capitalize; text-shadow: 1px 2px 3px #000;}
 
 /* PAGINA lesao do Plexo Braquial*/
-.item_PlexoBraq {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; border-right: 1px solid #125F65; border-bottom: 1px solid #125F65; border-top: 1px solid #125F65; padding: 10px 15px; font-size: 16px; float: left; width: 100%;}
+.item_PlexoBraq {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; border-right: 1px solid #125F65; border-bottom: 1px solid #125F65; border-top: 1px solid #125F65; padding: 10px 15px; font-size: 16px; float: left; width: 100%; border-radius: 2px;}
 .PlexoBraqdireita {float: right; margin: 0px 10px 5px 0px; width: 60%;}
 p:last-child {margin: 0px;}
 img{max-width: 100%;}
 
 /*Ajustes do Accordion do Bootstrap */
-.panel-default {border-color: #75B2B7;}
-.panel-default>.panel-heading {background-color: #75B2B7;}
-.panel-default>.panel-heading+.panel-collapse>.panel-body {border-top-color: #75B2B7;}
+.panel-default {border-color: #159393;}
+.panel-default>.panel-heading {background-color: #159393; border-radius: 0px;}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {border-top-color: #159393;}
 
 .panel-group .panel {margin-bottom: 0; border-radius: 2px;}
 
@@ -189,9 +202,9 @@ img{max-width: 100%;}
 .aPesq {margin-bottom: 50px;}
 .aPesquisa p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesPesq { background-color: #e5e5e5; border-top: 3px solid #3758C1; border-bottom: 5px solid #3758C1; border-radius: 2px; padding: 20px; height: 210px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
-.aOpcoesPesq:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 15px}
-.aOpcoesPesq img {max-width: 12%;}
+.aOpcoesPesq { background-color: #e5e5e5; border-bottom: 10px solid #3758C1; border-radius: 2px; padding: 20px; height: 210px; margin-top: 10px; margin-bottom: 40px; text-align: center; box-shadow: 1px 0px 6px rgba(0,0,0,.5); -webkit-box-shadow: 1px 0px 6px rgba(0,0,0,.5); -moz-box-shadow: 1px 0px 6px rgba(0,0,0,.5);}
+.aOpcoesPesq:hover {border-bottom-width: 20px; padding-top: 15px; font-size: 120%;}
+.aOpcoesPesq img {max-width: 16%;}
 
 /*Subpaginas (BLOG geral)*/
 .aConteudopost p a {color: #000; background-color: #ffdb41; border-radius: 29px; padding: 1px 10px; border-bottom: 1px solid #f6a500;}
@@ -204,8 +217,8 @@ img{max-width: 100%;}
 #lateralt ul {margin: 0px; padding: 0px; list-style: none;}
 #lateralt ul li {display: block; padding: 5px 15px;}
 #lateralt ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
-#lateralt ul li.active {background: #75B2B7; border-right: 13px solid #125F65;}
-#lateralt ul li:hover {background: #75B2B7; border-top: 1px solid #ffffff;}
+#lateralt ul li.active {background: #E8E8E8; border-left: 10px solid #125F65; border-radius: 2px;}
+#lateralt ul li:hover {background: #E8E8E8; border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-radius: 2px; border-left: none;}
 #lateralt ul li.abraco_academico a {color: #000;}
 #lateralt ul li.abraco_academico {border-top: 1px solid #BE6837;}
 #lateralt ul li.abraco_academico:hover a {color: #000;}
@@ -215,8 +228,8 @@ img{max-width: 100%;}
 #lateralp ul {margin: 0px; padding: 0px; list-style: none;}
 #lateralp ul li {display: block; padding: 5px 15px;}
 #lateralp ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
-#lateralp ul li.active {background: #C8D1EC; border-right: 13px solid #3758C1;}
-#lateralp ul li:hover {background: #C8D1EC; border-top: 1px solid #ffffff;}
+#lateralp ul li.active {background: #E8E8E8; border-left: 10px solid #3758C1; border-radius: 2px}
+#lateralp ul li:hover {background: #E8E8E8; border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-radius: 2px;}
 #lateralp ul li.abraco_academico a {color: #000;}
 #lateralp ul li.abraco_academico {border-top: 1px solid #BE6837;}
 #lateralp ul li.abraco_academico:hover a {color: #000;}
@@ -226,9 +239,9 @@ img{max-width: 100%;}
 .aRec {margin-bottom: 50px;}
 .aRecEducacionais p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesRec {background-color: #e5e5e5; border-top: 3px solid #BE6837; border-bottom: 5px solid #BE6837; border-radius: 2px; padding: 20px; height: 220px; margin-top: 10px; margin-bottom: 40px; text-align: center;}
-.aOpcoesRec:hover {border-bottom-width: 10px; border-top-width: 3px; padding-top: 15px}
-.aOpcoesRec img {max-width: 17%;}
+.aOpcoesRec {background-color: #e5e5e5; border-bottom: 10px solid #BE6837; border-radius: 2px; padding: 20px; height: 220px; margin-top: 10px; margin-bottom: 40px; text-align: center; box-shadow: 1px 0px 6px rgba(0,0,0,.5); -webkit-box-shadow: 1px 0px 6px rgba(0,0,0,.5); -moz-box-shadow: 1px 0px 6px rgba(0,0,0,.5);}
+.aOpcoesRec:hover {border-bottom-width: 20px; padding-top: 15px}
+.aOpcoesRec img {max-width: 20%;}
 
 /* Excluir estilo quando houver conteúdo disponivel em eventos e cartilhas*/
 .aOpcoesRec span {color: #FFFFFF; font-weight: lighter; font-size: 13px; background-color: #BE6837; padding: 7px; border-radius: 20px;}
@@ -237,8 +250,8 @@ img{max-width: 100%;}
 #lateralr ul {margin: 0px; padding: 0px; list-style: none;}
 #lateralr ul li {display: block; padding: 5px 15px;}
 #lateralr ul li a {color: #2c2626; text-decoration: none; font-size: 16px; display: block;}
-#lateralr ul li.active {background: #E1AB8D; border-right: 13px solid #BE6837;}
-#lateralr ul li:hover {background: #E1AB8D; border-top: 1px solid #ffffff;}
+#lateralr ul li.active {background: #E8E8E8; border-left: 10px solid #BE6837; border-radius: 2px;}
+#lateralr ul li:hover {background: #E8E8E8; border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-radius: 2px;}
 #lateralr ul li.abraco_academico a {color: #2c2626;}
 #lateralr ul li.abraco_academico {border-top: 1px solid #BE6837;}
 #lateralr ul li.abraco_academico:hover a {color: #2c2626;}

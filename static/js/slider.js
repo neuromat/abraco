@@ -1,17 +1,39 @@
-$('.multi-item-carousel').carousel({
-  interval: 15000
+$(document).ready(function() {
+	// inicia o novo plugin de slider.
+    $('#slick-slider').slick({
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  dots: false,
+	  speed: 1500,
+	  autoplay: true,
+	  autoplaySpeed: 6000,
+	  adaptiveHeight: true,
+	  appendArrows: '#slider-novo',
+	  prevArrow: '<a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>',
+	  nextArrow: '<a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>',
+      responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+      },
+      {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+     }]
+    });
 });
-$('.multi-item-carousel .carousel-inner .item').each(function(){
-  if($(window).width() > 1000){
-    var next = $(this).next();
-    if (!next.length) {
-      next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    if (next.next().length>0) {
-      next.next().children(':first-child').clone().appendTo($(this));
-    } else {
-      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-    }
-  }
-});
+

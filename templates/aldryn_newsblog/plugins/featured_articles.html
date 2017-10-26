@@ -2,8 +2,8 @@
 
 <!--Novidades-->
 <h2>Novidades</h2>
-<div class="carousel slide multi-item-carousel" id="Carousel" data-ride="carousel">
-    <div class="carousel-inner onebyone-carosel">
+<div id="slider-novo">
+    <div id="slick-slider">
         {% for article in articles_list %}
             {% if forloop.first %}
                 <div class="item active">
@@ -18,6 +18,4 @@
             <p>There' nothing here. </p>
         {% endfor %}
     </div>
-    <a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-    <a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
 </div>

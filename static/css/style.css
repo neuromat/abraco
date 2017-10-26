@@ -118,10 +118,26 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 .item{ transition: 900ms ease-in-out left; transition: 900ms ease-in-out all; backface-visibility: visible; transform: none!important;}}}
 
 .carouse-control{&.left, &.right{background-image: none;}}}
-.carousel-control {opacity: 0.2;}
+.carousel-control {opacity: 0.2; border: none;}
 .carousel-control:focus, .carousel-control:hover {opacity: 0.9;}
 .carousel-control.right {background: transparent;}
 .carousel-control.left {background: none!important;}
+
+div#slider-novo {
+    position: relative;
+}
+
+div#slick-slider {
+    width: calc(100% - 60px);
+    max-width: calc(100% - 60px);
+    margin-left: 30px;
+    position: relative;
+}
+@media(max-width: 1024px){
+    .aNovidade{
+        height: auto!important
+    }
+}
 
 .onebyone-carosel{width: calc(100% - 60px);  max-width: calc(100% - 60px);  margin-left: 30px;  position: relative;}
 

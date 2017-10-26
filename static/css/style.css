@@ -1,12 +1,12 @@
 /*Definicoes gerais*/
-* {margin: 0px; padding: 0px;}
+* {margin: 0; padding: 0;}
 
 .row {margin-right: 0; margin-left: 0;}
 
 h1, h2, h3, h4, p, ol, ul{font-family: 'Open Sans', sans-serif;color: #222527;}
 
 h1 {font-size: 30px; text-transform: uppercase;}
-.aSecaoNovidades h2 {font-size: 20px;text-transform: uppercase;text-align: center;font-weight: bold;color: #222527;letter-spacing: 5px;margin: 60px 0px 20px;}
+.aSecaoNovidades h2 {font-size: 20px;text-transform: uppercase;text-align: center;font-weight: bold;color: #222527;letter-spacing: 5px;margin: 60px 0 20px;}
 h3 {font-size: 15px;text-transform: uppercase;}
 p {font-size: 15px;}
 
@@ -38,16 +38,16 @@ header {margin-top: 25px;}
 .aEspacocabecalhor {padding: 0 0 0 8px; }
 
 .btn {background-color: #115960;}
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0px auto -webkit-focus-ring-color;}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0 auto -webkit-focus-ring-color;}
 button.menu-hamburger.btn {padding-top: 4px; padding-bottom: 4px;}
-header .aMenu {color: #fff;margin: 40px 0px 0px;padding: 0;position: relative;padding-right: 0;}
+header .aMenu {color: #fff;margin: 40px 0 0;padding: 0;position: relative;}
 header .aMenu i{color: #115c61;font-size: 2em;transform: scaleX(1.2);}
 header .aMenu span.has-tip { border-bottom: 0; cursor: pointer }
-header .aMenu button {float: right;background: transparent;padding-right: 0px;}
+header .aMenu button {float: right;background: transparent;padding-right: 0;}
 .menu-hamburger.aberto .glyphicon-menu-hamburger:before{  content: "\e014"!important;}
 
 header .aMenuAbraco {position: absolute;z-index: 999;display: none;margin-top: 5px;top: 100%;right: -1px;border: 1px solid rgba(0,0,0,.075);box-shadow: -1px 2px 3px rgba(0,0,0,.5);}
-header .aMenuAbraco li:first-child a span { width: 0; height: 0; border: inset 0.5rem; border-color: transparent transparent #ffffff; border-bottom-style: solid; border-top-width: 0; bottom: 100%; position: absolute; left: 4%; }
+header .aMenuAbraco li:first-child a span { width: 0; height: 0; border: inset 0.5rem; border-color: transparent; border-bottom-style: solid; border-top-width: 0; bottom: 100%; position: absolute; left: 4%; }
 header .aMenuAbraco ul { list-style: none; margin: 0; background-color: #ffffff; border-radius: 2px; }
 header .aMenuAbraco ul li {border-bottom: 1px solid #E4E1E1;}
 header .aMenuAbraco ul li:last-child {border-bottom: none;}
@@ -57,7 +57,7 @@ header .aMenuAbraco ul li:first-child a:hover span {border-color: transparent tr
 header .aMenuAbraco ul li:first-child a:hover {border-radius: 2px 2px 0 0; }
 header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 
-.breadcrumb {margin-left: 0px; margin-bottom: 20px; padding: 8px 0px; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
+.breadcrumb {margin-left: 0; margin-bottom: 20px; padding: 8px 0; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
 .breadcrumb > .active {color: #3a3d3f; }
 
 .top,  a.top:focus, a.top:visited {background: #115c61; width: 30px; height: 30px; position: fixed; bottom: 15px; right: 23px; font-size: 20px; opacity: 0.5; transition: all 0.3s ease-out; display: none; z-index: 996; padding: 3px 6px; color: white;}
@@ -65,11 +65,11 @@ header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
 a.top:hover {opacity: 1; color: white;}
 
 /* Pesquisar */
-div#pesquisar {float: right; margin-top: 3px; margin-right: 0px;}
+div#pesquisar {float: right; margin-top: 3px; margin-right: 0;}
 
 button.menu-hamburger.btn:active {-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);}
 div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; height: 35px; padding: 5px 10px; line-height: 35px; color: #363636; width: 350px; max-width: 90%;}
-#pesquisar form button {background-color: #207d7d; width: 68px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px; font-size: 27px; padding: 0px; color: #F6F6F6; border-radius: 2px;}
+#pesquisar form button {background-color: #207d7d; width: 68px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px; font-size: 27px; padding: 0; color: #F6F6F6; border-radius: 2px;}
 
 /*PAGINA Principal*/
 
@@ -80,17 +80,17 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 .aIntrod a {color: #FFFFFF; font-style: italic;}
 .aIntrod a:hover {color: #FFFFFF; text-decoration: none; font-style: normal;}
 /*Links Acoes*/
-#aBotaoLesao {background-color: #F8F8F8;border-bottom: 10px solid #137B7B;border-radius: 2px;box-shadow: 1px 0px 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0px 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0px 10px rgba(0,0,0,.5);padding: 10px;}
-#aBotaoPesquisa {background-color: #F8F8F8;border-bottom: 10px solid #3758C1;-moz-box-shadow: 1px -1px 2px #4c4e4c;padding: 10px;box-shadow: 1px 0px 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0px 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0px 10px rgba(0,0,0,.5);}
-#aBotaoRecEduc {background-color: #F8F8F8;border-bottom: 10px solid #BE6837;border-radius: 2px;padding: 10px;box-shadow: 1px 0px 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0px 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0px 10px rgba(0,0,0,.5);}
+#aBotaoLesao {background-color: #F8F8F8;border-bottom: 10px solid #137B7B;border-radius: 2px;box-shadow: 1px 0 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0 10px rgba(0,0,0,.5);padding: 10px;}
+#aBotaoPesquisa {background-color: #F8F8F8;border-bottom: 10px solid #3758C1;-moz-box-shadow: 1px -1px 2px #4c4e4c;padding: 10px;box-shadow: 1px 0 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0 10px rgba(0,0,0,.5);}
+#aBotaoRecEduc {background-color: #F8F8F8;border-bottom: 10px solid #BE6837;border-radius: 2px;padding: 10px;box-shadow: 1px 0 10px rgba(0,0,0,.5);-webkit-box-shadow: 1px 0 10px rgba(0,0,0,.5);-moz-box-shadow: 1px 0 10px rgba(0,0,0,.5);}
 
 /*Ilustracao do braco*/
 .aIlustracaoMob {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAADCAYAAAC56t6BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAATSURBVBhXY3j69Ol/EEZnPP0PAClOFhW8TqRvAAAAAElFTkSuQmCC);background-size: 100% 50%; background-repeat: no-repeat; background-position: bottom center;}
 .aIlustracao {padding: 0 40px;}
-.aIlustracao img {width: 100%;box-shadow: 0px 5px 10px rgba(0,0,0,.5);-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,.5);-moz-box-shadow: 0px 5px 10px rgba(0,0,0,.5);.7)}
+.aIlustracao img {width: 100%;box-shadow: 0 5px 10px rgba(0,0,0,.5);-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.5);-moz-box-shadow: 0 5px 10px rgba(0,0,0,.5);}
 
 /*Area de novidades*/
-.aSecaoNovidades {background-color: #e5e5e5;padding: 0px 10px 35px;}
+.aSecaoNovidades {background-color: #e5e5e5;padding: 0 10px 35px;}
 .aNovidades {background-color: #ececec; padding-top: 10px; padding-bottom: 20px; margin-top: 20px; margin-bottom: 20px;}
 .aNovidades h2 {padding: 0; text-align: center;}
 
@@ -111,17 +111,11 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 .aCategoriar p{text-align: center; color: #FFFFFF; font-size: 13px;}
 
 /*Slider da area de novidades*/
-.multi-item-carousel{.carousel-inner{ > .item{ transition: 900ms ease-in-out left; }
-.active{ &.left{ left:-33%; } &.right{ left:33%; }} .next{left: 33%;}
-.prev{left: -33%;}
-    @media all and (transform-3d), (-webkit-transform-3d) { >
-.item{ transition: 900ms ease-in-out left; transition: 900ms ease-in-out all; backface-visibility: visible; transform: none!important;}}}
 
-.carouse-control{&.left, &.right{background-image: none;}}}
 .carousel-control {opacity: 0.2; border: none;}
 .carousel-control:focus, .carousel-control:hover {opacity: 0.9;}
 .carousel-control.right {background: transparent;}
-.carousel-control.left {background: none!important;}
+.carousel-control.left {background: transparent;}
 
 div#slider-novo {
     position: relative;
@@ -134,24 +128,22 @@ div#slick-slider {
     position: relative;
 }
 @media(max-width: 1024px){
-    .aNovidade{
-        height: auto!important
-    }
+    .aNovidade{ height: auto!important; }
 }
 
 .onebyone-carosel{width: calc(100% - 60px);  max-width: calc(100% - 60px);  margin-left: 30px;  position: relative;}
 
 .aSection a > div, .aNovidade{transition: all 0.1s linear;}
-.aSection a > div:hover{border-bottom-width: 13px!important;    padding-bottom: 7px!important;    text-shadow: 0px 0px black;}
+.aSection a > div:hover{border-bottom-width: 13px!important;    padding-bottom: 7px!important;    text-shadow: 0 0 black;}
 
-.aNovidade:hover{border-bottom-width: 13px!important;  border-top-width: 3px!important;  padding-top: 8px!important}
+.aNovidade:hover{border-bottom-width: 13px!important;  border-top-width: 3px!important;  padding-top: 8px!important;}
 
 .carousel-control:hover{transform: scale(1.1);}
 .carousel-control{width: 30px;}
 .carousel-control, .carousel-control i{opacity: 1;  color: #125f65;}
 
-.onebyone-carosel:before{content: "";  background: #e5e5e5;  width: 15px;  height: 100%;  position: absolute;  top: 0px;  z-index: 99;  left: 0px;}
-.onebyone-carosel:after{content: "";  background: #e5e5e5;  width: 15px;  height: 100%;  position: absolute;  top: 0px;  z-index: 99;  right: 0px;}
+.onebyone-carosel:before{content: "";  background: #e5e5e5;  width: 15px;  height: 100%;  position: absolute;  top: 0;  z-index: 99;  left: 0;}
+.onebyone-carosel:after{content: "";  background: #e5e5e5;  width: 15px;  height: 100%;  position: absolute;  top: 0;  z-index: 99;  right: 0;}
 
 /*Rodape*/
 .footer{margin-top: 20px; background: linear-gradient(to right, #115c61, #178787);}
@@ -166,7 +158,7 @@ div#slick-slider {
 
 /* PAGINA Quem somos*/
 
-.aText_box {float: left; width: 100%; padding: 0px 15px; color: #333;}
+.aText_box {float: left; width: 100%; padding: 0 15px; color: #333;}
 .aText_box hr {width: 95%; border-color: #ccc; margin: 25px auto 23px;}
 .aText_box strong {color: #333; display: block; margin-top: 10px;}
 .aText_box ul {margin-left: 30px; margin-top: 15px;}
@@ -174,9 +166,9 @@ div#slick-slider {
 
 .aMeio {margin-bottom: 20px;}
 
-h2.h2_equipe {text-align: center; margin-top: 0px; background: linear-gradient(to right, #006271, #2b7c88); font-size: 17px; padding: 7px 0px; color: #fff; text-transform: capitalize; margin-bottom: 0px; border-radius: 2px;}
+h2.h2_equipe {text-align: center; margin-top: 0; background: linear-gradient(to right, #006271, #2b7c88); font-size: 17px; padding: 7px 0; color: #fff; text-transform: capitalize; margin-bottom: 0; border-radius: 2px;}
 
-div#aCoordenacao {padding: 10px; margin: 20px 0px; border: 1px solid #006271; border-radius: 2px; text-align: center; position: relative;}
+div#aCoordenacao {padding: 10px; margin: 20px 0; border: 1px solid #006271; border-radius: 2px; text-align: center; position: relative;}
 
 .aMembro a > img {max-width: 100%; position: absolute; top: 0; min-width: 100%; left: 0;}
 
@@ -192,7 +184,7 @@ div#outros {text-align: left;width: 80%;margin-left: 10%;}
 div#aCoordenacao:before {content: "Coordenação"; display: inline-block; position: absolute; left: 15px; background: #006271; color: #ffffff; padding: 3px 30px; top: -13px; z-index: 999;}
 
 .aMembro a div {width: 100%; height: 100%; position: absolute; background: rgba(0, 98, 113, 0.75);
-    padding: 25% 0px; display: none;
+    padding: 25% 0; display: none;
     z-index: 9; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-name: fadeIn; animation-name: fadeIn;}
 .aMembro a:hover div{display: block;}
 .aMembro a {position: relative; display: block; width: 100%;  padding-bottom: 97%; overflow: hidden; border-radius: 4px;}
@@ -203,13 +195,13 @@ div#aCoordenacao:before {content: "Coordenação"; display: inline-block; positi
 
 /* PAGINA lesao do Plexo Braquial*/
 .item_PlexoBraq {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; border-right: 1px solid #125F65; border-bottom: 1px solid #125F65; border-top: 1px solid #125F65; padding: 10px 15px; font-size: 16px; float: left; width: 100%; border-radius: 2px;}
-.PlexoBraqdireita {float: right; margin: 0px 10px 5px 0px; width: 60%;}
-p:last-child {margin: 0px;}
+.PlexoBraqdireita {float: right; margin: 0 10px 5px 0; width: 60%;}
+p:last-child {margin: 0;}
 img{max-width: 100%;}
 
 /*Ajustes do Accordion do Bootstrap */
 .panel-default {border-color: #159393;}
-.panel-default>.panel-heading {background-color: #159393; border-radius: 0px;}
+.panel-default>.panel-heading {background-color: #159393; border-radius: 0;}
 .panel-default>.panel-heading+.panel-collapse>.panel-body {border-top-color: #159393;}
 
 .panel-group .panel {margin-bottom: 0; border-radius: 2px;}
@@ -218,7 +210,7 @@ img{max-width: 100%;}
 .aPesq {margin-bottom: 50px;}
 .aPesquisa p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesPesq { background-color: #e5e5e5; border-bottom: 10px solid #3758C1; border-radius: 2px; padding: 20px; height: 210px; margin-top: 10px; margin-bottom: 40px; text-align: center; box-shadow: 1px 0px 6px rgba(0,0,0,.5); -webkit-box-shadow: 1px 0px 6px rgba(0,0,0,.5); -moz-box-shadow: 1px 0px 6px rgba(0,0,0,.5);}
+.aOpcoesPesq { background-color: #e5e5e5; border-bottom: 10px solid #3758C1; border-radius: 2px; padding: 20px; height: 210px; margin-top: 10px; margin-bottom: 40px; text-align: center; box-shadow: 1px 0 6px rgba(0,0,0,.5); -webkit-box-shadow: 1px 0 6px rgba(0,0,0,.5); -moz-box-shadow: 1px 0 6px rgba(0,0,0,.5);}
 .aOpcoesPesq:hover {border-bottom-width: 20px; padding-top: 15px; font-size: 120%;}
 .aOpcoesPesq img {max-width: 16%;}
 
@@ -229,8 +221,8 @@ img{max-width: 100%;}
 .panel-group a:hover {font-weight: 600; color: #000000; background-color: transparent;border-radius: 0; padding: 0; border-bottom: none;}
 
 /*Subpaginas (BLOG Lesão)*/
-#lateralt h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
-#lateralt ul {margin: 0px; padding: 0px; list-style: none;}
+#lateralt h2 {color: #000; font-size: 20px; margin: 0; line-height: 45px; margin-top: 0;}
+#lateralt ul {margin: 0; padding: 0; list-style: none;}
 #lateralt ul li {display: block; padding: 5px 15px;}
 #lateralt ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
 #lateralt ul li.active {background: #E8E8E8; border-left: 10px solid #125F65; border-radius: 2px;}
@@ -240,8 +232,8 @@ img{max-width: 100%;}
 #lateralt ul li.abraco_academico:hover a {color: #000;}
 
 /*Subpaginas (BLOG Pesquisa)*/
-#lateralp h2 {color: #000; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
-#lateralp ul {margin: 0px; padding: 0px; list-style: none;}
+#lateralp h2 {color: #000; font-size: 20px; margin: 0; line-height: 45px; margin-top: 0;}
+#lateralp ul {margin: 0; padding: 0; list-style: none;}
 #lateralp ul li {display: block; padding: 5px 15px;}
 #lateralp ul li a {color: #000; text-decoration: none; font-size: 16px; display: block;}
 #lateralp ul li.active {background: #E8E8E8; border-left: 10px solid #3758C1; border-radius: 2px}
@@ -255,15 +247,15 @@ img{max-width: 100%;}
 .aRec {margin-bottom: 50px;}
 .aRecEducacionais p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesRec {background-color: #e5e5e5; border-bottom: 10px solid #BE6837; border-radius: 2px; padding: 20px; height: 220px; margin-top: 10px; margin-bottom: 40px; text-align: center; box-shadow: 1px 0px 6px rgba(0,0,0,.5); -webkit-box-shadow: 1px 0px 6px rgba(0,0,0,.5); -moz-box-shadow: 1px 0px 6px rgba(0,0,0,.5);}
+.aOpcoesRec {background-color: #e5e5e5; border-bottom: 10px solid #BE6837; border-radius: 2px; padding: 20px; height: 220px; margin-top: 10px; margin-bottom: 40px; text-align: center; box-shadow: 1px 0 6px rgba(0,0,0,.5); -webkit-box-shadow: 1px 0 6px rgba(0,0,0,.5); -moz-box-shadow: 1px 0 6px rgba(0,0,0,.5);}
 .aOpcoesRec:hover {border-bottom-width: 20px; padding-top: 15px}
 .aOpcoesRec img {max-width: 20%;}
 
 /* Excluir estilo quando houver conteúdo disponivel em eventos e cartilhas*/
 .aOpcoesRec span {color: #FFFFFF; font-weight: lighter; font-size: 13px; background-color: #BE6837; padding: 7px; border-radius: 20px;}
 
-#lateralr h2 {color: #2c2626; font-size: 20px; margin: 0px; line-height: 45px; margin-top: 0px;}
-#lateralr ul {margin: 0px; padding: 0px; list-style: none;}
+#lateralr h2 {color: #2c2626; font-size: 20px; margin: 0; line-height: 45px; margin-top: 0;}
+#lateralr ul {margin: 0; padding: 0; list-style: none;}
 #lateralr ul li {display: block; padding: 5px 15px;}
 #lateralr ul li a {color: #2c2626; text-decoration: none; font-size: 16px; display: block;}
 #lateralr ul li.active {background: #E8E8E8; border-left: 10px solid #BE6837; border-radius: 2px;}
@@ -273,11 +265,11 @@ img{max-width: 100%;}
 #lateralr ul li.abraco_academico:hover a {color: #2c2626;}
 
 div#loop_posts {padding-left: 30px;}
-.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #E8E8E8; border-right: 1px solid #F6F6F6; border-bottom: 1px solid #F6F6F6; border-top: 1px solid #F6F6F6; padding: 0px 15px 20px 15px; font-size: 16px; background: #F6F6F6; float: left; width: 100%;}
-.item_post img {float: left;margin: 0px 10px 5px 0px;}
+.item_post {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #E8E8E8; border-right: 1px solid #F6F6F6; border-bottom: 1px solid #F6F6F6; border-top: 1px solid #F6F6F6; padding: 0 15px 20px 15px; font-size: 16px; background: #F6F6F6; float: left; width: 100%;}
+.item_post img {float: left;margin: 0 10px 5px 0;}
 .item_post a {color: #2c2626;;}
 
-p:last-child {margin: 0px;}
+p:last-child {margin: 0;}
 img{max-width: 100%;}
 
 .read-more a {color: #3a3d3f; background-color: #D7D7D7; padding: 5px 10px; border-radius: 4px; border-bottom: solid 1px #969696}
@@ -307,17 +299,17 @@ img{max-width: 100%;}
   div#aBotaoPesquisa h2 {line-height: 44px;}
 
   .aMembro {width: 25%;}
-  div#outros {width: 100%; margin: 0px;}
+  div#outros {width: 100%; margin: 0;}
   #outros > .aMembro {width: 24%;}
-  .aMembro a div{padding: 20% 0px;}
+  .aMembro a div{padding: 20% 0;}
   }
 @media (max-width: 991px) {
   .container.aIntroduction {background-size: 100% 100%;}
   .aSection a > div {margin-bottom: 15px;}
   .aMembro {width: 33.33%;}
-  div#outros {width: 100%; margin: 0px;}
+  div#outros {width: 100%; margin: 0;}
   #outros > .aMembro { width: 32%;}
-  .aMembro a div{padding: 20% 0px;}
+  .aMembro a div{padding: 20% 0;}
   .aOpcoesRec img {max-width: 9%;}
   .aOpcoesPesq img {max-width: 9%;}
   }
@@ -328,16 +320,16 @@ img{max-width: 100%;}
   .aDescLogo {font-size: 13px; }
   .aMenu {padding-left: 15px!important; margin-top: 30px!important;}
   .aMenuAbraco {right: 10px!important;}
-  .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 20px 10px 20px; margin-bottom: 0px;}
+  .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 20px 10px 20px; margin-bottom: 0;}
 
   /*Links Acoes*/
   #aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc {margin-top: 5px; margin-bottom: 10px;}
   .aIlustracao {padding: 0; margin-top: 20px;}
-  header {margin-top: 0px;}
+  header {margin-top: 0;}
   /* PAGINA Quem somos*/
   .aMembro {width: 49%;}
   #outros > .aMembro {width: 49%;}
-  .aMembro a div{padding: 35% 0px;}
+  .aMembro a div{padding: 35% 0;}
   .aOpcoesRec img {max-width: 10%;}
   .aOpcoesPesq img {max-width: 7%;}
   }
@@ -353,14 +345,14 @@ img{max-width: 100%;}
   .aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}
 
     /* PAGINA Principal*/
-  .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 10px 10px 10px; margin-bottom: 0px;}
+  .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 10px 10px 10px; margin-bottom: 0;}
   .aIlustracao {padding: 0; margin-top: 20px;}
   .aIlustracao img {width: 100%; padding: 0;}
-  .aIlustracaoMob {padding-right: 0px; padding-left: 0px;}
+  .aIlustracaoMob {padding-right: 0; padding-left: 0;}
 
   /* PAGINA Quem somos*/
   .aMembro, #outros > .aMembro { width: 100%; margin-bottom: 25px; min-height: 1px;}
-  .aMembro a div {padding: 20% 0px;}
+  .aMembro a div {padding: 20% 0;}
   .aOpcoesRec img {max-width: 20%;}
   .aOpcoesPesq img {max-width: 15%;}
   }
@@ -368,7 +360,7 @@ img{max-width: 100%;}
 /*Subpaginas Pesquisa (Blog)*/
 @media (max-width: 798px) {
   #lateral * {text-align: center;}
-  div#loop_posts {padding-left: 0px; padding-right: 0px;}
+  div#loop_posts {padding-left: 0; padding-right: 0;}
   .item_post {font-size: 13px}
   .item_PlexoBraq {font-size: 13px}
   .PlexoBraqdireita {width: 100%;}

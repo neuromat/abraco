@@ -24,6 +24,17 @@ h1.h1_aPadrao {font-size: 23px; background-color: #F6F6F6; padding-bottom: 10px;
 h1.h1_aPesquisa {font-size: 23px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #3758C1; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
 h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; padding-bottom: 10px; padding-top: 10px; border-bottom: 8px solid #BE6837; font-weight: 600; padding-left: 10px; margin-top: 15px; margin-bottom: 20px; border-radius: 2px;}
 
+/*Retirando efeito de bordas e sombras dos campos dos formularios no navegador chrome*/
+
+:focus {
+    outline: none;
+}
+.form-control:focus, .has-error .form-control:focus{
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.0001), 0 0 8px rgba(102,175,233,.0001);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.0001), 0 0 8px rgba(102,175,233,.0001);
+}
+
+
 /*Cabeçalho*/
 header {margin-top: 25px;}
 .aNav{ padding: 0; margin-bottom: 5px;}

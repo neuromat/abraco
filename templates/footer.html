@@ -1,54 +1,54 @@
 {% load i18n staticfiles %}
-    <div class="footer">
-        <div class="row">
-            <div class="container aRodape text-center">
-                <div class="col-md-4">
-                   <a href="http://neuromat.numec.prp.usp.br/" target="_blank"><img src="{% static 'img/Neuromat.png' %}" alt=""></a>
-                    <p>{% trans "Iniciative" %}</p>
-                </div>
-                <div class="col-md-4">
-                   <a href="http://www.fapesp.br/" target="_blank"><img src="{% static 'img/Fapesp.png' %}" alt=""></a>
-                    <p>{% trans "Support" %}</p>
-                </div>
-                <div class="col-md-4">
-                    <a href="http://www.indc.ufrj.br/" target="_blank"><img src="{% static 'img/InstiDeolCouto.png' %}" alt=""> </a>
-                    <p>{% trans "Partner" %}</p>
-                </div>
+<div class="footer">
+    <div class="row">
+        <div class="container aRodape text-center">
+            <div class="col-md-4">
+               <a href="http://neuromat.numec.prp.usp.br/" target="_blank"><img src="{% static 'img/Neuromat.png' %}" alt=""></a>
+                <p>{% trans "Initiative" %}</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="container aRodape">
-                <hr>
-                <div class="col-md-3">
-                    <h3> Abraço</h3>
-                    <ul>
-                        <li><a href="/quem-somos">{% trans "Who we are" %}</a></li>
-                        <li><a href="/lesao-do-plexo-braquial">{% trans "Brachial Plexus Injury" %}</a></li>
-                        <li><a href="/pesquisa">{% trans "Research" %}</a></li>
-                        <li><a href="/recursos-educacionais">{% trans "Educational resources" %}</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3> {% trans "Follow" %}</h3>
-                    <ul>
-                        <li><a href="https://www.facebook.com/iniciativaabraco/" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.youtube.com/playlist?list=PLXUXkbNfNLDaDITWmMKsHCBxw5FcDbMx1" target="_blank">Youtube</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3> {% trans "Contact" %}</h3>
-                    <ul>
-                        <li><a href="/faca-parte">{% trans "Form" %}: {% trans "Join us" %}</a></li>
-                        <li>abraco@numec.prp.usp.br</li>
-                    </ul>
-                </div>
+            <div class="col-md-4">
+               <a href="http://www.fapesp.br/" target="_blank"><img src="{% static 'img/Fapesp.png' %}" alt=""></a>
+                <p>{% trans "Support" %}</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="container aRodape aLicensa">
-                <div class="col-md-12">
-                    <p>{% trans "Licensed under the terms of the" %} <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0</a></p>
-                </div>
+            <div class="col-md-4">
+                <a href="http://www.indc.ufrj.br/" target="_blank"><img src="{% static 'img/InstiDeolCouto.png' %}" alt=""> </a>
+                <p>{% trans "Partner" %}</p>
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="container aRodape">
+            <hr>
+            <div class="col-md-3">
+                <h3> Abraço</h3>
+                <ul>
+                    <li><a href="/quem_somos">{% trans "Who we are" %}</a></li>
+                    <li><a href="/lesao-do-plexo-braquial">{% trans "Brachial Plexus Injury" %}</a></li>
+                    <li><a href="/pesquisa">{% trans "Research" %}</a></li>
+                    <li><a href="/recursos-educacionais">{% trans "Educational resources" %}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3> {% trans "Follow" %}</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/iniciativaabraco/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLXUXkbNfNLDaDITWmMKsHCBxw5FcDbMx1" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3> {% trans "Contact" %}</h3>
+                <ul>
+                    <li><a href="/faca_parte">{% trans "Form" %}: {% trans "Join us" %}</a></li>
+                    <li>abraco@numec.prp.usp.br</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container aRodape aLicensa">
+            <div class="col-md-12">
+                <p>{% trans "Licensed under the terms of the" %} <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0</a></p>
+            </div>
+        </div>
+    </div>
+</div>

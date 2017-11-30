@@ -1,11 +1,17 @@
-{% extends "base.html" %} {% load cms_tags i18n menu_tags sekizai_tags staticfiles %}
-{% block content %}
-      <!--Introdução-->
+{% extends "base.html" %}
+{% load embed_video_tags i18n keyword_tags project_tags staticfiles mezzanine_tags %}
+
+{% block meta_title %}
+    {% trans "Home" %}
+{% endblock %}
+
+{% block main %}
     <div class="container aIntroduction ">
+        <!--Introdução-->
         <div class="row">
-            <div class="col-md-12 aIntrod">
-                {% placeholder "introducao" %}
-            </div>
+            {% editable page.richtextpage.content %}
+                {{ page.richtextpage.content|safe }}
+            {% endeditable %}
         </div>
         <!-- Acoes da iniciativa -->
         <div class="row aSection text-center">
@@ -45,7 +51,39 @@
     <!--Novidades-->
     <div class="row">
         <div class="container aSecaoNovidades">
-            {% placeholder "Novidades" %}
+            <h2>Novidades</h2>
+            <div class="carousel slide multi-item-carousel" id="Carousel" data-ride="carousel">
+                <div class="carousel-inner onebyone-carosel">
+                    {% blog_news limit=6 as recent_posts %}
+                    {% if recent_posts %}
+                        {% for post in recent_posts %}
+                            <div class="item {% if forloop.first %}active{% endif %}">
+                                <div class="col-md-4">
+                                    <a href="{{ post.get_absolute_url }}">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            {% for category in post.categories.all %}
+                                                <div class="aCategoria">
+                                                    <p>{{ category.title }}</p>
+                                                </div>
+                                            {% endfor %}
+                                            <h3>{{ post.title }}</h3>
+                                            {% if post.video %}
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    {% video post.video "small" %}
+                                                </div>
+                                            {% else %}
+                                                <p>{{ post.content|safe|truncatewords:40 }}</p>
+                                            {% endif %}
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
         </div>
     </div>
-{% endblock content %}
+{% endblock %}

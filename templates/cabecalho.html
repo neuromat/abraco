@@ -1,41 +1,27 @@
-{% load  menu_tags staticfiles %}
+{% load mezzanine_tags staticfiles %}
 
 <!--Barra superior-->
-
-    <!--Barra superior-->
-    <header>
-        <nav class="row aDelimitador">
-            <div class="container aNav">
-                <!--Espaço do logo lado esquerdo-->
-                <div class="col-xs-4 col-sm-2 col-md-2 aEspacocabecalhol">
-                    <a href="/">
-                        <img class="aLogo" alt="Logo da iniciativa" src="{% static 'img/logoabraco.png'%}">
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-4 aEspacocabecalhor">
-                    <a href="/">
-                        <p class ="aAbraco"><span>ABRA</span>ÇO</p>
-                        <p class="aDescLogo"><span>A</span>ção NeuroMat para a </br> lesão do plexo <span>bra</span>quial</p>
-                    </a>
-                </div>
-                <!--Espaço do icone do lado direito-->
-                <div class="col-xs-2 col-sm-7 col-md-6 aMenu aEspacocabecalhor">
-
-                    <button href="#" class="menu-hamburger btn"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
-                    <div class="aMenuAbraco animated fadeIn">
-                        <ul>
-                            {% show_menu 0 100 100 100 'menu.html' %}
-                        </ul>
-                    </div>
-                    <div id="pesquisar" class="hidden-xs">
-                        <form action="/content/search/" method="get">
-                            <input type="text" name="q"  placeholder="Buscar">
-                            <button type="submit">&#xe003</button>
-                        </form>
-                    </div>
-                </div>
+<header>
+    <nav class="row aDelimitador">
+        <div class="container aNav">
+            <!--Espaço do logo lado esquerdo-->
+            <div class="col-xs-4 col-sm-2 col-md-2 aEspacocabecalhol">
+                <a href="/">
+                    <img class="aLogo" alt="Logo da iniciativa" src="{% static 'img/logoabraco.png'%}">
+                </a>
             </div>
-        </nav>
-    </header>
-    <!-- botao menu -->
-    <script src="{% static 'js/menu.js'%}"></script>
+            <div class="col-xs-6 col-sm-3 col-md-4 aEspacocabecalhor">
+                <a href="/">
+                    <p class ="aAbraco"><span>ABRA</span>ÇO</p>
+                    <p class="aDescLogo"><span>A</span>ção NeuroMat para a </br> lesão do plexo <span>bra</span>quial</p>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                {% block navbar_search_form %}{% search_form "all" %}{% endblock %}<br>
+                {% include "includes/language_selector.html" %}
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- botao menu -->
+{#<script src="{% static 'js/menu.js'%}"></script>#}

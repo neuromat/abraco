@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load i18n mezzanine_tags %}
+
+{% block meta_title %}
+    {% trans "Educational resources" %}
+{% endblock %}
+
+{% block title %}
+    <h1 class="h1_aRecursosEducacionais">{% trans "Educational resources" %}</h1>
+{% endblock %}
+
+{% block main %}
+    <div class="container  aPesquisa">
+        {% editable page.richtextpage.content %}
+            {{ page.richtextpage.content|safe }}
+        {% endeditable %}
+    </div>
+    <br>
+
+    <div class="row aRec">
+        <div class="container">
+            <a href="/content/category/abraco-academico/">
+                <div class="col-md-3">
+                    <div  class="aOpcoesRec">
+                        <img src="/static/img/search.svg" alt="">
+                        <h3>Abraço acadêmico</h3>
+                        <p>Lista de contribuições acadêmicas da equipe da ABRAÇO</p>
+                    </div>
+                </div>
+            </a>
+            <!-- Incluir tag a quando houver conteúdo -->
+                <div class="col-md-3">
+                    <div class="aOpcoesRec">
+                        <img src="/static/img/notebook.svg" alt="">
+                        <h3>Cartilhas</h3>
+                        <p>Folhetos informativos sobre a lesão do plexo braquial</p>
+                        <span>{% trans "Available soon" %}</span>
+                    </div>
+                </div>
+            <!-- fechar tag a -->
+            <!-- Incluir tag a quando houver conteúdo -->
+                <div class="col-md-3">
+                    <div class="aOpcoesRec">
+                        <img src="/static/img/viral-marketing.svg" alt="">
+                        <h3>{% trans "Events" %}</h3>
+                        <p>Palestras educativas oferecidas pela equipe da ABRAÇO</p>
+                        <span>{% trans "Available soon" %}</span>
+                    </div>
+                </div>
+            <a href="/content/category/videos/">
+                <div class="col-md-3">
+                    <div class="aOpcoesRec">
+                        <img src="/static/img/video-player.svg" alt="">
+                        <h3>{% trans "Videos" %}</h3>
+                        <p>Filmes sobre a lesão do plexo braquial e a ABRAÇO</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+{% endblock %}

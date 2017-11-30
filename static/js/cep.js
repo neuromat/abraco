@@ -6,7 +6,6 @@ function limpa_formulário_cep() {
         document.getElementById('id_district').value=("");
         document.getElementById('id_city').value=("");
         document.getElementById('id_state').value=("");
-        //document.getElementById('id_country').value=("");
 }
 
 function meu_callback(conteudo) {
@@ -16,7 +15,6 @@ function meu_callback(conteudo) {
         document.getElementById('id_district').value=(conteudo.bairro);
         document.getElementById('id_city').value=(conteudo.localidade);
         document.getElementById('id_state').value=(conteudo.uf);
-        //document.getElementById('id_country').value=('Brasil');
     } //end if.
     else {
         //CEP não Encontrado.
@@ -44,7 +42,6 @@ function pesquisacep(valor) {
             document.getElementById('id_district').value="...";
             document.getElementById('id_city').value="...";
             document.getElementById('id_state').value="...";
-            //document.getElementById('id_country').value="...";
 
             //Cria um elemento javascript.
             var script = document.createElement('script');

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n mezzanine_tags pages_tags %}
+
+{% block meta_title %}
+    {% trans "Brachial Plexus Injury" %}
+{% endblock %}
+
+{% block title %}
+    <h1 class="h1_aPadrao">{% trans "Brachial Plexus Injury" %}</h1>
+{% endblock %}
+
+{% block main %}
+    <div id="lateralt" class="col-md-3 col-sm-4 col-xs-12">
+        {% page_menu "pages/menus/lesao_do_plexo_braquial.html" %}
+    </div>
+    <div class="pull-right col-md-9 col-sm-8 col-xs-12 aConteudopost">
+        <div class="item_PlexoBraq">
+            {% editable page.richtextpage.content %}
+                {{ page.richtextpage.content|safe }}
+            {% endeditable %}
+        </div>
+    </div>
+{% endblock %}

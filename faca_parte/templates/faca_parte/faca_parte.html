@@ -1,122 +1,81 @@
 {% extends 'base.html' %}
-{% load i18n cms_tags menu_tags sekizai_tags staticfiles %}
-{% block extrahead %}
-    <script src="{% static 'js/cep.js' %}"></script>
+{% load i18n mezzanine_tags staticfiles %}
+
+{% block extra_js %}
+    <script type="text/javascript" src="{% static 'js/cep.js' %}"></script>
     <script src="{% static 'js/datepicker.js' %}"></script>
 {% endblock %}
 
-{% block content %}
-    {% if messages %}
-        {% for message in messages %}
+{% block title %}
+    <h1 class="h1_aPadrao">{{ page.title }}</h1>
+{% endblock %}
 
-            {% if message.tags == "success" %}
-                <script>showSuccessMessage('{{ message }}')</script>
-            {% endif %}
-
-            {% if message.tags == "warning" %}
-                <script>showWarningMessage('{{ message }}')</script>
-            {% endif %}
-
-            {% if message.tags == "error" %}
-                <script>showErrorMessage('{{ message }}')</script>
-            {% endif %}
-
-            {% if message.tags == "info" %}
-                <script>showInfoMessage('{{ message }}')</script>
-            {% endif %}
-
-        {% endfor %}
-    {% endif %}
-    <div class="container">
-        <h1 class="h1_aPadrao">Faça Parte</h1>
-        <div class="col-md-12">
-            {% placeholder "Texto" %}
-        </div>
+{% block main %}
+    <div class="col-md-12">
+        {% editable page.richtextpage.content %}
+            {{ page.richtextpage.content|safe }}
+        {% endeditable %}
     </div>
-
-    <br>
 
     <form role="form" method="post" data-toggle="validator">{% csrf_token %}
         <div class="container aFormulario">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="control-label">{% trans "Full name" %} <b style="color: red;">*</b></label>
-                        {{ person_form.full_name }}
-                        <div class="help-block with-errors"></div>
-                    </div>
+                    <label class="control-label">{% trans "Full name" %} <b style="color: red;">*</b></label>
+                    {{ person_form.full_name }}
+                    <div class="help-block with-errors"></div>
                 </div>
                 <div class="col-md-6">
                     <label for="email" class="control-label">{% trans "Email" %} <b style="color: red;">*</b></label>
-                    <div class="form-group">
-                        {{ person_form.email }}
-                        <div class="help-block with-errors"></div>
-                    </div>
+                    {{ person_form.email }}
+                    <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <label for="select_role" class="control-label">{% trans "Role" %} <b style="color: red;">*</b></label>
-                    <div class="form-group">
-                        {{ person_form.select_role }}
-                        <div class="help-block with-errors"></div>
-                    </div>
+                    {{ person_form.select_role }}
+                    <div class="help-block with-errors"></div>
                 </div>
                 <div class="col-md-6">
                     <label for="birth" class="control-label">{% trans "Date of birth" %}</label>
-                    <div class="form-group">
-                        {{ person_form.birth }}
-                    </div>
+                    {{ person_form.birth }}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <label for="schooling" class="control-label">{% trans "Schooling" %}</label>
-                    <div class="form-group">
-                        {{ person_form.schooling }}
-                    </div>
+                    {{ person_form.schooling }}
                 </div>
                 <div class="col-md-6">
                     <label for="zipcode" class="control-label">{% trans "Zipcode" %}</label>
-                    <div class="form-group">
-                        {{ person_form.zipcode }}
-                    </div>
+                    {{ person_form.zipcode }}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <label for="schooling" class="control-label">{% trans "Street" %}</label>
-                    <div class="form-group">
-                        {{ person_form.street }}
-                    </div>
+                    {{ person_form.street }}
                 </div>
                 <div class="col-md-6">
                     <label for="street" class="control-label">{% trans "District" %}</label>
-                    <div class="form-group">
-                        {{ person_form.district }}
-                    </div>
+                    {{ person_form.district }}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <label for="city" class="control-label">{% trans "City" %}</label>
-                    <div class="form-group">
-                        {{ person_form.city }}
-                    </div>
+                    {{ person_form.city }}
                 </div>
                 <div class="col-md-6">
                     <label for="state" class="control-label">{% trans "State" %}</label>
-                    <div class="form-group">
-                        {{ person_form.state }}
-                    </div>
+                    {{ person_form.state }}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <label for="note" class="control-label">{% trans "How did you hear about the project?" %}</label>
-                    <div class="form-group">
-                        {{ person_form.note }}
-                    </div>
+                    {{ person_form.note }}
                 </div>
             </div>
             <div class="row">
@@ -129,6 +88,5 @@
                 </div>
             </div>
         </div>
-    </div>
     </form>
 {% endblock %}

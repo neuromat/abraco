@@ -1,0 +1,13 @@
+{% if blog_posts %}
+    {% include "blog/blog_menu_items.html" %}
+{% endif %}
+
+{% if blog_post %}
+    {% with blog_post.categories.all as categories %}
+        {% if categories %}
+            {% for category in categories %}
+                {% include "blog/blog_menu_items.html" %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+{% endif %}

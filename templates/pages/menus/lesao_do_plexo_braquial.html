@@ -1,0 +1,11 @@
+{% load i18n %}
+
+<h2>{% trans "About" %}</h2>
+<ul>
+    <li {% if page.slug == "lesao-do-plexo-braquial" %}class="active"{% endif %}>
+        <a href="/lesao-do-plexo-braquial">{% trans "What is the Brachial Plexus" %}</a>
+    </li>
+    <li {% if page.slug == "tratamento" %}class="active"{% endif %}>
+        <a href="/tratamento">{% trans "Treatment" %}</a>
+    </li>
+</ul>

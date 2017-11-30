@@ -1,6 +1,4 @@
-django-cms
-django-filer
-djangocms-text-ckeditor
-psycopg2
-aldryn-newsblog
-aldryn_video
+Mezzanine==4.2.3
+django-embed-video==1.1.2
+django-modeltranslation==0.12.1
+psycopg2==2.7.3.2

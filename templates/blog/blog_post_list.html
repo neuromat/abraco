@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load i18n embed_video_tags mezzanine_tags blog_tags keyword_tags disqus_tags %}
+
+{% block meta_title %}
+    {{ category }} |
+    {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
+        {% trans "Educational resources" %}
+    {% else %}
+        {% trans "Research" %}
+    {% endif %}
+{% endblock %}
+
+{% block meta_keywords %}{% metablock %}
+{% keywords_for page as keywords %}
+{% for keyword in keywords %}
+    {% if not forloop.first %}, {% endif %}
+    {{ keyword }}
+{% endfor %}
+{% endmetablock %}{% endblock %}
+
+{% block meta_description %}{% metablock %}
+{{ page.description }}
+{% endmetablock %}{% endblock %}
+
+{% block title %}
+    {% if category %}
+        {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
+            <h1 class="h1_aRecursosEducacionais">{% trans "Educational resources" %}</h1>
+        {% else %}
+            <h1 class="h1_aPesquisa">{% trans "Research" %}</h1>
+        {% endif %}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumb_menu %}
+    {{ block.super }}
+    {% if category %}
+        <li>{% spaceless %}{% if category %}{{ category }}{% endif %}{% endspaceless %}</li>
+    {% endif %}
+{% endblock %}
+
+{% block main %}
+    {% include "blog/blog_menu.html" %}
+
+    <div id="loop_posts" class="pull-right col-md-9 col-sm-8 col-xs-12 aConteudopost">
+        {% for blog_post in blog_posts.object_list %}
+            <div class="item_post">
+                {% block blog_post_list_post_title %}
+                    {% editable blog_post.title %}
+                        <h2><a href="{{ blog_post.get_absolute_url }}">{{ blog_post.title }}</a></h2>
+                    {% endeditable %}
+                {% endblock %}
+
+                {% if settings.BLOG_USE_FEATURED_IMAGE and blog_post.featured_image %}
+                    {% block blog_post_list_post_featured_image %}
+                        <a href="{{ blog_post.get_absolute_url }}">
+                            <img class="img-thumbnail pull-left" src="{{ MEDIA_URL }}{% thumbnail blog_post.featured_image 90 90 %}">
+                        </a>
+                    {% endblock %}
+                {% endif %}
+
+                {% block blog_post_list_post_content %}
+                    {% if blog_post.video %}
+                        <div class="embed-responsive embed-responsive-16by9">
+                            {% video blog_post.video "small" %}
+                        </div>
+                    {% else %}
+                        {% editable blog_post.description %}
+                            {{ blog_post.description }}
+                        {% endeditable %}
+                    {% endif %}
+                {% endblock %}
+
+                {% block blog_post_list_post_links %}
+                    <div class="read-more">
+                        <a href="{{ blog_post.get_absolute_url }}">{% trans "Read more" %}</a>
+                    </div>
+                {% endblock %}
+            </div>
+        {% endfor %}
+
+        {% pagination_for blog_posts %}
+
+        {% if settings.COMMENTS_DISQUS_SHORTNAME %}
+        {% include "generic/includes/disqus_counts.html" %}
+        {% endif %}
+    </div>
+{% endblock %}

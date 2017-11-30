@@ -26,11 +26,8 @@ class PersonForm(ModelForm):
                                         'pattern': '\d{5}-?\d{3}',
                                         'placeholder': _('Enter your zip code that we will try to find your address')}),
             'street': TextInput(attrs={'class': 'form-control'}),
-            # 'number': TextInput(attrs={'class': 'form-control'}),
-            # 'street_complement': TextInput(attrs={'class': 'form-control'}),
             'district': TextInput(attrs={'class': 'form-control'}),
             'city': TextInput(attrs={'class': 'form-control'}),
             'state': TextInput(attrs={'class': 'form-control'}),
-            # 'country': TextInput(attrs={'class': 'form-control'}),
             'note': Textarea(attrs={'class': 'form-control', 'rows': '4'}),
         }

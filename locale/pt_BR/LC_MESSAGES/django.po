@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-15 14:07+0000\n"
+"POT-Creation-Date: 2017-11-28 18:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
-#: faca_parte/cms_apps.py:7
-msgid "Registration"
-msgstr "Faça parte"
 
 #: faca_parte/forms.py:17
 msgid "Role must be included"
@@ -36,29 +32,29 @@ msgstr "Endereço de email inválido"
 
 #: faca_parte/forms.py:27
 msgid "Enter your zip code that we will try to find your address"
-msgstr "Digite o CEP para o sitema buscar seu endereço"
+msgstr "Digite seu CEP para que o sistema busque seu endereço"
 
-#: faca_parte/models.py:6 faca_parte/models.py:22
+#: faca_parte/models.py:6 faca_parte/models.py:22 quem_somos/models.py:6
 msgid "Name"
 msgstr "Nome"
 
-#: faca_parte/models.py:20 faca_parte/templates/faca_parte/faca_parte.html:61
+#: faca_parte/models.py:20 faca_parte/templates/faca_parte/faca_parte.html:36
 msgid "Role"
 msgstr "Perfil"
 
-#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:76
+#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:47
 msgid "Schooling"
 msgstr "Escolaridade"
 
-#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:52
+#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:29
 msgid "Email"
 msgstr "Email"
 
-#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:68
+#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:41
 msgid "Date of birth"
 msgstr "Data de nascimento"
 
-#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:118
+#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:77
 msgid "How did you hear about the project?"
 msgstr "Como ficou sabendo do projeto?"
 
@@ -78,15 +74,15 @@ msgstr "Complemento"
 msgid "Number"
 msgstr "Número"
 
-#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:96
+#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:61
 msgid "District"
 msgstr "Bairro"
 
-#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:104
+#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:67
 msgid "City"
 msgstr "Cidade"
 
-#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:110
+#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:71
 msgid "State"
 msgstr "Estado"
 
@@ -94,144 +90,130 @@ msgstr "Estado"
 msgid "Country"
 msgstr "País"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:46
+#: faca_parte/templates/faca_parte/faca_parte.html:24
 msgid "Full name"
 msgstr "Nome completo"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:82
+#: faca_parte/templates/faca_parte/faca_parte.html:51
 msgid "Zipcode"
 msgstr "CEP"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:90
+#: faca_parte/templates/faca_parte/faca_parte.html:57
 msgid "Street"
 msgstr "Rua"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:128
+#: faca_parte/templates/faca_parte/faca_parte.html:85
 msgid "Send"
 msgstr "Enviar"
 
-#: faca_parte/views.py:21
-msgid "Registration created successfully!"
-msgstr "Cadastro criado com sucesso!"
+#: faca_parte/views.py:19
+msgid "E-mail already registered"
+msgstr "Este email já foi cadastrado"
 
-#: faca_parte/views.py:26
-msgid "Information not saved."
-msgstr "O cadastro não foi criado"
+#: faca_parte/views.py:24
+msgid "Registration created successfully!"
+msgstr "Registro criado com sucesso!"
 
 #: faca_parte/views.py:29
-msgid "Action not available."
-msgstr "Ação não disponível"
+msgid "Information not saved."
+msgstr "A informação não foi salva."
 
-#: templates/404.html:9 templates/404.html.py:12
-msgid "Error 404"
-msgstr "Erro 404"
+#: quem_somos/models.py:7
+msgid "Biography"
+msgstr "Biografia"
 
-#: templates/404.html:19
-msgid ""
-"Sorry, but the page you are looking for was either not found or does not "
-"exist."
-msgstr "Desculpe, mas a página que você está procurando não foi encontrada."
+#: quem_somos/models.py:8
+msgid "CV"
+msgstr "CV"
 
-#: templates/aldryn_newsblog/articles_list.html:8
-#: templates/aldryn_newsblog/plugins/archive.html:22
-#: templates/aldryn_newsblog/plugins/authors.html:9
-#: templates/aldryn_newsblog/plugins/latest_articles.html:6
-#: templates/aldryn_newsblog/plugins/related_articles.html:11
-msgid "No items available"
-msgstr "Nenhum item disponível"
+#: quem_somos/models.py:9
+msgid "Photo"
+msgstr "Foto"
 
-#: templates/aldryn_newsblog/includes/paginate_search.html:8
-#: templates/aldryn_newsblog/includes/pagination.html:8
-msgid "Previous"
-msgstr "Anterior"
+#: quem_somos/models.py:10
+msgid "Coordination"
+msgstr "Coordenação"
 
-#: templates/aldryn_newsblog/includes/paginate_search.html:42
-#: templates/aldryn_newsblog/includes/pagination.html:42
-msgid "Next"
-msgstr "Próximo"
+#: quem_somos/models.py:16
+msgid "Person"
+msgstr "Pessoa"
 
-#: templates/aldryn_newsblog/includes/search_results.html:36
-#, python-format
-msgid "Sorry we didn't find any results for \"<strong>%(query)s</strong>\""
-msgstr ""
-"Desculpe, não encontramos nenhum resultado para \"<strong>%(query)s</strong>"
-"\""
+#: quem_somos/models.py:17
+msgid "People"
+msgstr "Pessoas"
 
-#: templates/aldryn_newsblog/includes/search_results.html:43
-msgid "We could not perform this search. Search text is required."
-msgstr "Você precisa digitar alguma palavra para realizarmos a busca."
+#: quem_somos/templates/quem_somos/quem_somos.html:25
+msgid "Team"
+msgstr "Equipe"
 
-#: templates/aldryn_newsblog/plugins/article_search.html:6
-msgid "Keyword search"
-msgstr "Pesquisa por palavra-chave"
+#: templates/blog/blog_menu_items.html:5
+msgid "Topics"
+msgstr "Tópicos"
 
-#: templates/aldryn_newsblog/plugins/article_search.html:7
-msgid "Keyword"
-msgstr "Palavra-chave"
+#: templates/blog/blog_menu_items.html:14 templates/pages/pesquisa.html:26
+msgid "Publications"
+msgstr "Publicações"
 
-#: templates/aldryn_newsblog/plugins/article_search.html:10
-msgid "Go"
-msgstr ""
+#: templates/blog/blog_menu_items.html:16
+msgid "Articles"
+msgstr "Artigos"
 
-#: templates/aldryn_newsblog/plugins/related_articles.html:8
-msgid "by"
-msgstr ""
+#: templates/blog/blog_menu_items.html:17
+msgid "Book chapters"
+msgstr "Capítulos de livro"
 
-#: templates/aldryn_newsblog/plugins/tags.html:5
-msgid "All"
-msgstr ""
+#: templates/blog/blog_menu_items.html:18
+msgid "MSc dissertations"
+msgstr "Dissertações de mestrado"
 
-#: templates/aldryn_people/group_list.html:13
-msgid "Ungrouped"
-msgstr ""
+#: templates/blog/blog_menu_items.html:19
+msgid "PhD dissertations"
+msgstr "Teses de doutorado"
 
-#: templates/aldryn_people/includes/group.html:13
-#: templates/aldryn_people/includes/person.html:27
-msgid "Phone:"
-msgstr ""
+#: templates/blog/blog_menu_items.html:23 templates/pages/pesquisa.html:35
+msgid "Research project"
+msgstr "Projetos de pesquisa"
 
-#: templates/aldryn_people/includes/group.html:17
-#: templates/aldryn_people/includes/person.html:35
-msgid "Fax:"
-msgstr ""
+#: templates/blog/blog_menu_items.html:25
+msgid "Projects"
+msgstr "Projetos"
 
-#: templates/aldryn_people/includes/group.html:21
-#: templates/aldryn_people/includes/person.html:39
-msgid "Email:"
-msgstr ""
+#: templates/blog/blog_menu_items.html:28
+#: templates/blog/blog_menu_items.html:30 templates/pages/pesquisa.html:45
+msgid "Activities"
+msgstr "Atividades"
 
-#: templates/aldryn_people/includes/group.html:26
-#: templates/aldryn_people/includes/person.html:44
-msgid "Website:"
-msgstr ""
-
-#: templates/aldryn_people/includes/group.html:34
-msgid "Address:"
-msgstr ""
-
-#: templates/aldryn_people/includes/person.html:31
-msgid "Mobile:"
-msgstr ""
-
-#: templates/aldryn_people/includes/person.html:57
-msgid "Download vCard"
-msgstr ""
-
-#: templates/breadcrumb_pesquisa.html:2 templates/breadcrumb_pesquisa.html:5
-#: templates/footer.html:27 templates/index.html:23 templates/pesquisa.html:9
-#: templates/pesquisa.html.py:12
-msgid "Research"
-msgstr "Pesquisa"
-
-#: templates/breadcrumb_recursos_educacionais.html:2
-#: templates/breadcrumb_recursos_educacionais.html:5 templates/footer.html:28
-#: templates/index.html:30 templates/recursos_educacionais.html:9
-#: templates/recursos_educacionais.html:12
+#: templates/blog/blog_post_detail.html:20 templates/blog/blog_post_list.html:7
+#: templates/blog/blog_post_list.html:28 templates/footer.html:28
+#: templates/index.html:36 templates/pages/menus/breadcrumb.html:22
+#: templates/pages/menus/breadcrumb.html:34
+#: templates/pages/recursos-educacionais.html:5
+#: templates/pages/recursos-educacionais.html:9
 msgid "Educational resources"
 msgstr "Recursos educacionais"
 
+#: templates/blog/blog_post_detail.html:22 templates/blog/blog_post_list.html:9
+#: templates/blog/blog_post_list.html:30 templates/footer.html:27
+#: templates/index.html:29 templates/pages/menus/breadcrumb.html:24
+#: templates/pages/menus/breadcrumb.html:36 templates/pages/pesquisa.html:5
+#: templates/pages/pesquisa.html:9
+msgid "Research"
+msgstr "Pesquisa"
+
+#: templates/blog/blog_post_detail.html:58
+msgid "Share on Twitter"
+msgstr "Compartilhar no Twitter"
+
+#: templates/blog/blog_post_detail.html:59
+msgid "Share on Facebook"
+msgstr "Compartilhar no Facebook"
+
+#: templates/blog/blog_post_list.html:76
+msgid "Read more"
+msgstr "Leia mais"
+
 #: templates/footer.html:7
-msgid "Iniciative"
+msgid "Initiative"
 msgstr "Iniciativa"
 
 #: templates/footer.html:11
@@ -242,12 +224,14 @@ msgstr "Apoio"
 msgid "Partner"
 msgstr "Parceiro"
 
-#: templates/footer.html:25 templates/quem_somos.html:8
+#: templates/footer.html:25
 msgid "Who we are"
 msgstr "Quem somos"
 
-#: templates/footer.html:26 templates/index.html:16
-#: templates/plexo_braquial.html:13 templates/plexo_braquial_tratamento.html:13
+#: templates/footer.html:26 templates/index.html:22
+#: templates/pages/lesao-do-plexo-braquial.html:5
+#: templates/pages/lesao-do-plexo-braquial.html:9
+#: templates/pages/tratamento.html:5 templates/pages/tratamento.html:9
 msgid "Brachial Plexus Injury"
 msgstr "Lesão do Plexo Braquial"
 
@@ -271,71 +255,41 @@ msgstr "Faça parte"
 msgid "Licensed under the terms of the"
 msgstr "Licenciado sob os termos da"
 
-#: templates/menu_pesquisa.html:3 templates/pesquisa.html:24
-msgid "Publications"
-msgstr "Publicações"
+#: templates/index.html:5 templates/pages/menus/breadcrumb.html:6
+#: templates/pages/menus/breadcrumb.html:20
+#: templates/pages/menus/breadcrumb.html:29
+msgid "Home"
+msgstr "Início"
 
-#: templates/menu_pesquisa.html:5
-msgid "Articles"
-msgstr "Artigos"
-
-#: templates/menu_pesquisa.html:6
-msgid "Book chapters"
-msgstr "Capítulos de livro"
-
-#: templates/menu_pesquisa.html:7
-msgid "MSc dissertations"
-msgstr "Dissertações de mestrado"
-
-#: templates/menu_pesquisa.html:8
-msgid "PhD dissertations"
-msgstr "Teses de doutorado"
-
-#: templates/menu_pesquisa.html:12 templates/pesquisa.html:33
-msgid "Research project"
-msgstr "Projetos de pesquisa"
-
-#: templates/menu_pesquisa.html:14
-msgid "Projects"
-msgstr "Projetos"
-
-#: templates/menu_pesquisa.html:16 templates/menu_pesquisa.html.py:18
-#: templates/pesquisa.html:43
-msgid "Activities"
-msgstr "Atividades"
-
-#: templates/menu_recursos_educacionais.html:3
-msgid "Topics"
-msgstr "Tópicos"
-
-#: templates/plexo_braquial.html:16 templates/plexo_braquial.html.py:28
-#: templates/plexo_braquial_tratamento.html:28
-msgid "What is the Brachial Plexus"
-msgstr "O que é o Plexo Braquial"
-
-#: templates/plexo_braquial.html:25
+#: templates/pages/menus/lesao_do_plexo_braquial.html:3
 msgid "About"
 msgstr "Sobre"
 
-#: templates/plexo_braquial.html:31 templates/plexo_braquial_tratamento.html:16
-#: templates/plexo_braquial_tratamento.html:31
+#: templates/pages/menus/lesao_do_plexo_braquial.html:6
+msgid "What is the Brachial Plexus"
+msgstr "O que é o Plexo Braquial"
+
+#: templates/pages/menus/lesao_do_plexo_braquial.html:9
 msgid "Treatment"
 msgstr "Tratamento"
 
-#: templates/quem_somos.html:16
-msgid "Team"
-msgstr "Equipe"
-
-#: templates/recursos_educacionais.html:34
-#: templates/recursos_educacionais.html:44
-#: templates/recursos_educacionais.html:53
+#: templates/pages/recursos-educacionais.html:37
+#: templates/pages/recursos-educacionais.html:47
 msgid "Available soon"
 msgstr "Disponível em breve"
 
-#: templates/recursos_educacionais.html:42
+#: templates/pages/recursos-educacionais.html:45
 msgid "Events"
 msgstr "Eventos"
 
-#: templates/recursos_educacionais.html:51
+#: templates/pages/recursos-educacionais.html:54
 msgid "Videos"
 msgstr "Vídeos"
+
+#: website/settings.py:81
+msgid "Portugues"
+msgstr "Português"
+
+#: website/settings.py:82
+msgid "English"
+msgstr ""

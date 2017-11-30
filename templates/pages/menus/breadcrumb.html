@@ -1,0 +1,42 @@
+{% load i18n pages_tags %}
+
+{% if not on_home %}
+    {% for page in page_branch %}
+        {% if page.is_current_or_ascendant %}
+            <li class="breadcrumb-item" id="breadcrumb-menu-home"><a href="{% url "home" %}">{% trans "Home" %}</a></li>
+            {% if page.is_current %}
+                <li class="breadcrumb-item" id="breadcrumb-menu-{{ page.html_id }}" class="active">{{ page.title }}</li>
+            {% else %}
+                <li class="breadcrumb-item" id="breadcrumb-menu-{{ page.html_id }}"><a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
+            {% endif %}
+            {% if page.has_children %}
+                {% page_menu page %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if blog_posts %}
+    <li class="breadcrumb-item" id="breadcrumb-menu-home"><a href="{% url "home" %}">{% trans "Home" %}</a></li>
+    {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
+        <li class="breadcrumb-item" id="breadcrumb-menu-recursos-educacionais"><a href="/recursos-educacionais">{% trans "Educational resources" %}</a></li>
+    {% else %}
+        <li class="breadcrumb-item" id="breadcrumb-menu-pesquisa"><a href="/pesquisa">{% trans "Research" %}</a></li>
+    {% endif %}
+{% endif %}
+
+{% if blog_post %}
+    <li class="breadcrumb-item" id="breadcrumb-menu-home"><a href="{% url "home" %}">{% trans "Home" %}</a></li>
+    {% with blog_post.categories.all as categories %}
+        {% if categories %}
+            {% for category in categories %}
+                {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
+                    <li class="breadcrumb-item" id="breadcrumb-menu-recursos-educacionais"><a href="/recursos-educacionais">{% trans "Educational resources" %}</a></li>
+                {% else %}
+                    <li class="breadcrumb-item" id="breadcrumb-menu-pesquisa"><a href="/pesquisa">{% trans "Research" %}</a></li>
+                {% endif %}
+                <li class="breadcrumb-item" id="breadcrumb-{{ category.slug }}"><a href="{% url "blog_post_list_category" category.slug %}">{{ category }}</a></li>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+{% endif %}

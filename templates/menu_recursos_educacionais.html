@@ -1,8 +1,0 @@
-{% load i18n %}
-<div id="lateralr" class="col-md-3 col-sm-4 col-xs-12">
-    <h2>{% trans "Topics" %}</h2>
-        <ul>
-            <li {% if newsblog_category.slug == 'abraco-academico' or category.slug == 'abraco-academico' %} class="active"{% endif %}><a href="/content/category/abraco-academico/">Abraço acadêmico</a></li>
-            <li {% if newsblog_category.slug == 'videos' or category.slug == 'videos' %} class="active"{% endif %}><a href="/content/category/videos/">Vídeos</a></li>
-        </ul>
-</div>

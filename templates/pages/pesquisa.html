@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load i18n mezzanine_tags %}
+
+{% block meta_title %}
+    {% trans "Research" %}
+{% endblock %}
+
+{% block title %}
+    <h1 class="h1_aPesquisa">{% trans "Research" %}</h1>
+{% endblock %}
+
+{% block main %}
+    <div class="container  aPesquisa">
+        {% editable page.richtextpage.content %}
+            {{ page.richtextpage.content|safe }}
+        {% endeditable %}
+    </div>
+    <br>
+
+    <div class="row aPesq">
+        <div class="container">
+            <a href="/content/category/artigos/">
+                <div class="col-md-4">
+                    <div class="aOpcoesPesq">
+                        <img src="/static/img/report.svg" alt="">
+                        <h3>{% trans "Publications" %}</h3>
+                        <p>Lista de contribuições acadêmicas da equipe da ABRAÇO</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/content/category/projetos-de-pesquisa/">
+                <div class="col-md-4">
+                    <div class="aOpcoesPesq">
+                        <img src="/static/img/analytics.svg" alt="">
+                        <h3>{% trans "Research project" %}</h3>
+                        <p>Informações sobre grupos de trabalho e objetivos de pesquisa da ABRAÇO</p>
+                    </div>
+                </div>
+
+            </a>
+            <a href="/content/category/atividades/">
+                <div class="col-md-4">
+                    <div class="aOpcoesPesq">
+                        <img src="/static/img/networking.svg" alt="">
+                    <h3>{% trans "Activities" %}</h3>
+                    <p>Eventos científicos e treinamentos passados e por vir</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+{% endblock %}

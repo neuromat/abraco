@@ -1,14 +1,17 @@
 /*Definicoes gerais*/
 * {margin: 0; padding: 0;}
 
+body {padding-top: 10px;}
+
 .row {margin-right: 0; margin-left: 0;}
 
-h1, h2, h3, h4, p, ol, ul{font-family: 'Open Sans', sans-serif;color: #222527;}
+h1, h2 {font-family: 'Open Sans', sans-serif;color: #222527;}
+h3, h4, p, ol,ul {font-family: 'Roboto', sans-serif;color: #222527;}
 
 h1 {font-size: 30px; text-transform: uppercase;}
 .aSecaoNovidades h2 {font-size: 20px;text-transform: uppercase;text-align: center;font-weight: bold;color: #222527;letter-spacing: 5px;margin: 60px 0 20px;}
-h3 {font-size: 15px;text-transform: uppercase;}
-p {font-size: 15px;}
+h3 {font-size: 16px;text-transform: uppercase;}
+p {font-size: 16px;}
 
 a {color: #137B7B;}
 a:link {text-decoration: none;}
@@ -36,12 +39,11 @@ h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; padding
 
 
 /*Cabeçalho*/
-header {margin-top: 25px;}
 .aNav{ padding: 0; margin-bottom: 5px;}
 .aLogo {width: 100%; margin: 14px 0 0 0;}
-.aAbraco {font-size: 47px; color: #178787; font-weight: 600; margin: 0;}
+.aAbraco {font-family: 'Open Sans', sans-serif; font-size: 47px; color: #178787; font-weight: 600; margin: 0; padding-top: 20px;}
 .aAbraco span {color: #006271;}
-.aDescLogo {font-size: 17px; color: #137B7B; font-weight: 600;}
+.aDescLogo {font-family: 'Open Sans', sans-serif; font-size: 17px; color: #137B7B; font-weight: 600; padding-top: 20px;}
 .aDescLogo span {color: #006271;}
 .aDescLogo a {color: #137B7B;}
 
@@ -212,10 +214,12 @@ img{max-width: 100%;}
 
 /*Ajustes do Accordion do Bootstrap */
 .panel-default {border-color: #159393;}
-.panel-default>.panel-heading {background-color: #159393; border-radius: 0;}
+.panel-default>.panel-heading {background-image: none!important; background-color: #159393; border-radius: 0;}
 .panel-default>.panel-heading+.panel-collapse>.panel-body {border-top-color: #159393;}
 
 .panel-group .panel {margin-bottom: 0; border-radius: 2px;}
+
+.panel-title { font-weight: 300;}
 
 /* PAGINA Pesquisa*/
 .aPesq {margin-bottom: 50px;}
@@ -258,7 +262,7 @@ img{max-width: 100%;}
 .aRec {margin-bottom: 50px;}
 .aRecEducacionais p {padding-left: 20px; padding-right: 20px;}
 
-.aOpcoesRec {background-color: #e5e5e5; border-bottom: 10px solid #BE6837; border-radius: 2px; padding: 20px; height: 220px; margin-top: 10px; margin-bottom: 40px; text-align: center; box-shadow: 1px 0 6px rgba(0,0,0,.5); -webkit-box-shadow: 1px 0 6px rgba(0,0,0,.5); -moz-box-shadow: 1px 0 6px rgba(0,0,0,.5);}
+.aOpcoesRec {background-color: #e5e5e5; border-bottom: 10px solid #BE6837; border-radius: 2px; padding: 20px; height: 250px; margin-top: 10px; margin-bottom: 40px; text-align: center; box-shadow: 1px 0 6px rgba(0,0,0,.5); -webkit-box-shadow: 1px 0 6px rgba(0,0,0,.5); -moz-box-shadow: 1px 0 6px rgba(0,0,0,.5);}
 .aOpcoesRec:hover {border-bottom-width: 20px; padding-top: 15px}
 .aOpcoesRec img {max-width: 20%;}
 
@@ -326,9 +330,9 @@ img{max-width: 100%;}
   }
 /* Landscape phones and portrait tablets */
 @media (max-width: 995px) {
-  .aAbraco {font-size: 35px; margin: 24px 0 0 0;}
+  .aAbraco {font-size: 35px; margin: 24px 0 0 0; padding-top: 0;}
   .aLogo {width: 100%; margin: 35px 0 0 0; }
-  .aDescLogo {font-size: 13px; }
+  .aDescLogo {font-size: 13px; padding-top: 0;}
   .aMenu {padding-left: 15px!important; margin-top: 30px!important;}
   .aMenuAbraco {right: 10px!important;}
   .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 20px 10px 20px; margin-bottom: 0;}
@@ -348,9 +352,9 @@ img{max-width: 100%;}
 /* Portrait phones and smaller */
 @media (max-width: 500px) {
   /* Cabeçalho*/
-  .aAbraco {font-size: 20px; margin: 6px 0 0 0;}
+  .aAbraco {font-size: 20px; margin: 6px 0 0 0; padding-top: 0;}
   .aLogo {width: 100%; margin: 12px 0 0 0;}
-  .aDescLogo {font-size: 11px; }
+  .aDescLogo {font-size: 11px;  padding-top: 0;}
   .aEspacocabecalhol {padding-left: 4px;}
   .aMenu {padding: 0 4px 0 4px !important; margin-top: 6px !important; }
   .aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}

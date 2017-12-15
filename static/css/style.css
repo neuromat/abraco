@@ -1,7 +1,7 @@
 /*Definicoes gerais*/
 * {margin: 0; padding: 0;}
 
-body {padding-top: 10px;}
+body {padding-top: 10px; line-height: inherit;}
 
 .row {margin-right: 0; margin-left: 0;}
 
@@ -41,9 +41,9 @@ h1.h1_aRecursosEducacionais {font-size: 23px; background-color: #F6F6F6; padding
 /*Cabeçalho*/
 .aNav{ padding: 0; margin-bottom: 5px;}
 .aLogo {width: 100%; margin: 14px 0 0 0;}
-.aAbraco {font-family: 'Open Sans', sans-serif; font-size: 47px; color: #178787; font-weight: 600; margin: 0; padding-top: 20px;}
+.aAbraco {font-family: 'Open Sans', sans-serif; font-size: 47px; color: #178787; font-weight: 600; margin: 0; padding-top: 0px;}
 .aAbraco span {color: #006271;}
-.aDescLogo {font-family: 'Open Sans', sans-serif; font-size: 17px; color: #137B7B; font-weight: 600; padding-top: 20px;}
+.aDescLogo {font-family: 'Open Sans', sans-serif; font-size: 17px; color: #137B7B; font-weight: 600;}
 .aDescLogo span {color: #006271;}
 .aDescLogo a {color: #137B7B;}
 
@@ -56,19 +56,17 @@ button.menu-hamburger.btn {padding-top: 4px; padding-bottom: 4px;}
 header .aMenu {color: #fff;margin: 40px 0 0;padding: 0;position: relative;}
 header .aMenu i{color: #115c61;font-size: 2em;transform: scaleX(1.2);}
 header .aMenu span.has-tip { border-bottom: 0; cursor: pointer }
-header .aMenu button {float: right;background: transparent;padding-right: 0;}
-.menu-hamburger.aberto .glyphicon-menu-hamburger:before{  content: "\e014"!important;}
+header .aMenu button {float: right; background: #006271; color: #FFFFFF; border: none;}
+header .aMenu button:hover {background: #178787;; color: #FFFFFF;}
+header .aMenu button:active {background: #178787;; color: #FFFFFF;}
 
-header .aMenuAbraco {position: absolute;z-index: 999;display: none;margin-top: 5px;top: 100%;right: -1px;border: 1px solid rgba(0,0,0,.075);box-shadow: -1px 2px 3px rgba(0,0,0,.5);}
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {color: #FFFFFF; background-color: #178787; border-color: transparent;}
+.dropdown-menu {background-color: rgba(225,225,225,.95);}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #dd0c0c;}
+header .aMenuAbraco {position: absolute;z-index: 999;display: none;margin-top: 5px;top: 100%;right: -1px; left: auto; border: 1px solid rgba(0,0,0,.075);box-shadow: -1px 2px 3px rgba(0,0,0,.5);}
 header .aMenuAbraco li:first-child a span { width: 0; height: 0; border: inset 0.5rem; border-color: transparent; border-bottom-style: solid; border-top-width: 0; bottom: 100%; position: absolute; left: 4%; }
-header .aMenuAbraco ul { list-style: none; margin: 0; background-color: #ffffff; border-radius: 2px; }
-header .aMenuAbraco ul li {border-bottom: 1px solid #E4E1E1;}
-header .aMenuAbraco ul li:last-child {border-bottom: none;}
-header .aMenuAbraco ul li a {display: block; padding: .4em 4em .4em 1em;}
-header .aMenuAbraco ul li a:hover {background-color: #E4E1E1;}
-header .aMenuAbraco ul li:first-child a:hover span {border-color: transparent transparent #E4E1E1;}
-header .aMenuAbraco ul li:first-child a:hover {border-radius: 2px 2px 0 0; }
-header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
+
 
 .breadcrumb {margin-left: 0; margin-bottom: 20px; padding: 8px 0; list-style: none; background-color: rgba(232, 232, 232, 0.02);}
 .breadcrumb > .active {color: #3a3d3f; }
@@ -179,7 +177,7 @@ div#slick-slider {
 
 .aMeio {margin-bottom: 20px;}
 
-h2.h2_equipe {text-align: center; margin-top: 0; background: linear-gradient(to right, #006271, #2b7c88); font-size: 17px; padding: 7px 0; color: #fff; text-transform: capitalize; margin-bottom: 0; border-radius: 2px;}
+h2.h2_equipe {text-align: center; margin-top: 10px; background: linear-gradient(to right, #006271, #2b7c88); font-size: 17px; padding: 7px 0; color: #fff; text-transform: capitalize; margin-bottom: 0; border-radius: 2px;}
 
 div#aCoordenacao {padding: 10px; margin: 20px 0; border: 1px solid #006271; border-radius: 2px; text-align: center; position: relative;}
 
@@ -287,13 +285,15 @@ div#loop_posts {padding-left: 30px;}
 p:last-child {margin: 0;}
 img{max-width: 100%;}
 
+.read-more {margin-top: 18px;}
 .read-more a {color: #3a3d3f; background-color: #D7D7D7; padding: 5px 10px; border-radius: 4px; border-bottom: solid 1px #969696}
 .read-more a:hover {color: #3a3d3f; background-color: #D7D7D7; padding: 6px 11px; border-radius: 4px; border-bottom: solid 2px #969696;}
 
 .tags a {color: #125F65; background-color: #E8E8E8; padding: 5px; border-radius: 4px;}
 .tags a:hover {color: #125F65; background-color: #c9cccb; padding: 5px; border-radius: 4px;}
 
-
+/*PAGINA Faca parte*/
+.aFormulario {margin-top: 10px;}
 
 /*Ajustes na paginacao do bootstrap*/
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {background-color: #75B2B7; border-color: #75B2B7;

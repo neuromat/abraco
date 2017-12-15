@@ -40,9 +40,10 @@
 {% endblock %}
 
 {% block main %}
+    <div class="container">
     {% include "blog/blog_menu.html" %}
 
-    <div id="loop_posts" class="pull-right col-md-9 col-sm-8 col-xs-12 aConteudopost">
+        <div id="loop_posts" class="pull-right col-md-9 col-sm-8 col-xs-12 aConteudopost">
         {% for blog_post in blog_posts.object_list %}
             <div class="item_post">
                 {% block blog_post_list_post_title %}
@@ -84,5 +85,6 @@
         {% if settings.COMMENTS_DISQUS_SHORTNAME %}
         {% include "generic/includes/disqus_counts.html" %}
         {% endif %}
+    </div>
     </div>
 {% endblock %}

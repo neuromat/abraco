@@ -32,6 +32,7 @@
 {% endblock %}
 
 {% block main %}
+    <div class="container">
     {% include "blog/blog_menu.html" %}
 
     {#{% block blog_post_detail_featured_image %}#}
@@ -58,5 +59,6 @@
             <a class="btn btn-sm share-twitter" target="_blank" href="https://twitter.com/intent/tweet?url={{ blog_post.short_url|urlencode }}&amp;text={{ blog_post.title|urlencode }}">{% trans "Share on Twitter" %}</a>
             <a class="btn btn-sm share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}">{% trans "Share on Facebook" %}</a>
         {% endblock %}
+    </div>
     </div>
 {% endblock %}

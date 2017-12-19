@@ -52,13 +52,13 @@
     <div class="row">
         <div class="container aSecaoNovidades">
             <h2>Novidades</h2>
-            <div class="carousel slide multi-item-carousel" id="Carousel" data-ride="carousel">
-                <div class="carousel-inner onebyone-carosel">
+                <div id="slider-novo">
+                    <div id="slick-slider">
                     {% blog_news limit=6 as recent_posts %}
                     {% if recent_posts %}
                         {% for post in recent_posts %}
                             <div class="item {% if forloop.first %}active{% endif %}">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <a href="{{ post.get_absolute_url }}">
                                         <div class="aNovidade aNovidadeTexto">
                                             {% for category in post.categories.all %}
@@ -81,8 +81,6 @@
                         {% endfor %}
                     {% endif %}
                 </div>
-                <a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                <a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
             </div>
         </div>
     </div>

@@ -16,10 +16,24 @@
                     <p class="aDescLogo"><span>A</span>ção NeuroMat para a </br> lesão do plexo <span>bra</span>quial</p>
                 </a>
             </div>
-            <div class="navbar-collapse collapse">
+
+            <div class="dropdown aMenu col-xs-2 col-sm-7 col-md-6 aEspacocabecalhor">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="aMenuPrinc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU</button>
+                  <ul class="dropdown-menu aMenuAbraco" aria-labelledby="aMenuPrinc">
+                    <li><a href="/">Página Principal</a></li>
+                    <li><a href="/quem_somos/">Quem somos</a></li>
+                    <li><a href="/lesao-do-plexo-braquial/">Lesão do Plexo Braquial</a></li>
+                    <li><a href="/pesquisa/">Pesquisa</a></li>
+                    <li><a href="/recursos-educacionais/">Recursos Educacionais</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="/faca_parte/">Faça parte</a></li>
+                  </ul>
+
                 {% block navbar_search_form %}{% search_form "all" %}{% endblock %}<br>
                 {% include "includes/language_selector.html" %}
+
             </div>
+
         </div>
     </nav>
 </header>

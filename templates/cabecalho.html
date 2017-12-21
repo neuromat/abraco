@@ -18,20 +18,22 @@
             </div>
 
             <div class="dropdown aMenu col-xs-2 col-sm-7 col-md-6 aEspacocabecalhor">
-                  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"> <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> MENU</button>
-                  <ul class="dropdown-menu aMenuAbraco" aria-labelledby="aMenuPrinc">
-                    <li><a href="/">Página Principal</a></li>
-                    <li><a href="/quem_somos/">Quem somos</a></li>
-                    <li><a href="/lesao-do-plexo-braquial/">Lesão do Plexo Braquial</a></li>
-                    <li><a href="/pesquisa/">Pesquisa</a></li>
-                    <li><a href="/recursos-educacionais/">Recursos Educacionais</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="/faca_parte/">Faça parte</a></li
-                  </ul>
-
-
+                <div>
+                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"> <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> MENU</button>
+                      <ul class="dropdown-menu aMenuAbraco fadeIn" aria-labelledby="aMenuPrinc">
+                        <li><a href="/">Página Principal</a></li>
+                        <li><a href="/quem_somos/">Quem somos</a></li>
+                        <li><a href="/lesao-do-plexo-braquial/">Lesão do Plexo Braquial</a></li>
+                        <li><a href="/pesquisa/">Pesquisa</a></li>
+                        <li><a href="/recursos-educacionais/">Recursos Educacionais</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/faca_parte/">Faça parte</a></li
+                      </ul>
+                </div>
+                <div id="pesquisar" class="hidden-xs">
+                    {% block navbar_search_form %}{% search_form %}{% endblock %}
+                </div>
             </div>
-
         </div>
     </nav>
 </header>

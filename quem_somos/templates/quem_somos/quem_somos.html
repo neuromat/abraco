@@ -24,7 +24,7 @@
                     {% for person in coordination %}
                         <div class="aMembro">
                             <a href="{{ person.lattes }}" target="_blank">
-                                <div><img src="{% static 'img/lattes.png'%}"><span>currículo lattes</span></div>
+                                <div><img src="{% static 'img/lattes.png'%}"><span>{% trans "Lattes Platform" %}</span></div>
                                 {% if person.photo %}<img alt="Person image" src="{{ person.photo.url }}">{% endif %}
                             </a>
                             <h5>{{ person.name }}</h5>
@@ -38,7 +38,7 @@
                     {% for person in members %}
                         <div class="aMembro">
                             <a href="{{ person.lattes }}" target="_blank">
-                                <div><img src="{% static 'img/lattes.png'%}"><span>currículo lattes</span></div>
+                                <div><img src="{% static 'img/lattes.png'%}"><span>{% trans "Lattes Platform" %}</span></div>
                                 {% if person.photo %}<img alt="Image of {{ person.name }}" src="{{ person.photo.url }}">{% endif %}
                             </a>
                             <h5>{{ person.name }}</h5>

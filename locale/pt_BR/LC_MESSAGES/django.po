@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-28 18:50+0000\n"
+"POT-Creation-Date: 2017-12-21 20:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,23 +38,23 @@ msgstr "Digite seu CEP para que o sistema busque seu endereço"
 msgid "Name"
 msgstr "Nome"
 
-#: faca_parte/models.py:20 faca_parte/templates/faca_parte/faca_parte.html:36
+#: faca_parte/models.py:20 faca_parte/templates/faca_parte/faca_parte.html:37
 msgid "Role"
 msgstr "Perfil"
 
-#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:47
+#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:48
 msgid "Schooling"
 msgstr "Escolaridade"
 
-#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:29
+#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:30
 msgid "Email"
 msgstr "Email"
 
-#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:41
+#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:42
 msgid "Date of birth"
 msgstr "Data de nascimento"
 
-#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:77
+#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:78
 msgid "How did you hear about the project?"
 msgstr "Como ficou sabendo do projeto?"
 
@@ -74,15 +74,15 @@ msgstr "Complemento"
 msgid "Number"
 msgstr "Número"
 
-#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:61
+#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:62
 msgid "District"
 msgstr "Bairro"
 
-#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:67
+#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:68
 msgid "City"
 msgstr "Cidade"
 
-#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:71
+#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:72
 msgid "State"
 msgstr "Estado"
 
@@ -90,19 +90,19 @@ msgstr "Estado"
 msgid "Country"
 msgstr "País"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:24
+#: faca_parte/templates/faca_parte/faca_parte.html:25
 msgid "Full name"
 msgstr "Nome completo"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:51
+#: faca_parte/templates/faca_parte/faca_parte.html:52
 msgid "Zipcode"
 msgstr "CEP"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:57
+#: faca_parte/templates/faca_parte/faca_parte.html:58
 msgid "Street"
 msgstr "Rua"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:85
+#: faca_parte/templates/faca_parte/faca_parte.html:86
 msgid "Send"
 msgstr "Enviar"
 
@@ -142,13 +142,28 @@ msgstr "Pessoa"
 msgid "People"
 msgstr "Pessoas"
 
-#: quem_somos/templates/quem_somos/quem_somos.html:25
+#: quem_somos/templates/quem_somos/quem_somos.html:21
 msgid "Team"
 msgstr "Equipe"
+
+#: quem_somos/templates/quem_somos/quem_somos.html:27
+#: quem_somos/templates/quem_somos/quem_somos.html:41
+msgid "Lattes Platform"
+msgstr "Currículo Lattes"
 
 #: templates/blog/blog_menu_items.html:5
 msgid "Topics"
 msgstr "Tópicos"
+
+#: templates/blog/blog_menu_items.html:7 templates/blog/blog_menu_items.html:20
+#: templates/pages/recursos-educacionais.html:26
+msgid "Abraço and the Academy"
+msgstr "Abraço acadêmico"
+
+#: templates/blog/blog_menu_items.html:8
+#: templates/pages/recursos-educacionais.html:54
+msgid "Videos"
+msgstr "Vídeos"
 
 #: templates/blog/blog_menu_items.html:14 templates/pages/pesquisa.html:26
 msgid "Publications"
@@ -200,15 +215,15 @@ msgstr "Recursos educacionais"
 msgid "Research"
 msgstr "Pesquisa"
 
-#: templates/blog/blog_post_detail.html:58
+#: templates/blog/blog_post_detail.html:59
 msgid "Share on Twitter"
 msgstr "Compartilhar no Twitter"
 
-#: templates/blog/blog_post_detail.html:59
+#: templates/blog/blog_post_detail.html:60
 msgid "Share on Facebook"
 msgstr "Compartilhar no Facebook"
 
-#: templates/blog/blog_post_list.html:76
+#: templates/blog/blog_post_list.html:77
 msgid "Read more"
 msgstr "Leia mais"
 
@@ -225,7 +240,7 @@ msgid "Partner"
 msgstr "Parceiro"
 
 #: templates/footer.html:25
-msgid "Who we are"
+msgid "About us"
 msgstr "Quem somos"
 
 #: templates/footer.html:26 templates/index.html:22
@@ -252,14 +267,22 @@ msgid "Join us"
 msgstr "Faça parte"
 
 #: templates/footer.html:50
-msgid "Licensed under the terms of the"
+msgid "Licensed under the"
 msgstr "Licenciado sob os termos da"
+
+#: templates/includes/language_selector.html:19
+msgid "Change"
+msgstr ""
 
 #: templates/index.html:5 templates/pages/menus/breadcrumb.html:6
 #: templates/pages/menus/breadcrumb.html:20
 #: templates/pages/menus/breadcrumb.html:29
 msgid "Home"
 msgstr "Início"
+
+#: templates/index.html:54
+msgid "News"
+msgstr "Novidades"
 
 #: templates/pages/menus/lesao_do_plexo_braquial.html:3
 msgid "About"
@@ -273,6 +296,27 @@ msgstr "O que é o Plexo Braquial"
 msgid "Treatment"
 msgstr "Tratamento"
 
+#: templates/pages/pesquisa.html:27
+#: templates/pages/recursos-educacionais.html:27
+msgid "List of ABRAÇO team academic works"
+msgstr "Lista de contribuições acadêmicas da equipe da ABRAÇO"
+
+#: templates/pages/pesquisa.html:36
+msgid "Our workgroups and research goals"
+msgstr "Informações sobre grupos de trabalho e objetivos de pesquisa da ABRAÇO"
+
+#: templates/pages/pesquisa.html:46
+msgid "Our past and upcoming workshops and scientific events"
+msgstr "Eventos científicos e treinamentos passados e por vir"
+
+#: templates/pages/recursos-educacionais.html:35
+msgid "Handouts"
+msgstr "Cartilhas"
+
+#: templates/pages/recursos-educacionais.html:36
+msgid "Handouts about the brachial plexus injury"
+msgstr "Folhetos informativos sobre a lesão do plexo braquial"
+
 #: templates/pages/recursos-educacionais.html:37
 #: templates/pages/recursos-educacionais.html:47
 msgid "Available soon"
@@ -282,9 +326,13 @@ msgstr "Disponível em breve"
 msgid "Events"
 msgstr "Eventos"
 
-#: templates/pages/recursos-educacionais.html:54
-msgid "Videos"
-msgstr "Vídeos"
+#: templates/pages/recursos-educacionais.html:46
+msgid "Educational lectures by ABRAÇO team"
+msgstr "Palestras educativas oferecidas pela equipe da ABRAÇO"
+
+#: templates/pages/recursos-educacionais.html:55
+msgid "Videos about brachial plexus injury and ABRAÇO"
+msgstr "Filmes sobre a lesão do plexo braquial e a ABRAÇO"
 
 #: website/settings.py:81
 msgid "Portugues"

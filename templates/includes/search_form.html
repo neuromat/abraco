@@ -1,29 +1,25 @@
 {% load mezzanine_tags i18n %}
 <form action="{% url "search" %}" class="navbar-form" role="search">
-
-<div>
-    <input placeholder="{% trans "Search" %}" type="text" name="q" value="{{ request.GET.q }}">
-
-
-{% if search_model_choices %}
-    {% if search_model_choices|length == 1 %}
-    <input type="hidden" name="type" value="{{ search_model_choices.0.1 }}">
-    {% else %}
     <div>
-    <select name="type">
-        <option value="">{% trans "Everything" %}</option>
-        {% for verbose_name, model in search_model_choices %}
-        <option value="{{ model }}"
-            {% if model == request.GET.type  %}selected{% endif %}>
-            {{ verbose_name }}
-        </option>
-        {% endfor %}
-    </select>
+        <input placeholder="{% trans "Search" %}" type="text" name="q" value="{{ request.GET.q }}">
+            {% if search_model_choices %}
+                {% if search_model_choices|length == 1 %}
+                <input type="hidden" name="type" value="{{ search_model_choices.0.1 }}">
+                {% else %}
+                <div>
+                <select name="type">
+                    <option value="">{% trans "Everything" %}</option>
+                    {% for verbose_name, model in search_model_choices %}
+                    <option value="{{ model }}"
+                        {% if model == request.GET.type  %}selected{% endif %}>
+                        {{ verbose_name }}
+                    </option>
+                    {% endfor %}
+                </select>
+                </div>
+                {% endif %}
+            {% endif %}
+        <button type="submit" class="btn btn-primary"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> </button>
     </div>
-    {% endif %}
-{% endif %}
-
-    <button type="submit" class="btn btn-primary"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> </button>
-</div>
 </form>
 

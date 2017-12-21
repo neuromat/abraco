@@ -3,6 +3,6 @@
 *.db
 .DS_Store
 .coverage
-/static
+/static/media
 .idea/
 website/local_settings.py

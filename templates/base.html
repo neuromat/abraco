@@ -82,9 +82,8 @@
                 {% endfor %}
             {% endif %}
 
-            <h1>{% block title %}{% endblock %}</h1>
-
             {% if not page.home %}
+                <h1>{% block title %}{% endblock %}</h1>
                 <ol class="breadcrumb">
                     {% spaceless %}
                         {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
@@ -94,7 +93,7 @@
         </div>
 
 
-                {% block main %}{% endblock %}
+        {% block main %}{% endblock %}
 
 
         {% include "footer.html" %}

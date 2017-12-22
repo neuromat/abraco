@@ -82,7 +82,7 @@ div#pesquisar input, #pesquisar button {background: #F6F6F6; border: none; heigh
 #pesquisar form {margin: 0 0;}
 #pesquisar form button {background-color: #207d7d; width: 68px; position: relative; display: inline-block;  font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 300; line-height: 30px; font-size: 27px; padding: 0; color: #F6F6F6; border-radius: 2px; margin: 0;}
 
-#idioma select {margin-top: 0px; margin-right: 0; box-shadow: none; border: none; float: right; max-width: 170px;}
+#idioma select {margin-top: 0px; margin-right: 0; box-shadow: none; border: none; float: right; max-width: 180px;}
 
 /*PAGINA Principal*/
 

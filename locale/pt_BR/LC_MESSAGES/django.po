@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-21 20:01+0000\n"
+"POT-Creation-Date: 2017-12-22 20:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -274,9 +274,17 @@ msgstr "Licenciado sob os termos da"
 msgid "Change"
 msgstr ""
 
+#: templates/includes/search_form.html:4
+msgid "Search"
+msgstr "Pesquisar"
+
+#: templates/includes/search_form.html:11
+msgid "Everything"
+msgstr "Tudo"
+
 #: templates/index.html:5 templates/pages/menus/breadcrumb.html:6
 #: templates/pages/menus/breadcrumb.html:20
-#: templates/pages/menus/breadcrumb.html:29
+#: templates/pages/menus/breadcrumb.html:29 templates/search_results.html:13
 msgid "Home"
 msgstr "Início"
 
@@ -333,6 +341,28 @@ msgstr "Palestras educativas oferecidas pela equipe da ABRAÇO"
 #: templates/pages/recursos-educacionais.html:55
 msgid "Videos about brachial plexus injury and ABRAÇO"
 msgstr "Filmes sobre a lesão do plexo braquial e a ABRAÇO"
+
+#: templates/search_results.html:5 templates/search_results.html:6
+#: templates/search_results.html:15
+msgid "Search Results"
+msgstr "Resultados da pesquisa"
+
+#: templates/search_results.html:22
+#, python-format
+msgid "No results were found matching your query: %(query)s"
+msgstr "Sua busca por %(query)s não retornou resultados."
+
+#: templates/search_results.html:24
+msgid ""
+"Showing %(start)s to %(end)s of %(total)s results matching your query: "
+"%(query)s"
+msgstr ""
+"Mostrando resultados de %(start)s a %(end)s de um total de %(total)s resultados correspondentes à sua consulta: "
+"%(query)s"
+
+#: templates/search_results.html:45
+msgid "read more"
+msgstr "Leia mais"
 
 #: website/settings.py:81
 msgid "Portugues"

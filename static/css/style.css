@@ -303,7 +303,8 @@ img{max-width: 100%;}
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: #125F65;}
 .pagination>li>a, .pagination>li>span {color: #125F65;}
 
-
+/* Large desktops and laptops */
+.aResultadoP {margin-bottom: 300px;}
 
 /*Ajustes dispositivos*/
 

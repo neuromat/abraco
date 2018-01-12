@@ -1,4 +1,4 @@
-{% load mezzanine_tags staticfiles %}
+{% load i18n mezzanine_tags staticfiles %}
 
 <!--Barra superior-->
 <header>
@@ -21,13 +21,13 @@
                 <div>
                     <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"> <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> </button>
                       <ul class="dropdown-menu aMenuAbraco fadeIn" aria-labelledby="aMenuPrinc">
-                        <li><a href="/">Página Principal</a></li>
-                        <li><a href="/quem_somos/">Quem somos</a></li>
-                        <li><a href="/lesao-do-plexo-braquial/">Lesão do Plexo Braquial</a></li>
-                        <li><a href="/pesquisa/">Pesquisa</a></li>
-                        <li><a href="/recursos-educacionais/">Recursos Educacionais</a></li>
+                        <li><a href="/">{% trans "Home" %}</a></li>
+                        <li><a href="/quem_somos/">{% trans "About us" %}</a></li>
+                        <li><a href="/lesao-do-plexo-braquial/">{% trans "Brachial Plexus Injury" %}</a></li>
+                        <li><a href="/pesquisa/">{% trans "Research" %}</a></li>
+                        <li><a href="/recursos-educacionais/">{% trans "Educational resources" %}</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/faca_parte/">Faça parte</a></li
+                        <li><a href="/faca_parte/">{% trans "Join us" %}</a></li>
                       </ul>
                 </div>
                 <div id="pesquisar" class="hidden-xs">

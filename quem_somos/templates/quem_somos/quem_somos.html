@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load i18n mezzanine_tags staticfiles %}
 
+{% block meta_title %}
+    {% trans "About us" %}
+{% endblock %}
+
 {% block title %}
     <h1 class="h1_aPadrao">{{ page.title }}</h1>
 {% endblock %}

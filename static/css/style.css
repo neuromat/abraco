@@ -304,7 +304,8 @@ img{max-width: 100%;}
 .pagination>li>a, .pagination>li>span {color: #125F65;}
 
 /* Large desktops and laptops */
-.aResultadoP {margin-bottom: 300px;}
+.aResultadoPesquisaNEncontrado {margin-bottom: 500px;}
+.aResultadoPesquisa {margin-bottom: 430px;}
 
 /*Ajustes dispositivos*/
 

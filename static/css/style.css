@@ -207,10 +207,11 @@ div#aCoordenacao:before {content: "Coordenação"; display: inline-block; positi
 .aMembro a div span {color: #fff; font-weight: bold; text-transform: capitalize; text-shadow: 1px 2px 3px #000;}
 
 /* PAGINA lesao do Plexo Braquial*/
-.item_PlexoBraq {margin-top: 20px; margin-bottom: 20px; border-left: 13px solid #125F65; border-right: 1px solid #125F65; border-bottom: 1px solid #125F65; border-top: 1px solid #125F65; padding: 10px 15px; font-size: 16px; float: left; width: 100%; border-radius: 2px;}
+.item_PlexoBraq {margin-top: 20px; margin-bottom: 20px; padding: 10px 15px; font-size: 16px; float: left; width: 100%; border-radius: 2px;}
 .PlexoBraqdireita {float: right; margin: 0 10px 5px 0; width: 60%;}
 p:last-child {margin: 0;}
 img{max-width: 100%;}
+.aEspacamentoParagrafoAbaixo {margin-bottom: 30px;}
 
 /*Ajustes do Accordion do Bootstrap */
 .panel-default {border-color: #159393;}

@@ -66,9 +66,10 @@
                             {% video blog_post.video "small" %}
                         </div>
                     {% else %}
-                        {% editable blog_post.description %}
-                            {{ blog_post.description }}
-                        {% endeditable %}
+{#                        {% editable blog_post.description %}#}
+{#                            {{ blog_post.description }}#}
+{#                        {% endeditable %}#}
+                        {{ blog_post.content|safe|truncatewords:80 }}
                     {% endif %}
                 {% endblock %}
 

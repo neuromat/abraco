@@ -6,3 +6,4 @@
 /static/media
 .idea/
 website/local_settings.py
+website/wsgi.py

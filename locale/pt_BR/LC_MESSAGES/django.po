@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-22 20:06+0000\n"
+"POT-Creation-Date: 2018-02-05 19:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,23 +38,23 @@ msgstr "Digite seu CEP para que o sistema busque seu endereço"
 msgid "Name"
 msgstr "Nome"
 
-#: faca_parte/models.py:20 faca_parte/templates/faca_parte/faca_parte.html:37
+#: faca_parte/models.py:20 faca_parte/templates/faca_parte/faca_parte.html:41
 msgid "Role"
 msgstr "Perfil"
 
-#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:48
+#: faca_parte/models.py:21 faca_parte/templates/faca_parte/faca_parte.html:52
 msgid "Schooling"
 msgstr "Escolaridade"
 
-#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:30
+#: faca_parte/models.py:23 faca_parte/templates/faca_parte/faca_parte.html:34
 msgid "Email"
 msgstr "Email"
 
-#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:42
+#: faca_parte/models.py:24 faca_parte/templates/faca_parte/faca_parte.html:46
 msgid "Date of birth"
 msgstr "Data de nascimento"
 
-#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:78
+#: faca_parte/models.py:25 faca_parte/templates/faca_parte/faca_parte.html:82
 msgid "How did you hear about the project?"
 msgstr "Como ficou sabendo do projeto?"
 
@@ -74,15 +74,15 @@ msgstr "Complemento"
 msgid "Number"
 msgstr "Número"
 
-#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:62
+#: faca_parte/models.py:30 faca_parte/templates/faca_parte/faca_parte.html:66
 msgid "District"
 msgstr "Bairro"
 
-#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:68
+#: faca_parte/models.py:31 faca_parte/templates/faca_parte/faca_parte.html:72
 msgid "City"
 msgstr "Cidade"
 
-#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:72
+#: faca_parte/models.py:32 faca_parte/templates/faca_parte/faca_parte.html:76
 msgid "State"
 msgstr "Estado"
 
@@ -90,19 +90,24 @@ msgstr "Estado"
 msgid "Country"
 msgstr "País"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:25
+#: faca_parte/templates/faca_parte/faca_parte.html:10
+#: templates/cabecalho.html:30 templates/footer.html:41
+msgid "Join us"
+msgstr "Faça parte"
+
+#: faca_parte/templates/faca_parte/faca_parte.html:29
 msgid "Full name"
 msgstr "Nome completo"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:52
+#: faca_parte/templates/faca_parte/faca_parte.html:56
 msgid "Zipcode"
 msgstr "CEP"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:58
+#: faca_parte/templates/faca_parte/faca_parte.html:62
 msgid "Street"
 msgstr "Rua"
 
-#: faca_parte/templates/faca_parte/faca_parte.html:86
+#: faca_parte/templates/faca_parte/faca_parte.html:90
 msgid "Send"
 msgstr "Enviar"
 
@@ -142,12 +147,17 @@ msgstr "Pessoa"
 msgid "People"
 msgstr "Pessoas"
 
-#: quem_somos/templates/quem_somos/quem_somos.html:21
+#: quem_somos/templates/quem_somos/quem_somos.html:5
+#: templates/cabecalho.html:25 templates/footer.html:25
+msgid "About us"
+msgstr "Quem somos"
+
+#: quem_somos/templates/quem_somos/quem_somos.html:25
 msgid "Team"
 msgstr "Equipe"
 
-#: quem_somos/templates/quem_somos/quem_somos.html:27
-#: quem_somos/templates/quem_somos/quem_somos.html:41
+#: quem_somos/templates/quem_somos/quem_somos.html:31
+#: quem_somos/templates/quem_somos/quem_somos.html:45
 msgid "Lattes Platform"
 msgstr "Currículo Lattes"
 
@@ -157,7 +167,7 @@ msgstr "Tópicos"
 
 #: templates/blog/blog_menu_items.html:7 templates/blog/blog_menu_items.html:20
 #: templates/pages/recursos-educacionais.html:26
-msgid "Abraço and the Academy"
+msgid "Academic ABRAÇO"
 msgstr "Abraço acadêmico"
 
 #: templates/blog/blog_menu_items.html:8
@@ -199,8 +209,9 @@ msgid "Activities"
 msgstr "Atividades"
 
 #: templates/blog/blog_post_detail.html:20 templates/blog/blog_post_list.html:7
-#: templates/blog/blog_post_list.html:28 templates/footer.html:28
-#: templates/index.html:36 templates/pages/menus/breadcrumb.html:22
+#: templates/blog/blog_post_list.html:28 templates/cabecalho.html:28
+#: templates/footer.html:28 templates/index.html:36
+#: templates/pages/menus/breadcrumb.html:22
 #: templates/pages/menus/breadcrumb.html:34
 #: templates/pages/recursos-educacionais.html:5
 #: templates/pages/recursos-educacionais.html:9
@@ -208,8 +219,9 @@ msgid "Educational resources"
 msgstr "Recursos educacionais"
 
 #: templates/blog/blog_post_detail.html:22 templates/blog/blog_post_list.html:9
-#: templates/blog/blog_post_list.html:30 templates/footer.html:27
-#: templates/index.html:29 templates/pages/menus/breadcrumb.html:24
+#: templates/blog/blog_post_list.html:30 templates/cabecalho.html:27
+#: templates/footer.html:27 templates/index.html:29
+#: templates/pages/menus/breadcrumb.html:24
 #: templates/pages/menus/breadcrumb.html:36 templates/pages/pesquisa.html:5
 #: templates/pages/pesquisa.html:9
 msgid "Research"
@@ -223,9 +235,23 @@ msgstr "Compartilhar no Twitter"
 msgid "Share on Facebook"
 msgstr "Compartilhar no Facebook"
 
-#: templates/blog/blog_post_list.html:77
+#: templates/blog/blog_post_list.html:78
 msgid "Read more"
 msgstr "Leia mais"
+
+#: templates/cabecalho.html:24 templates/index.html:5
+#: templates/pages/menus/breadcrumb.html:6
+#: templates/pages/menus/breadcrumb.html:20
+#: templates/pages/menus/breadcrumb.html:29 templates/search_results.html:13
+msgid "Home"
+msgstr "Página inicial"
+
+#: templates/cabecalho.html:26 templates/footer.html:26 templates/index.html:22
+#: templates/pages/lesao-do-plexo-braquial.html:5
+#: templates/pages/lesao-do-plexo-braquial.html:9
+#: templates/pages/tratamento.html:5 templates/pages/tratamento.html:9
+msgid "Brachial Plexus Injury"
+msgstr "Lesão do Plexo Braquial"
 
 #: templates/footer.html:7
 msgid "Initiative"
@@ -239,17 +265,6 @@ msgstr "Apoio"
 msgid "Partner"
 msgstr "Parceiro"
 
-#: templates/footer.html:25
-msgid "About us"
-msgstr "Quem somos"
-
-#: templates/footer.html:26 templates/index.html:22
-#: templates/pages/lesao-do-plexo-braquial.html:5
-#: templates/pages/lesao-do-plexo-braquial.html:9
-#: templates/pages/tratamento.html:5 templates/pages/tratamento.html:9
-msgid "Brachial Plexus Injury"
-msgstr "Lesão do Plexo Braquial"
-
 #: templates/footer.html:32
 msgid "Follow"
 msgstr "Siga"
@@ -261,10 +276,6 @@ msgstr "Contato"
 #: templates/footer.html:41
 msgid "Form"
 msgstr "Formulário"
-
-#: templates/footer.html:41
-msgid "Join us"
-msgstr "Faça parte"
 
 #: templates/footer.html:50
 msgid "Licensed under the"
@@ -281,12 +292,6 @@ msgstr "Pesquisar"
 #: templates/includes/search_form.html:11
 msgid "Everything"
 msgstr "Tudo"
-
-#: templates/index.html:5 templates/pages/menus/breadcrumb.html:6
-#: templates/pages/menus/breadcrumb.html:20
-#: templates/pages/menus/breadcrumb.html:29 templates/search_results.html:13
-msgid "Home"
-msgstr "Início"
 
 #: templates/index.html:54
 msgid "News"
@@ -353,12 +358,13 @@ msgid "No results were found matching your query: %(query)s"
 msgstr "Sua busca por %(query)s não retornou resultados."
 
 #: templates/search_results.html:24
+#, python-format
 msgid ""
 "Showing %(start)s to %(end)s of %(total)s results matching your query: "
 "%(query)s"
 msgstr ""
-"Mostrando resultados de %(start)s a %(end)s de um total de %(total)s resultados correspondentes à sua consulta: "
-"%(query)s"
+"Mostrando resultados de %(start)s a %(end)s de um total de %(total)s "
+"resultados correspondentes à sua consulta: %(query)s"
 
 #: templates/search_results.html:45
 msgid "read more"

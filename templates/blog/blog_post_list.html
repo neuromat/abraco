@@ -3,7 +3,7 @@
 
 {% block meta_title %}
     {{ category }} |
-    {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
+    {% if category.slug == 'abraco-academico' or category.slug == 'cartilhas' or category.slug == 'videos' %}
         {% trans "Educational resources" %}
     {% else %}
         {% trans "Research" %}
@@ -24,7 +24,7 @@
 
 {% block title %}
     {% if category %}
-        {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
+        {% if category.slug == 'abraco-academico' or category.slug == 'cartilhas' or category.slug == 'videos' %}
             <h1 class="h1_aRecursosEducacionais">{% trans "Educational resources" %}</h1>
         {% else %}
             <h1 class="h1_aPesquisa">{% trans "Research" %}</h1>

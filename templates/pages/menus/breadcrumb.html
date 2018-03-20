@@ -18,7 +18,7 @@
 
 {% if blog_posts %}
     <li class="breadcrumb-item" id="breadcrumb-menu-home"><a href="{% url "home" %}">{% trans "Home" %}</a></li>
-    {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
+    {% if category.slug == 'abraco-academico' or category.slug == 'cartilhas' or category.slug == 'videos' %}
         <li class="breadcrumb-item" id="breadcrumb-menu-recursos-educacionais"><a href="/recursos-educacionais">{% trans "Educational resources" %}</a></li>
     {% else %}
         <li class="breadcrumb-item" id="breadcrumb-menu-pesquisa"><a href="/pesquisa">{% trans "Research" %}</a></li>
@@ -30,7 +30,7 @@
     {% with blog_post.categories.all as categories %}
         {% if categories %}
             {% for category in categories %}
-                {% if category.slug == 'abraco-academico' or category.slug == 'videos' %}
+                {% if category.slug == 'abraco-academico' or category.slug == 'cartilhas' or category.slug == 'videos' %}
                     <li class="breadcrumb-item" id="breadcrumb-menu-recursos-educacionais"><a href="/recursos-educacionais">{% trans "Educational resources" %}</a></li>
                 {% else %}
                     <li class="breadcrumb-item" id="breadcrumb-menu-pesquisa"><a href="/pesquisa">{% trans "Research" %}</a></li>

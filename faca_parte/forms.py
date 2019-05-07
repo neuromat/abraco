@@ -1,10 +1,15 @@
-from django.forms import ModelForm, DateInput, Select, TextInput, Textarea
+import datetime
+from django.forms import ModelForm, DateInput, DateField, Select, TextInput, Textarea
 from django.utils.translation import ugettext_lazy as _
 
 from models import Person
 
 
 class PersonForm(ModelForm):
+    birth = DateField(
+        input_formats=['%d/%m/%Y'],
+        widget=DateInput(attrs={'class': 'form-control datepicker', 'placeholder': _('dd/mm/yyyy')}, format='%d/%m/%Y')
+    )
 
     class Meta:
         model = Person
@@ -21,7 +26,6 @@ class PersonForm(ModelForm):
             'email': TextInput(attrs={
                 'class': 'form-control', 'type': 'email', 'data-error': _('Invalid email address'), 'required': "",
                 'pattern': '^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$'}),
-            'birth': DateInput(attrs={'class': 'form-control datepicker'}),
             'zipcode': TextInput(attrs={'class': 'form-control', 'onBlur': 'pesquisacep(this.value);',
                                         'pattern': '\d{5}-?\d{3}',
                                         'placeholder': _('Enter your zip code that we will try to find your address')}),

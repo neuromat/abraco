@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-05 19:56+0000\n"
+"POT-Creation-Date: 2019-05-07 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: faca_parte/forms.py:17
+#: faca_parte/forms.py:11
+msgid "dd/mm/yyyy"
+msgstr "dd/mm/aaaa"
+
+#: faca_parte/forms.py:22
 msgid "Role must be included"
 msgstr "O campo perfil deve ser preenchido"
 
-#: faca_parte/forms.py:20
+#: faca_parte/forms.py:25
 msgid "Name must be included"
 msgstr "O campo nome deve ser preenchido"
 
-#: faca_parte/forms.py:22
+#: faca_parte/forms.py:27
 msgid "Invalid email address"
 msgstr "Endereço de email inválido"
 
-#: faca_parte/forms.py:27
+#: faca_parte/forms.py:31
 msgid "Enter your zip code that we will try to find your address"
 msgstr "Digite seu CEP para que o sistema busque seu endereço"
 
@@ -165,46 +169,51 @@ msgstr "Currículo Lattes"
 msgid "Topics"
 msgstr "Tópicos"
 
-#: templates/blog/blog_menu_items.html:7 templates/blog/blog_menu_items.html:20
+#: templates/blog/blog_menu_items.html:7 templates/blog/blog_menu_items.html:21
 #: templates/pages/recursos-educacionais.html:26
 msgid "Academic ABRAÇO"
 msgstr "Abraço acadêmico"
 
 #: templates/blog/blog_menu_items.html:8
+#: templates/pages/recursos-educacionais.html:35
+msgid "Handouts"
+msgstr "Cartilhas"
+
+#: templates/blog/blog_menu_items.html:9
 #: templates/pages/recursos-educacionais.html:54
 msgid "Videos"
 msgstr "Vídeos"
 
-#: templates/blog/blog_menu_items.html:14 templates/pages/pesquisa.html:26
+#: templates/blog/blog_menu_items.html:15 templates/pages/pesquisa.html:26
 msgid "Publications"
 msgstr "Publicações"
 
-#: templates/blog/blog_menu_items.html:16
+#: templates/blog/blog_menu_items.html:17
 msgid "Articles"
 msgstr "Artigos"
 
-#: templates/blog/blog_menu_items.html:17
+#: templates/blog/blog_menu_items.html:18
 msgid "Book chapters"
 msgstr "Capítulos de livro"
 
-#: templates/blog/blog_menu_items.html:18
+#: templates/blog/blog_menu_items.html:19
 msgid "MSc dissertations"
 msgstr "Dissertações de mestrado"
 
-#: templates/blog/blog_menu_items.html:19
+#: templates/blog/blog_menu_items.html:20
 msgid "PhD dissertations"
 msgstr "Teses de doutorado"
 
-#: templates/blog/blog_menu_items.html:23 templates/pages/pesquisa.html:35
+#: templates/blog/blog_menu_items.html:24 templates/pages/pesquisa.html:35
 msgid "Research project"
 msgstr "Projetos de pesquisa"
 
-#: templates/blog/blog_menu_items.html:25
+#: templates/blog/blog_menu_items.html:26
 msgid "Projects"
 msgstr "Projetos"
 
-#: templates/blog/blog_menu_items.html:28
-#: templates/blog/blog_menu_items.html:30 templates/pages/pesquisa.html:45
+#: templates/blog/blog_menu_items.html:29
+#: templates/blog/blog_menu_items.html:31 templates/pages/pesquisa.html:45
 msgid "Activities"
 msgstr "Atividades"
 
@@ -227,11 +236,11 @@ msgstr "Recursos educacionais"
 msgid "Research"
 msgstr "Pesquisa"
 
-#: templates/blog/blog_post_detail.html:59
+#: templates/blog/blog_post_detail.html:60
 msgid "Share on Twitter"
 msgstr "Compartilhar no Twitter"
 
-#: templates/blog/blog_post_detail.html:60
+#: templates/blog/blog_post_detail.html:61
 msgid "Share on Facebook"
 msgstr "Compartilhar no Facebook"
 
@@ -322,26 +331,21 @@ msgstr "Informações sobre grupos de trabalho e objetivos de pesquisa da ABRAÇ
 msgid "Our past and upcoming workshops and scientific events"
 msgstr "Eventos científicos e treinamentos passados e por vir"
 
-#: templates/pages/recursos-educacionais.html:35
-msgid "Handouts"
-msgstr "Cartilhas"
-
 #: templates/pages/recursos-educacionais.html:36
 msgid "Handouts about the brachial plexus injury"
 msgstr "Folhetos informativos sobre a lesão do plexo braquial"
 
-#: templates/pages/recursos-educacionais.html:37
-#: templates/pages/recursos-educacionais.html:47
-msgid "Available soon"
-msgstr "Disponível em breve"
-
-#: templates/pages/recursos-educacionais.html:45
+#: templates/pages/recursos-educacionais.html:44
 msgid "Events"
 msgstr "Eventos"
 
-#: templates/pages/recursos-educacionais.html:46
+#: templates/pages/recursos-educacionais.html:45
 msgid "Educational lectures by ABRAÇO team"
 msgstr "Palestras educativas oferecidas pela equipe da ABRAÇO"
+
+#: templates/pages/recursos-educacionais.html:46
+msgid "Available soon"
+msgstr "Disponível em breve"
 
 #: templates/pages/recursos-educacionais.html:55
 msgid "Videos about brachial plexus injury and ABRAÇO"

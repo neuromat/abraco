@@ -2,11 +2,11 @@
 {% load i18n mezzanine_tags %}
 
 {% block meta_title %}
-    {% trans "Educational resources" %}
+    {% trans "Further information" %}
 {% endblock %}
 
 {% block title %}
-    <h1 class="h1_aRecursosEducacionais">{% trans "Educational resources" %}</h1>
+    <h1 class="h1_aRecursosEducacionais">{% trans "Further information" %}</h1>
 {% endblock %}
 
 {% block main %}
@@ -19,6 +19,15 @@
 
     <div class="row aRec">
         <div class="container">
+            <a href="/content/category/noticias/">
+                <div class="col-md-3">
+                    <div class="aOpcoesRec">
+                        <img src="/static/img/viral-marketing.svg" alt="">
+                        <h3>{% trans "News" %}</h3>
+                        <p>{% trans "Media clipping on the ABRAÇO initiative" %}</p>
+                    </div>
+                </div>
+            </a>
             <a href="/content/category/abraco-academico/">
                 <div class="col-md-3">
                     <div  class="aOpcoesRec">
@@ -37,16 +46,6 @@
                     </div>
                 </div>
             </a>
-            <!-- Incluir tag a quando houver conteúdo -->
-                <div class="col-md-3">
-                    <div class="aOpcoesRec">
-                        <img src="/static/img/viral-marketing.svg" alt="">
-                        <h3>{% trans "Events" %}</h3>
-                        <p>{% trans "Educational lectures by ABRAÇO team" %}</p>
-                        <span>{% trans "Available soon" %}</span>
-                    </div>
-                </div>
-            <!-- fechar tag a -->
             <a href="/content/category/videos/">
                 <div class="col-md-3">
                     <div class="aOpcoesRec">

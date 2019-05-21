@@ -1,9 +1,10 @@
 {% load i18n %}
 
-{% if category.slug == 'abraco-academico' or category.slug == 'cartilhas' or category.slug == 'videos' %}
+{% if category.slug == 'noticias' or category.slug == 'abraco-academico' or category.slug == 'cartilhas' or category.slug == 'videos' %}
     <div id="lateralr" class="col-md-3 col-sm-4 col-xs-12">
         <h2>{% trans "Topics" %}</h2>
         <ul>
+            <li {% if category.slug == 'noticias' %} class="active"{% endif %}><a href="/content/category/noticias/">{% trans "News" %}</a></li>
             <li {% if category.slug == 'abraco-academico' %} class="active"{% endif %}><a href="/content/category/abraco-academico/">{% trans "Academic ABRAÇO" %}</a></li>
             <li {% if category.slug == 'cartilhas' %} class="active"{% endif %}><a href="/content/category/cartilhas/">{% trans "Handouts" %}</a></li>
             <li {% if category.slug == 'videos' %} class="active"{% endif %}><a href="/content/category/videos/">{% trans "Videos" %}</a></li>

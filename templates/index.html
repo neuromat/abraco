@@ -72,7 +72,7 @@
                                                     {% video post.video "small" %}
                                                 </div>
                                             {% else %}
-                                                <p>{{ post.content|safe|truncatewords:40 }}</p>
+                                                <p>{{ post.description_from_content|safe|truncatewords:40 }}</p>
                                             {% endif %}
                                         </div>
                                     </a>

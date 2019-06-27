@@ -33,7 +33,7 @@
                 <div class="col-md-4">
                     <a href="/recursos-educacionais">
                         <div id="aBotaoRecEduc">
-                            <h2>{% trans "Educational resources" %}</h2>
+                            <h2>{% trans "Further information" %}</h2>
                         </div>
                     </a>
                 </div>
@@ -75,7 +75,7 @@
                                                 {{ post.feature_image }}
                                                 <div class="image-container" style="background-image:url('{{ MEDIA_URL }}{% thumbnail post.featured_image 500 350 %} ')"></div>
                                             {% else %}
-                                                <p>{{ post.content|safe|truncatewords:40 }}</p>
+                                                <p>{{ post.description_from_content|safe|truncatewords:40 }}</p>
                                             {% endif %}
                                         </div>
                                     </a>

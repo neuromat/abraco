@@ -16,8 +16,8 @@
     {% with blog_post.categories.all as categories %}
         {% if categories %}
             {% for category in categories %}
-                {% if category.slug == 'abraco-academico' or category.slug == 'cartilhas' or category.slug == 'videos' %}
-                    <h1 class="h1_aRecursosEducacionais">{% trans "Educational resources" %}</h1>
+                {% if category.slug == 'noticias' or category.slug == 'abraco-academico' or category.slug == 'cartilhas' or category.slug == 'videos' %}
+                    <h1 class="h1_aRecursosEducacionais">{% trans "Further information" %}</h1>
                 {% else %}
                     <h1 class="h1_aPesquisa">{% trans "Research" %}</h1>
                 {% endif %}

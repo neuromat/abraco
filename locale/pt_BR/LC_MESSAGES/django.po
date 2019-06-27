@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 16:37+0000\n"
+"POT-Creation-Date: 2019-05-20 20:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,51 +169,56 @@ msgstr "Currículo Lattes"
 msgid "Topics"
 msgstr "Tópicos"
 
-#: templates/blog/blog_menu_items.html:7 templates/blog/blog_menu_items.html:21
+#: templates/blog/blog_menu_items.html:7 templates/index.html:54
 #: templates/pages/recursos-educacionais.html:26
+msgid "News"
+msgstr "Notícias"
+
+#: templates/blog/blog_menu_items.html:8 templates/blog/blog_menu_items.html:22
+#: templates/pages/recursos-educacionais.html:35
 msgid "Academic ABRAÇO"
 msgstr "Abraço acadêmico"
 
-#: templates/blog/blog_menu_items.html:8
-#: templates/pages/recursos-educacionais.html:35
+#: templates/blog/blog_menu_items.html:9
+#: templates/pages/recursos-educacionais.html:44
 msgid "Handouts"
 msgstr "Cartilhas"
 
-#: templates/blog/blog_menu_items.html:9
-#: templates/pages/recursos-educacionais.html:54
+#: templates/blog/blog_menu_items.html:10
+#: templates/pages/recursos-educacionais.html:53
 msgid "Videos"
 msgstr "Vídeos"
 
-#: templates/blog/blog_menu_items.html:15 templates/pages/pesquisa.html:26
+#: templates/blog/blog_menu_items.html:16 templates/pages/pesquisa.html:26
 msgid "Publications"
 msgstr "Publicações"
 
-#: templates/blog/blog_menu_items.html:17
+#: templates/blog/blog_menu_items.html:18
 msgid "Articles"
 msgstr "Artigos"
 
-#: templates/blog/blog_menu_items.html:18
+#: templates/blog/blog_menu_items.html:19
 msgid "Book chapters"
 msgstr "Capítulos de livro"
 
-#: templates/blog/blog_menu_items.html:19
+#: templates/blog/blog_menu_items.html:20
 msgid "MSc dissertations"
 msgstr "Dissertações de mestrado"
 
-#: templates/blog/blog_menu_items.html:20
+#: templates/blog/blog_menu_items.html:21
 msgid "PhD dissertations"
 msgstr "Teses de doutorado"
 
-#: templates/blog/blog_menu_items.html:24 templates/pages/pesquisa.html:35
+#: templates/blog/blog_menu_items.html:25 templates/pages/pesquisa.html:35
 msgid "Research project"
 msgstr "Projetos de pesquisa"
 
-#: templates/blog/blog_menu_items.html:26
+#: templates/blog/blog_menu_items.html:27
 msgid "Projects"
 msgstr "Projetos"
 
-#: templates/blog/blog_menu_items.html:29
-#: templates/blog/blog_menu_items.html:31 templates/pages/pesquisa.html:45
+#: templates/blog/blog_menu_items.html:30
+#: templates/blog/blog_menu_items.html:32 templates/pages/pesquisa.html:45
 msgid "Activities"
 msgstr "Atividades"
 
@@ -224,8 +229,8 @@ msgstr "Atividades"
 #: templates/pages/menus/breadcrumb.html:34
 #: templates/pages/recursos-educacionais.html:5
 #: templates/pages/recursos-educacionais.html:9
-msgid "Educational resources"
-msgstr "Recursos educacionais"
+msgid "Further information"
+msgstr "Saiba mais"
 
 #: templates/blog/blog_post_detail.html:22 templates/blog/blog_post_list.html:9
 #: templates/blog/blog_post_list.html:30 templates/cabecalho.html:27
@@ -302,10 +307,6 @@ msgstr "Pesquisar"
 msgid "Everything"
 msgstr "Tudo"
 
-#: templates/index.html:54
-msgid "News"
-msgstr "Novidades"
-
 #: templates/pages/menus/lesao_do_plexo_braquial.html:3
 msgid "About"
 msgstr "Sobre"
@@ -319,7 +320,7 @@ msgid "Treatment"
 msgstr "Tratamento"
 
 #: templates/pages/pesquisa.html:27
-#: templates/pages/recursos-educacionais.html:27
+#: templates/pages/recursos-educacionais.html:36
 msgid "List of ABRAÇO team academic works"
 msgstr "Lista de contribuições acadêmicas da equipe da ABRAÇO"
 
@@ -331,23 +332,15 @@ msgstr "Informações sobre grupos de trabalho e objetivos de pesquisa da ABRAÇ
 msgid "Our past and upcoming workshops and scientific events"
 msgstr "Eventos científicos e treinamentos passados e por vir"
 
-#: templates/pages/recursos-educacionais.html:36
+#: templates/pages/recursos-educacionais.html:27
+msgid "Media clipping on the ABRAÇO initiative"
+msgstr "Notícias sobre a iniciativa ABRAÇO"
+
+#: templates/pages/recursos-educacionais.html:45
 msgid "Handouts about the brachial plexus injury"
 msgstr "Folhetos informativos sobre a lesão do plexo braquial"
 
-#: templates/pages/recursos-educacionais.html:44
-msgid "Events"
-msgstr "Eventos"
-
-#: templates/pages/recursos-educacionais.html:45
-msgid "Educational lectures by ABRAÇO team"
-msgstr "Palestras educativas oferecidas pela equipe da ABRAÇO"
-
-#: templates/pages/recursos-educacionais.html:46
-msgid "Available soon"
-msgstr "Disponível em breve"
-
-#: templates/pages/recursos-educacionais.html:55
+#: templates/pages/recursos-educacionais.html:54
 msgid "Videos about brachial plexus injury and ABRAÇO"
 msgstr "Filmes sobre a lesão do plexo braquial e a ABRAÇO"
 

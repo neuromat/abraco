@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load embed_video_tags i18n keyword_tags project_tags staticfiles mezzanine_tags %}
+{% load embed_video_tags i18n keyword_tags project_tags staticfiles mezzanine_tags  %}
 
 {% block meta_title %}
     {% trans "Home" %}
@@ -71,6 +71,9 @@
                                                 <div class="embed-responsive embed-responsive-16by9">
                                                     {% video post.video "small" %}
                                                 </div>
+                                            {% elif post.featured_image %}
+                                                {{ post.feature_image }}
+                                                <div class="image-container" style="background-image:url('{{ MEDIA_URL }}{% thumbnail post.featured_image 500 350 %} ')"></div>
                                             {% else %}
                                                 <p>{{ post.content|safe|truncatewords:40 }}</p>
                                             {% endif %}

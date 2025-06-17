@@ -1,4 +1,4 @@
-Mezzanine==4.2.3
+Mezzanine==6.1.1
 django-embed-video==1.1.2
 django-modeltranslation==0.12.1
 psycopg2==2.7.3.2
